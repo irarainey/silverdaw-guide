@@ -4,20 +4,20 @@ layout: home
 hero:
   name: Silverdaw
   text: User Guide
-  tagline: Everything you need to remix, mashup, and make music with Silverdaw.
+  tagline: Build remixes and mashups from your own songs, loops, vocals, and samples — no studio experience needed.
   actions:
     - theme: brand
-      text: Get Started
-      link: /guide/introduction
+      text: Quick Start
+      link: /guide/quick-start
     - theme: alt
-      text: Installation
-      link: /guide/getting-started
+      text: Introduction
+      link: /guide/introduction
 
 features:
   - title: Remix & Mashup
-    details: Build tracks from samples with a workflow designed around cutting, chopping, and rearranging audio.
-  - title: Open Source
-    details: Silverdaw is free and open source. Read the guide, then dive into the code.
+    details: Drag songs, loops, and samples onto a timeline, then trim, re-pitch, and tempo-match them into a finished mix.
   - title: Sample-Driven
-    details: Learn how to organise, slice, and sequence your sample library into finished tracks.
+    details: Chop clips into loops and slices, save them to a per-project library, and rearrange them into something new.
+  - title: Open Source
+    details: Silverdaw is free and open source. Read the guide, then make your first mix.
 ---

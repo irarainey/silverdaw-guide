@@ -28,6 +28,7 @@ export default defineConfig({
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Guide', link: '/guide/introduction' },
+      { text: 'Quick Start', link: '/guide/quick-start' },
       { text: 'silverdaw.com', link: 'https://www.silverdaw.com' },
     ],
 
@@ -37,7 +38,38 @@ export default defineConfig({
           text: 'Getting Started',
           items: [
             { text: 'Introduction', link: '/guide/introduction' },
-            { text: 'Installation', link: '/guide/getting-started' },
+            { text: 'Installation', link: '/guide/installation' },
+            { text: 'Quick Start: Your First Remix', link: '/guide/quick-start' },
+            { text: 'The Silverdaw Window', link: '/guide/the-window' },
+          ],
+        },
+        {
+          text: 'Projects & Audio',
+          items: [
+            { text: 'Projects', link: '/guide/projects' },
+            { text: 'Importing & the Library', link: '/guide/library' },
+            { text: 'Stem Separation', link: '/guide/stems' },
+          ],
+        },
+        {
+          text: 'Building Your Mix',
+          items: [
+            { text: 'Arranging the Timeline', link: '/guide/timeline' },
+            { text: 'Editing Clips', link: '/guide/clip-editor' },
+            { text: 'Mixing & Effects', link: '/guide/mixing' },
+          ],
+        },
+        {
+          text: 'Finishing',
+          items: [
+            { text: 'Exporting a Mixdown', link: '/guide/export' },
+          ],
+        },
+        {
+          text: 'Reference',
+          items: [
+            { text: 'Preferences', link: '/guide/preferences' },
+            { text: 'Keyboard Shortcuts', link: '/guide/shortcuts' },
           ],
         },
       ],
@@ -49,12 +81,6 @@ export default defineConfig({
 
     search: {
       provider: 'local',
-    },
-
-    editLink: {
-      pattern:
-        'https://github.com/irarainey/silverdaw-guide/edit/main/docs/:path',
-      text: 'Edit this page on GitHub',
     },
 
     footer: {

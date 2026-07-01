@@ -2,18 +2,55 @@
 
 Welcome to the **Silverdaw** user guide.
 
-Silverdaw is an open-source Digital Audio Workstation (DAW) built for remixing,
-mashups, and sample-driven music making. This guide walks you through installing
-Silverdaw and getting productive quickly.
+Silverdaw is an open-source Digital Audio Workstation (DAW) for Windows, built for
+remixing, mashups, and sample-driven music making. It lets you build new tracks
+out of audio you already have: import your songs, loops, vocals, and samples,
+drag them onto a timeline, and arrange, trim, re-pitch, and tempo-match them into
+a finished mix.
 
-> This documentation is a work in progress and will grow alongside the software.
+This guide is written for people who want to *use* Silverdaw. You do not need to
+be a professional producer, DJ, or audio engineer — if you can drag a file and
+click a button, you can make a mix.
 
-## What you'll find here
+## Who Silverdaw is for
 
-- **Getting Started** — install Silverdaw and open your first project.
-- More sections coming soon as features land.
+Silverdaw is a studio creation tool for bedroom DJs, producers, and mixers —
+anyone who wants to combine and reshape existing audio into mixes and mashups. It
+is designed for building tracks at your own pace, not for performing live.
 
-## Looking for the main site?
+## The ideas behind it
 
-The Silverdaw project home lives at
-[www.silverdaw.com](https://www.silverdaw.com).
+A few principles shape how Silverdaw works, and knowing them makes everything
+else easier to follow:
+
+- **Arranging audio should be simple.** Common tasks are a drag, a double-click,
+  or a single menu item away.
+- **Remix and mashup first.** Silverdaw automatically detects the tempo and key
+  of your audio and can tempo-match and pitch-shift clips so they line up
+  musically.
+- **Non-destructive.** Tempo, pitch, trimming, and effects are stored as
+  settings on a clip. Your original files are never changed, and every edit can
+  be undone.
+- **It just plays.** Drop a clip in and it is ready to play. Waveforms and
+  analysis happen in the background without holding you up.
+
+## What you can do
+
+- Import audio into a per-project **Library** and drag it onto the timeline.
+- Arrange clips across multiple tracks — move, split, duplicate, trim, colour,
+  and delete them.
+- Split a song into **stems** (vocals, drums, bass, and other) to remix the
+  parts.
+- Chop clips into loops and slices, and save reusable clips and samples.
+- Shape your sound with per-track tone, filter, compression, reverb, and delay,
+  plus automation that changes settings over time.
+- Export the whole project to a single audio file.
+
+## How to use this guide
+
+If you have already installed Silverdaw and want to dive straight in, head to the
+[Quick Start](/guide/quick-start) and build your first remix in a few minutes.
+Otherwise, start with [Installation](/guide/installation), then take the
+[tour of the Silverdaw window](/guide/the-window).
+
+> This guide targets Silverdaw version 1.0.0.
