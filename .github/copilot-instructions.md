@@ -57,6 +57,13 @@ edit guide content.
    current released version of the Silverdaw application. Check the application
    repo's releases. If there is no current release, start at version `1.0.0`.
    Make the version the guide targets explicit and keep it in sync.
+10. **Document the present only.** The guide describes Silverdaw exactly as it is
+   in the current released version. Never mention feature migrations, upgrade or
+   migration paths, deprecated behaviour, removed or renamed features, "what's
+   new", changelogs, or how things "used to" work. If a feature no longer
+   exists, delete every trace of it rather than explaining that it changed.
+   Write as though the current version is the only version that has ever
+   existed.
 
 ## Sourcing and verification workflow
 
@@ -68,7 +75,9 @@ When generating or updating content, follow this order:
 3. Draft or update content using **only** what is supported by that source.
 4. Verify all UI text (menus, buttons, labels) against the application.
 5. Rubberduck the structure and key claims with two other models.
-6. Sweep the whole guide for stale content and broken links.
+6. Sweep the whole guide for stale content and broken links, removing any
+   reference to removed, renamed, or migrated features so only current
+   functionality remains.
 7. Build with `npm run docs:build` to catch dead links and errors before
    publishing.
 
