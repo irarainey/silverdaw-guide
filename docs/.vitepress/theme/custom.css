@@ -1,0 +1,11 @@
+/*
+ * Show the site footer on documentation pages too.
+ *
+ * The default VitePress theme hides the footer on any page that has a sidebar
+ * (`.VPFooter.has-sidebar { display: none }`), which would keep the Silverdaw
+ * version and copyright notice off every guide page. Re-enabling it ensures the
+ * version the guide targets, and the copyright notice, appear on all pages.
+ */
+.VPFooter.has-sidebar {
+  display: block !important;
+}

@@ -33,6 +33,10 @@ export default defineConfig({
       { text: 'Guide', link: '/guide/introduction' },
       { text: 'Quick Start', link: '/guide/quick-start' },
       { text: 'silverdaw.com', link: 'https://www.silverdaw.com' },
+      {
+        text: `v${silverdawVersion}`,
+        link: `https://github.com/irarainey/silverdaw/releases/tag/${silverdawVersion}`,
+      },
     ],
 
     sidebar: {
@@ -87,7 +91,7 @@ export default defineConfig({
     },
 
     footer: {
-      message: `Guide for Silverdaw v${silverdawVersion} · Released under the terms described in the repository license.`,
+      message: `Guide for Silverdaw v${silverdawVersion} · Silverdaw is released under the <a href="https://github.com/irarainey/silverdaw/blob/main/LICENSE">GNU AGPL v3.0</a>.`,
       copyright: `Copyright © ${new Date().getFullYear()} Silverdaw`,
     },
   },

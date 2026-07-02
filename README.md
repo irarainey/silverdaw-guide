@@ -44,3 +44,8 @@ npm run docs:preview  # preview the production build locally
 Every push to `main` triggers a GitHub Actions workflow that builds the site and
 publishes it to GitHub Pages, served from the custom domain `docs.silverdaw.com`.
 
+## License
+
+This guide is released under the [GNU Affero General Public License v3.0](LICENSE),
+the same license as the [Silverdaw application](https://github.com/irarainey/silverdaw).
+
