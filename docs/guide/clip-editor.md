@@ -8,26 +8,62 @@ changes as you make them.
 Many of these actions are also available directly from a clip's right-click menu on
 the timeline.
 
+The editor works on a **draft**: your changes are previewed as you make them but
+aren't applied until you click **Save**. **Cancel** (or <kbd>Esc</kbd>) discards
+them. When you edit a clip that's saved to the Library — or any of its copies on
+the timeline — saving updates every linked copy together, so they stay in step.
+
 ![The Clip Editor window](/images/clip-editor.png)
 
 *Screenshot placeholder — replace with: the Clip Editor open on a clip, showing the
 large waveform, the playback controls, and the panels/tools for Warp, Pitch, and
 Slice.*
 
+## Getting around the editor
+
+- **Play** with the transport buttons or the <kbd>Space</kbd> bar, and click the
+  waveform to move the playhead.
+- **Zoom** with the mouse wheel or <kbd>+</kbd> / <kbd>-</kbd> / <kbd>0</kbd>, so
+  you can work right down to the sample.
+- **Select a range** by dragging across the waveform, then drag the handles at
+  its edges to fine-tune it. Turn on **Loop** (<kbd>L</kbd>) to play the selection
+  round and round.
+- **Source / Clip** switches the view between the whole source file and just the
+  part your clip uses — handy when you want to pull a clip's edges out beyond
+  where they currently sit. It only changes what you see; it doesn't change the
+  clip.
+- **Trim** narrows the view to your current selection as a preview, without
+  changing the project.
+
+When you open the editor on an imported file (rather than a clip), the footer
+offers **Save Selection to Library**, which turns the range you've selected into a
+new saved clip you can reuse — the same [saved clips](/guide/library#saved-clips-and-samples)
+that appear in the Library.
+
 ## Matching tempo (Warp)
 
 A clip can automatically match the project tempo so it plays in time with
-everything else, without changing the source file. Use **Warp** (right-click a clip
-and choose **Warp**, or use the Clip Editor) to set this up. If Silverdaw's
-detected tempo is off, you can enter the **BPM by hand** and slide the beat grid
-across the waveform until it lines up with the audio.
+everything else, without changing the source file. Turn on **Warp** (right-click a
+clip and choose **Warp**, or use the Clip Editor) to set this up. You can either
+**Follow project BPM** so the clip tracks the project tempo, or **Pin to** a
+specific BPM. If Silverdaw's detected tempo is off, you can enter the **BPM by
+hand** and slide the beat grid across the waveform until it lines up with the
+audio.
+
+Warp offers three **modes** for how the stretch is done. As a rough guide:
+
+- **Rhythmic** — best for drums and percussive loops.
+- **Tonal** — best for melodic parts and vocals.
+- **Complex** — best for full songs and busy, layered material.
 
 ## Shifting pitch
 
 Clips can be **pitch-shifted** independently of their tempo — raise or lower a clip
 without speeding it up or slowing it down. Right-click a clip and choose **Pitch**,
-or open the Clip Editor, to change it. This is ideal for getting two tracks into
-the same key for a mashup.
+or open the Clip Editor, to change it. Adjust it in **Semitones** and **Cents** for
+fine tuning, or use the **Key presets** — computed from the clip's detected key —
+to jump straight to a musical key. This is ideal for getting two tracks into the
+same key for a mashup.
 
 ## Slicing a clip into loops
 
@@ -53,8 +89,11 @@ Slicing is non-destructive — the source file is untouched.
 ## Shaping a clip's volume
 
 In the Clip Editor you can draw a **volume envelope** right on the clip's waveform
-to swell, duck, fade in, or fade out. You can also chop a selected range to silence
-or full volume with hard edges. The shaping applies to both playback and export.
+to swell, duck, fade in, or fade out. Turn on the **Volume** tool, then click to
+add points and drag them to shape the line. With a range selected, the **Silence**
+and **Full** buttons (<kbd>S</kbd> / <kbd>F</kbd>) instantly drop that part to
+silence or push it to full volume with hard edges. The shaping applies to both
+playback and export.
 
 ## Reversing a clip
 

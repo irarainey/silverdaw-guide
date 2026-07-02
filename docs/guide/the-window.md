@@ -26,7 +26,10 @@ Along the top you'll find the main menus:
 ## The transport
 
 The transport controls handle playback. You can start and stop with the play
-button or the **space bar**, and skip through your project. A **Follow playback**
+button or the **space bar**, and skip through your project with the previous and
+next buttons. By default those buttons jump to the start and end of the project;
+you can set them to step through your [markers](/guide/timeline#markers) instead
+in [Preferences ▸ Timeline](/guide/preferences#timeline). A **Follow playback**
 toggle decides whether the timeline scrolls to keep up with the playhead or stays
 still while you play.
 
@@ -97,8 +100,12 @@ nothing, this is the first thing to check.
 
 You can set the output in **Edit ▸ Preferences ▸ Audio**, and a project can also
 remember its own device in [Project Properties](/guide/projects#project-properties).
-Choosing **System default** for a project clears its override, so the device from
-Preferences is used instead.
+Choosing **Use Application Settings** for a project clears its override, so the
+device from Preferences is used instead.
+
+If a device tends to go to sleep and clip the start of playback (common with some
+USB audio devices), turn on its **Keep awake** checkbox in **Preferences ▸
+Audio**.
 
 ## The Clip Editor
 

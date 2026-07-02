@@ -8,6 +8,14 @@ track, isolate a drum break, or drop the bass line onto its own track.
 Like everything else in Silverdaw, it's non-destructive: your original file is
 never changed.
 
+::: tip First time only: a one-off download
+The first time you separate stems, Silverdaw downloads its high-quality
+separation models (about 1 GB) — so you'll need an internet connection that once.
+After that, separation works offline. A smaller built-in **backup model** needs
+no download at all, so you can start separating stems straight away even while the
+main models are still downloading.
+:::
+
 ## Separating a track
 
 Right-click a clip and choose **Separate Stems**. Silverdaw analyses the audio and
@@ -28,6 +36,31 @@ time you separate stems, these models are downloaded once (about 1 GB) and then
 reused from then on. There's also a smaller built-in **backup model** that needs
 no setup at all, so you can separate stems even before the main models finish
 downloading.
+
+You can manage the models in **Edit ▸ Preferences ▸ Stems**. The **Separation
+models** section shows their status (**Not downloaded**, **Partly installed**, or
+**Installed**) and a **Download models (~1 GB)** button to fetch them.
+
+### Using models you already have
+
+If you've already downloaded the models — for example on another machine, or
+because someone shared them with you — you can point Silverdaw at them instead of
+downloading again:
+
+1. Open **Edit ▸ Preferences ▸ Stems**.
+2. Under **Separation models**, find *"Already have a model? Point Silverdaw at
+   the folder that contains it instead of downloading it again."*
+3. Click **Locate…** next to **Vocal model** and choose the folder that contains
+   the vocal model.
+4. Click **Locate…** next to **Drums & bass model** and choose that model's
+   folder.
+
+Each model's status changes to **Installed** once Silverdaw has checked the
+folder. If a folder doesn't contain the expected model, Silverdaw tells you so you
+can try another.
+
+The **backup model** has its own **Locate existing model…** button in the
+**Backup model** section, which works the same way.
 
 ## Speed, quality, and cleanup
 

@@ -27,13 +27,17 @@ Select a clip by clicking it, then rearrange freely. The common actions are on t
   playhead.
 - **Duplicate Clip** (<kbd>D</kbd>) — make a copy.
 - **Cut**, **Copy**, **Paste** (<kbd>Ctrl</kbd>+<kbd>X</kbd> / <kbd>C</kbd> /
-  <kbd>V</kbd>) — move clips around or between tracks.
+  <kbd>V</kbd>) — move clips around or between tracks. <kbd>Ctrl</kbd>+<kbd>V</kbd>
+  pastes onto the selected track at the playhead. You can also **right-click an
+  empty track lane and choose Paste** to drop a copied clip onto that track — click
+  first to place the playhead where it should land.
 - **Delete Clip** (<kbd>Delete</kbd>) — remove a clip.
 - **Trim** — drag a clip's edge to shorten or extend how much of it plays.
 - **Colour** — right-click a clip and choose **Colour** to tag it, which makes a
   busy arrangement easier to read.
-- **Lock** / **Unlock** — right-click and lock a clip so it can't be moved or
-  edited by accident.
+- **Lock** / **Unlock** — right-click and lock a clip (or press
+  <kbd>Ctrl</kbd>+<kbd>L</kbd>) so it can't be moved or edited by accident. A
+  locked clip shows a small padlock on its title strip.
 
 To clean up the end of your arrangement, **Edit ▸ Trim Project to Last Clip**
 shortens the project to finish at your final clip.
@@ -68,8 +72,32 @@ Everything lines up against the project **tempo** and its beat grid.
 - The project's own tempo is set in
   [Project Properties](/guide/projects#project-properties).
 
+By default, dropping a clip onto a track automatically **matches it to the
+project tempo** (Silverdaw switches on [Warp](/guide/clip-editor#matching-tempo-warp)
+for you). You can turn this off with **Match project tempo on drop** in
+**Preferences ▸ Timeline** if you'd rather clips keep their own tempo until you
+warp them yourself.
+
 Getting the grid right is what makes loops, slicing, and snapping all fall neatly
 into place.
+
+## Markers
+
+**Markers** are labelled points you can drop on the ruler to mark places in your
+arrangement — the start of a chorus, a drop, or wherever you want to jump back to.
+They appear as small triangles on the ruler and are saved with the project.
+
+- **Add or remove a marker** — double-click the ruler at the point you want, or
+  press <kbd>M</kbd> to place one at the playhead (press it again at the same
+  place to remove it).
+- **Move a marker** — drag it along the ruler; it snaps to the grid.
+- **Jump between markers** — press <kbd>Ctrl</kbd>+<kbd>←</kbd> and
+  <kbd>Ctrl</kbd>+<kbd>→</kbd> to move the playhead to the previous or next
+  marker.
+
+You can also set the transport's previous / next buttons to step through markers
+instead of jumping to the project ends — see **Previous / next buttons** in
+[Preferences ▸ Timeline](/guide/preferences#timeline).
 
 ## The metronome
 

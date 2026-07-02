@@ -17,6 +17,12 @@ Each track's header, on the left of the timeline, has the basics:
 
 The overall level of your finished mix is shown by the master output meter.
 
+::: tip
+To set an exact level, **double-click a track's gain number** to type a value in
+decibels (dB), or **double-click the master volume readout** in the transport bar
+to type the master level.
+:::
+
 ## Track FX
 
 Select a track, then open the **Track FX** tab in the bottom panel to shape that

@@ -40,8 +40,8 @@ Audio device / Audio driver fields.*
   at 1 by default, and can be set to 0 or lower to leave lead-in bars before bar
   one (handy for clips with a silent intro).
 - **Audio device** and **Audio driver** — an optional output device just for this
-  project, applied every time it loads. Choosing **System default** clears the
-  override so the global **Preferences ▸ Audio** device is used instead.
+  project, applied every time it loads. Choosing **Use Application Settings**
+  clears the override so the global **Preferences ▸ Audio** device is used instead.
 
 ## Portable projects
 
