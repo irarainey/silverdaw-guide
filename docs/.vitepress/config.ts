@@ -1,5 +1,8 @@
 import { defineConfig } from 'vitepress'
 
+// The released version of Silverdaw that this guide documents.
+const silverdawVersion = '1.0.0'
+
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   lang: 'en-US',
@@ -84,7 +87,7 @@ export default defineConfig({
     },
 
     footer: {
-      message: 'Released under the terms described in the repository license.',
+      message: `Guide for Silverdaw v${silverdawVersion} · Released under the terms described in the repository license.`,
       copyright: `Copyright © ${new Date().getFullYear()} Silverdaw`,
     },
   },
