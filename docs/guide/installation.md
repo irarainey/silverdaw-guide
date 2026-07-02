@@ -17,13 +17,32 @@ released under the GNU Affero General Public License v3.0.
 
 ## Getting Silverdaw
 
-Silverdaw is developed in the open, and its source code lives on GitHub:
+There are two ways to get Silverdaw. Most people should install it from the
+Microsoft Store; the portable download is aimed at more advanced users.
+
+### From the Microsoft Store (recommended)
+
+The easiest way to install Silverdaw is from the **Microsoft Store**. The Store
+keeps the application up to date for you automatically.
+
+> The Microsoft Store link will be added here soon.
+
+### Portable version (advanced)
+
+If you prefer not to use the Microsoft Store, a portable version is published on
+the application's releases page on GitHub:
+
+- [github.com/irarainey/silverdaw/releases](https://github.com/irarainey/silverdaw/releases)
+
+Download the portable package from the latest release, unpack it to a folder of
+your choice, and run Silverdaw from there. The portable version does not update
+itself, so you will need to download a new release yourself when one is
+available.
+
+Silverdaw is developed in the open, and its full source code also lives on
+GitHub:
 
 - [github.com/irarainey/silverdaw](https://github.com/irarainey/silverdaw)
-
-> Ready-to-run application downloads are not available yet. This guide covers how
-> to use Silverdaw once you have it running; the rest of the pages assume the
-> application is open.
 
 ## First launch
 
