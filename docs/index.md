@@ -5,6 +5,9 @@ hero:
   name: Silverdaw
   text: User Guide
   tagline: Build remixes and mashups from your own songs, loops, vocals, and samples — no studio experience needed.
+  image:
+    src: /images/logo-large.png
+    alt: Silverdaw logo
   actions:
     - theme: brand
       text: Quick Start
