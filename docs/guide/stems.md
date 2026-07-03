@@ -13,7 +13,8 @@ The first time you separate stems, Silverdaw downloads its high-quality
 separation models (about 1 GB) — so you'll need an internet connection that once.
 After that, separation works offline. A smaller built-in **backup model** needs
 no download at all, so you can start separating stems straight away even while the
-main models are still downloading.
+main models are still downloading. The models are hosted on
+[Hugging Face](https://huggingface.co/silverdaw).
 :::
 
 ## Separating a track
