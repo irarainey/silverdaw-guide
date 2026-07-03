@@ -10,10 +10,6 @@ click **Save**; **Cancel** (or <kbd>Esc</kbd>) discards them.
 
 ![The Preferences window with its tabs](/images/preferences.png)
 
-*Screenshot placeholder — replace with: the Preferences window open, showing the
-tab list (General, Timeline, Project, Audio, Effects, Stems, Developer) with one
-tab selected.*
-
 ## General
 
 Appearance and notifications:
