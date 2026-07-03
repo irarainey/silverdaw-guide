@@ -11,9 +11,8 @@ released under the GNU Affero General Public License v3.0.
   [stem separation](/guide/stems), but it is not required — Silverdaw can do the
   same work on the processor, just more slowly.
 - **Internet connection (first stem separation only):** the first time you
-  separate stems, Silverdaw downloads its high-quality separation models
-  (about 1 GB). This is a one-time download. A smaller built-in backup model
-  needs no download at all.
+  separate stems, Silverdaw downloads the separation model it needs (about 1 GB).
+  This is a one-time download, after which stem separation works offline.
 
 ## Getting Silverdaw
 

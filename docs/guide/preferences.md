@@ -100,12 +100,15 @@ uses to split a song into its parts:
   offers **Download models (~1 GB)** to fetch them. If you already have a copy,
   use the **Locate…** buttons for the **Vocal model** and **Drums & bass model**
   to point Silverdaw at their folders instead of downloading again.
-- **Backup model** — a smaller built-in model used automatically when the models
-  above aren't installed. Turn on **Always use the backup model** to use it even
-  when the others are installed, or use **Locate existing model…** if you already
-  have it.
-- **Cleanup** — optional per-stem tidying (Vocal, Drum, Bass, and Other cleanup),
-  each with a **Light**, **Medium**, or **Strong** strength.
+- **Cleanup** — optional per-stem tidying (**Vocal cleanup**, **Drum cleanup**,
+  **Bass cleanup**, and **Other cleanup**), each with a **Light**, **Medium**, or
+  **Strong** strength.
+- **Backup model** — a lower-quality fallback used automatically for any stem when
+  the models above aren't installed or can't run on your hardware. It's fetched on
+  first use if it's needed, so you don't normally download it yourself — but a
+  **Download…** button and **Locate existing model…** are here if you want them.
+  Turn on **Always use the backup model** to force it even when the other models
+  are installed.
 - **Hardware acceleration (experimental)** — **Use GPU acceleration for stem
   separation** to separate faster on a compatible graphics card. Off by default;
   separation runs on the processor otherwise.

@@ -9,38 +9,46 @@ Like everything else in Silverdaw, it's non-destructive: your original file is
 never changed.
 
 ::: tip First time only: a one-off download
-The first time you separate stems, Silverdaw downloads its high-quality
-separation models (about 1 GB) — so you'll need an internet connection that once.
-After that, separation works offline. A smaller built-in **backup model** needs
-no download at all, so you can start separating stems straight away even while the
-main models are still downloading. The models are hosted on
+The first time you separate stems, Silverdaw downloads the separation model it
+needs — a one-time download of about 1 GB, so you'll need an internet connection
+just that once. It's stored on your computer and reused for every separation
+afterwards, so from then on separation works offline. The models are hosted on
 [Hugging Face](https://huggingface.co/silverdaw).
 :::
 
 ## Separating a track
 
-Right-click a clip and choose **Separate Stems**. Silverdaw analyses the audio and
-produces the separate parts, each of which can go onto its own track for you to
-remix. Every stem keeps the original clip's tempo, key, and artwork, so it stays
-in step with the rest of your project.
+Right-click a clip and choose **Separate Stems**. The **Separate Stems** dialog
+opens: tick the parts you want — **Vocals**, **Drums**, **Bass**, and **Other** —
+choose a **Quality** setting, then click **Start**.
+
+The first time you separate stems, if the model Silverdaw needs isn't on your
+computer yet, it asks to download it once. Separation begins only after that
+download finishes; every separation after that starts straight away.
+
+Silverdaw then analyses the audio and produces the separate parts, each on its own
+track for you to remix. Every stem keeps the original clip's tempo, key, and
+artwork, so it stays in step with the rest of your project.
 
 ![The Separate Stems dialog](/images/stems-dialog.png)
 
 *Screenshot placeholder — replace with: the Separate Stems dialog, showing the
-stem choices (vocals, drums, bass, other) and the Quality control (Fast, Balanced,
+stem choices (Vocals, Drums, Bass, Other) and the Quality control (Fast, Balanced,
 Best).*
 
 ## The separation models
 
-Silverdaw uses high-quality **RoFormer** models to do the separation. The first
-time you separate stems, these models are downloaded once (about 1 GB) and then
-reused from then on. There's also a smaller built-in **backup model** that needs
-no setup at all, so you can separate stems even before the main models finish
-downloading.
+Silverdaw has two kinds of separation model, and you manage both in
+**Edit ▸ Preferences ▸ Stems**:
 
-You can manage the models in **Edit ▸ Preferences ▸ Stems**. The **Separation
-models** section shows their status (**Not downloaded**, **Partly installed**, or
-**Installed**) and a **Download models (~1 GB)** button to fetch them.
+- **High-quality RoFormer models** — these give the best results. They total
+  about 1 GB, are downloaded once with the **Download models (~1 GB)** button, and
+  are then used automatically. The **Separation models** section shows their
+  status (**Not downloaded**, **Partly installed**, or **Installed**).
+- **A backup model** — a lower-quality fallback. Silverdaw fetches it
+  automatically the first time you separate stems if the high-quality models
+  aren't installed (or can't run on your hardware), so you can start separating
+  without any setup.
 
 ### Using models you already have
 
