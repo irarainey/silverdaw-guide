@@ -32,10 +32,6 @@ artwork, so it stays in step with the rest of your project.
 
 ![The Separate Stems dialog](/images/stems-dialog.png)
 
-*Screenshot placeholder — replace with: the Separate Stems dialog, showing the
-stem choices (Vocals, Drums, Bass, Other) and the Quality control (Fast, Balanced,
-Best).*
-
 ## The separation models
 
 Silverdaw has two kinds of separation model, and you manage both in
