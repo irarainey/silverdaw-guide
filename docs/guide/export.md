@@ -12,10 +12,6 @@ once your project contains audio to render.
 
 ![The Export Mixdown dialog](/images/export-dialog.png)
 
-*Screenshot placeholder — replace with: the Export Mixdown dialog, showing the
-format choice (WAV / FLAC / AIFF / MP3), the Dither option, the loudness settings
-(Target LUFS and Ceiling dBTP), and the start-bar / length options.*
-
 ## Choosing a format
 
 Silverdaw can export to:
