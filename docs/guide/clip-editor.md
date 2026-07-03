@@ -15,10 +15,6 @@ the timeline — saving updates every linked copy together, so they stay in step
 
 ![The Clip Editor window](/images/clip-editor.png)
 
-*Screenshot placeholder — replace with: the Clip Editor open on a clip, showing the
-large waveform, the playback controls, and the panels/tools for Warp, Pitch, and
-Slice.*
-
 ## Getting around the editor
 
 - **Play** with the transport buttons or the <kbd>Space</kbd> bar, and click the
