@@ -26,10 +26,6 @@ project:
 
 ![The Project Properties dialog](/images/project-properties.png)
 
-*Screenshot placeholder — replace with: the Project Properties dialog, showing the
-Project name, Tempo (BPM), Project duration, Sample rate, Bar counter start, and
-Audio device / Audio driver fields.*
-
 - **Project name** — the name of the project.
 - **Tempo (BPM)** — the project's tempo, which the grid, metronome, and
   tempo-matching all follow.
