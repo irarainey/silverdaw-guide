@@ -62,10 +62,6 @@ you can shape. You can automate:
 
 ![A track with its automation lane open and a breakpoint curve](/images/mixing-automation.png)
 
-*Screenshot placeholder — replace with: a track on the timeline with its
-automation lane expanded underneath, showing a breakpoint curve (for example a
-filter sweep) with a few editable points.*
-
 - **Filter**
 - **Pan**
 - **Tone** — **Bass**, **Mid**, and **Treble**
