@@ -32,9 +32,6 @@ on library tiles** in [Preferences ▸ General](/guide/preferences#general).
 
 ![The Library panel with grouped imported items](/images/library-panel.png)
 
-*Screenshot placeholder — replace with: the Library tab showing several imported
-items grouped together, the item count, and the Import button.*
-
 ### Sample rate check
 
 Each project has a [sample rate](/guide/projects#project-properties) (44.1 or
