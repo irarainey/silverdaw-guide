@@ -19,9 +19,6 @@ drag files straight from Windows onto the Library.)
 
 ![The Library tab with the Import button](/images/quickstart-import.png)
 
-*Screenshot placeholder — replace with: the bottom panel on the Library tab, with
-the Import button highlighted.*
-
 Silverdaw analyses the file in the background to detect its tempo (BPM), key, and
 beat positions, so it can line clips up musically later.
 
@@ -49,10 +46,6 @@ Now turn the song into loops you can rearrange:
 
 ![The clip right-click menu open on Chop to Grid](/images/quickstart-chop-to-grid.png)
 
-*Screenshot placeholder — replace with: a clip on the timeline right-clicked, with
-the context menu open and the Chop to Grid submenu expanded to show the sizes
-(1 bar, 1/2 bar, 1/4, 1/8, 1/16).*
-
 Because everything is non-destructive, your original file is never changed — you
 are only rearranging.
 
@@ -65,9 +58,6 @@ Select a track by clicking its header on the left, then open the **Track FX** ta
 in the bottom panel. Here you can shape the track's sound:
 
 ![The Track FX panel with its effect modules](/images/quickstart-track-fx.png)
-
-*Screenshot placeholder — replace with: the Track FX tab open for a selected
-track, showing the Tone, Filter, Compressor, and Reverb & Delay send controls.*
 
 - **Tone** — boost or cut **Bass**, **Mid**, and **Treble**.
 - **Filter** — sweep from a low-pass to a high-pass filter for classic DJ
