@@ -5,11 +5,6 @@ where everything lives before you start building a mix.
 
 ![Overview of the Silverdaw window with its main areas labelled](/images/window-overview.png)
 
-*Screenshot placeholder — replace with: a full screenshot of the Silverdaw window
-with a project open, annotated with callouts pointing to the menu bar (top), the
-transport and timing display, the timeline with a few clips, a track header on the
-left, and the bottom panel with its Library / Track FX / Project FX tabs.*
-
 ## The menu bar
 
 Along the top you'll find the main menus:
@@ -67,11 +62,6 @@ The overall level of your mix is shown by the master output meter.
 
 ![Close-up of a single track header showing its controls](/images/window-track-header.png)
 
-*Screenshot placeholder — replace with: a close-up of one track header, with
-callouts on the volume fader, the Pan control beneath it, the Mute and Solo
-buttons, the Import button, the Remove track button, the track effects toggle, and
-the automation-lane toggle.*
-
 ## The bottom panel
 
 The panel across the bottom has three tabs:
@@ -87,10 +77,6 @@ You can collapse the panel when you need more room for the timeline, and expand
 it again when you need it.
 
 ![The bottom panel showing the Library, Track FX, and Project FX tabs](/images/window-bottom-panel.png)
-
-*Screenshot placeholder — replace with: the bottom panel with its three tabs —
-Library, Track FX, and Project FX — visible, with the Library tab open showing a
-few imported items.*
 
 ## Choosing your audio output
 
