@@ -33,3 +33,15 @@
   max-width: 280px !important;
   max-height: 280px !important;
 }
+
+/*
+ * Add a 2px border around every image in the documentation content.
+ *
+ * Screenshots and diagrams read better with a defined edge, especially where a
+ * light screenshot meets the light page background. Uses the theme border
+ * colour so it works in both light and dark modes; scoped to `.vp-doc` so it
+ * only affects in-content images, not the landing-page hero logo.
+ */
+.vp-doc img {
+  border: 2px solid var(--vp-c-border);
+}
