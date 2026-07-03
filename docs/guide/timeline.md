@@ -6,10 +6,6 @@ line up musically.
 
 ![The timeline with clips arranged across several tracks](/images/timeline-arranging.png)
 
-*Screenshot placeholder — replace with: the timeline with a few tracks, each
-holding some clips, the bar-and-beat ruler across the top, and clips of different
-colours so the arrangement is easy to read.*
-
 ## Tracks and clips
 
 Audio lives on horizontal **tracks**, and each piece of audio is a **clip**. You
