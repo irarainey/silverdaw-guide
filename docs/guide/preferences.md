@@ -71,7 +71,12 @@ Where and how Silverdaw plays sound:
   hear nothing, check here first. You can also switch device at any time from the
   transport bar without leaving the timeline. Each device has a **Keep awake**
   checkbox — turn it on for a device that sleeps and clips the first beat
-  (typically a USB audio device); it is off by default.
+  (typically a USB audio device); it is off by default. If your chosen device
+  isn't connected when Silverdaw starts — an unplugged USB or Bluetooth device,
+  say — Silverdaw quietly switches to another available device (usually your
+  system's default) and keeps your choice, so reconnecting the device restores it
+  the next time you open Silverdaw. If a device disappears while you're playing,
+  Silverdaw moves to another one on the fly so the sound keeps going.
 - **Audio driver** — an optional, advanced choice of the audio system Silverdaw
   uses for the selected device. The default suits most people.
 

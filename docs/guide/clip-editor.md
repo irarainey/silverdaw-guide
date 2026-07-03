@@ -10,8 +10,24 @@ the timeline.
 
 The editor works on a **draft**: your changes are previewed as you make them but
 aren't applied until you click **Save**. **Cancel** (or <kbd>Esc</kbd>) discards
-them. When you edit a clip that's saved to the Library — or any of its copies on
-the timeline — saving updates every linked copy together, so they stay in step.
+them.
+
+What **Save** affects depends on the kind of clip you opened:
+
+- **A [linked clip](/guide/library#linked-clips)** — or a **saved clip** opened
+  from the Library — Save updates the saved clip and **every linked copy** on the
+  timeline together, so they stay in step. The Save button confirms this with
+  *"Save changes to the library and every linked timeline clip."*
+- **An unlinked clip** — Save changes **only that one clip**
+  (*"Save changes to this timeline clip only"*).
+- **An imported file** opened from the Library (rather than a clip) — there's no
+  clip to change, so the footer shows **Close** and **Save Selection to Library**
+  (see below) instead.
+
+If a change to the trim or tempo would make a clip overlap its neighbour on a
+track, Silverdaw won't save it and tells you which track clashes — for a linked
+clip it checks every copy. To edit one linked copy on its own, right-click it and
+choose **Unlink from Library** first (see [linked clips](/guide/library#linked-clips)).
 
 ![The Clip Editor window](/images/clip-editor.png)
 

@@ -34,21 +34,33 @@ to edit its Tone, Filter, Compressor, and Reverb & Delay."*)
 - **Filter** — a single DJ-style sweep that runs from a low-pass filter (**LPF**),
   through off in the centre, to a high-pass filter (**HPF**). Perfect for
   build-ups and drops. Double-click to recentre it (off).
-- **Compressor** — a single-knob control for gentle dynamics, evening out the
-  level.
+- **Compressor** — a single **Amount** control for gentle dynamics, evening out
+  the level.
 - **Reverb** and **Delay** sends — how much of this track is sent to the shared
   project effects (below).
 
 ## Project FX
 
-The **Project FX** tab holds the song-wide effects that every track can send to:
+The **Project FX** tab holds the two song-wide effects that every track can send
+to. They're shared — one reverb and one delay that the whole mix sits in — and
+each track decides how much of itself to send in using its **Reverb** and
+**Delay** sends in [Track FX](#track-fx).
 
-- **Reverb** — a shared reverb for a sense of space.
-- **Delay** — a shared, tempo-locked echo.
+- **Reverb** — a shared reverb for a sense of space, with four controls:
+  - **Size** — how large the space feels.
+  - **Decay** — how long the tail rings on.
+  - **Tone** — brightens or darkens the reverb.
+  - **Mix** — how much reverb you hear. At 0% the reverb is silent.
+- **Delay** — a shared, tempo-locked echo:
+  - **Time** — the spacing between echoes, in beats, locked to the project tempo
+    (**1/4**, **1/8**, **1/8T** — an eighth-note triplet — or **1/16**).
+  - **Feedback** — how much the echo repeats.
+  - **Tone** — brightens or darkens the echoes.
+  - **Mix** — how much delay you hear. At 0% the delay is silent.
 
-Each track decides how much of itself to feed into these using its **Reverb** and
-**Delay** sends in Track FX. This shared setup is what lets several tracks sit in
-the same "room" together.
+The controls read as a percentage — apart from **Time** — and you can
+**double-click** one to reset it to 0%. This shared setup is what lets several
+tracks sit in the same "room" together.
 
 ## Automation: changing settings over time
 

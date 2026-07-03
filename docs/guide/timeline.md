@@ -28,7 +28,9 @@ Select a clip by clicking it, then rearrange freely. The common actions are on t
   empty track lane and choose Paste** to drop a copied clip onto that track — click
   first to place the playhead where it should land.
 - **Delete Clip** (<kbd>Delete</kbd>) — remove a clip.
-- **Trim** — drag a clip's edge to shorten or extend how much of it plays.
+- **Trim** — drag a clip's edge to shorten or extend how much of it plays. A
+  [linked clip](/guide/library#linked-clips) can't be edge-trimmed on the
+  timeline — unlink it first, or edit its shared trim in the Clip Editor.
 - **Colour** — right-click a clip and choose **Colour** to tag it, which makes a
   busy arrangement easier to read.
 - **Lock** / **Unlock** — right-click and lock a clip (or press

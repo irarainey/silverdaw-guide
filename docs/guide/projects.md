@@ -38,6 +38,9 @@ project:
 - **Audio device** and **Audio driver** — an optional output device just for this
   project, applied every time it loads. Choosing **Use Application Settings**
   clears the override so the global **Preferences ▸ Audio** device is used instead.
+  If the project's device isn't connected when it opens, Silverdaw falls back to
+  another available device and keeps the setting for the next time the project
+  opens.
 
 ## Portable projects
 
