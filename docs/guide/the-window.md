@@ -15,7 +15,7 @@ Along the top you'll find the main menus:
   clips; and open **Preferences…**.
 - **View** — zoom the timeline in and out, jump to zoom presets, and toggle full
   screen.
-- **Help** — open the documentation, report an issue, and see version
+- **Help** — open the documentation, report an issue, send feedback, and see version
   information in **About Silverdaw**.
 
 ## The transport
