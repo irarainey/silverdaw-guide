@@ -16,16 +16,14 @@ released under the GNU Affero General Public License v3.0.
 
 ## Getting Silverdaw
 
-There are three ways to install Silverdaw. The **Microsoft Store** is the easiest
+There are two ways to install Silverdaw. The **Microsoft Store** is the easiest
 and recommended option once it is available. The **portable download** lets you
-try Silverdaw without installing anything, and the **self-signed installer**
-gives you a full installation before the Store release.
+try Silverdaw without installing anything.
 
 | Option | Best for | Effort | Updates | Windows integration\* |
 | ------ | -------- | ------ | ------- | --------------------- |
 | **Microsoft Store** *(coming soon)* | Everyone | One click | Automatic | Full |
 | **Portable download** | Trying it quickly, no install | Unzip and run | Manual | None |
-| **Self-signed installer** | A full install before the Store release | Trust a certificate and run a script | Manual | Full |
 
 \* *Windows integration* means a Start-menu entry, the `.silverdaw` file
 association (so double-clicking a project opens it), and an entry in
@@ -34,7 +32,7 @@ association (so double-clicking a project opens it), and an entry in
 ### From the Microsoft Store (recommended)
 
 The easiest way to install Silverdaw is from the **Microsoft Store**. It installs
-in one click, with no security prompts and no certificates to manage, and the
+in one click, with no security prompts, and the
 Store keeps the application up to date for you automatically.
 
 > The Microsoft Store link will be added here soon.
@@ -50,7 +48,7 @@ extract it to any folder you can write to, and run `Silverdaw.exe`. Nothing is
 installed, so you can remove it later by simply deleting the folder.
 
 ::: warning
-The first time you run it, Windows may show a SmartScreen prompt
+The first time you run it, Windows will likely show a SmartScreen prompt
 (*"Windows protected your PC"*) because the file was downloaded from the
 internet. Choose **More info**, then **Run anyway**. To avoid this, right-click
 the zip before extracting it, choose **Properties**, tick **Unblock**, and click
@@ -59,32 +57,6 @@ the zip before extracting it, choose **Properties**, tick **Unblock**, and click
 
 The portable version has no Start-menu entry or file association, and it does not
 update itself — download a newer zip when a new release is available.
-
-### Self-signed installer (advanced)
-
-If you want a full installation before the Microsoft Store release, you can use
-the signed installer package. Because it is signed with a self-signed
-certificate, Windows needs to trust that certificate before it will install the
-app. A helper script does both steps for you: it trusts the certificate and then
-installs Silverdaw.
-
-Download three files from the
-[latest release](https://github.com/irarainey/silverdaw/releases) into the **same
-folder**:
-
-- the signed app package (`.appx`),
-- the public certificate (`Silverdaw-PublicCert.cer`), and
-- the install script (`Install-Silverdaw.ps1`).
-
-Then right-click `Install-Silverdaw.ps1`, choose **Run with PowerShell**, and
-approve the Windows security prompt (**User Account Control**) that asks to allow
-changes to your device.
-
-This gives you a full installation — a Start-menu entry, the `.silverdaw` file
-association, and a clean uninstall via **Settings ▸ Apps** — but it requires
-administrator rights to trust the certificate, and it does not update
-automatically. If you would rather not trust a certificate, use the Microsoft
-Store or portable option instead.
 
 Silverdaw is developed in the open, and its full source code lives on GitHub:
 
