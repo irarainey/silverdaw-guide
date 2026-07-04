@@ -67,7 +67,7 @@ These apply while the [Clip Editor](/guide/clip-editor) is open.
 | Previous / next beat | <kbd>←</kbd> / <kbd>→</kbd> |
 | Nudge playhead finely | <kbd>Alt</kbd>+<kbd>←</kbd> / <kbd>→</kbd> |
 | Extend the selection | <kbd>Shift</kbd>+<kbd>←</kbd> / <kbd>→</kbd> |
-| Loop the selection | <kbd>L</kbd> |
+| Toggle loop playback | <kbd>L</kbd> |
 | Silence / Full on the selection | <kbd>S</kbd> / <kbd>F</kbd> |
 | Zoom in / out / reset | <kbd>+</kbd> / <kbd>-</kbd> / <kbd>0</kbd> |
 | Close the editor | <kbd>Esc</kbd> |

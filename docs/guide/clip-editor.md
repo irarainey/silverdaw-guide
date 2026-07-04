@@ -38,8 +38,11 @@ choose **Unlink from Library** first (see [linked clips](/guide/library#linked-c
 - **Zoom** with the mouse wheel or <kbd>+</kbd> / <kbd>-</kbd> / <kbd>0</kbd>, so
   you can work right down to the sample.
 - **Select a range** by dragging across the waveform, then drag the handles at
-  its edges to fine-tune it. Turn on **Loop** (<kbd>L</kbd>) to play the selection
-  round and round.
+  its edges to fine-tune it.
+- **Loop** (<kbd>L</kbd>, or the round-arrows button in the transport controls)
+  plays the current section over and over — the selected range if you've made one,
+  or the whole clip if you haven't. Its tooltip reads **Loop off** when it's turned
+  off and **Loop on** once it's active.
 - **Source / Clip** switches the view between the whole source file and just the
   part your clip uses — handy when you want to pull a clip's edges out beyond
   where they currently sit. It only changes what you see; it doesn't change the
