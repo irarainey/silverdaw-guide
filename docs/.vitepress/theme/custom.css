@@ -11,38 +11,35 @@
 }
 
 /*
- * Scale the landing-page hero logo and centre it vertically.
+ * Scale the landing-page hero logo and centre it vertically — desktop only.
  *
- * The default theme sizes the hero image up to 320–392px, which is a touch
- * large for the Silverdaw mark. Constrain the image, its background glow, and
- * the container so the logo sits neatly.
- */
-.VPHero .image-container {
-  width: 320px !important;
-  height: 320px !important;
-  margin: 0 auto !important;
-}
-
-/*
- * Only on desktop (≥960px), where the hero switches to a row layout and the
- * logo sits beside the text, add top spacing so it sits centred rather than
- * riding high. On mobile the hero stacks vertically, so this top margin would
- * push the logo down and let its bottom edge spill below the text.
+ * At ≥960px the hero switches to a row layout with the logo beside the text.
+ * There the default theme sizes the image up to 320px, which is a touch large
+ * for the Silverdaw mark, so we constrain the image and its background glow and
+ * add top spacing to centre it rather than let it ride high.
+ *
+ * These overrides are scoped to the desktop breakpoint on purpose. Below 960px
+ * the hero stacks vertically and VitePress uses smaller native image sizes
+ * (192px on phones, 256px on tablets) with negative margins that tuck the logo
+ * neatly above the text. Forcing the larger desktop size there made the logo
+ * too big and pushed its bottom edge below the hero text.
  */
 @media (min-width: 960px) {
   .VPHero .image-container {
-    margin-top: 48px !important;
+    width: 320px !important;
+    height: 320px !important;
+    margin: 48px auto 0 !important;
   }
-}
 
-.VPHero .image-bg {
-  width: 280px !important;
-  height: 280px !important;
-}
+  .VPHero .image-bg {
+    width: 280px !important;
+    height: 280px !important;
+  }
 
-.VPHero .image-src {
-  max-width: 280px !important;
-  max-height: 280px !important;
+  .VPHero .image-src {
+    max-width: 280px !important;
+    max-height: 280px !important;
+  }
 }
 
 /*
