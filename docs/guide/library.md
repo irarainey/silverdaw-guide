@@ -150,8 +150,8 @@ of item):
 
 - **Show Information** — a read-only summary: file details, detected key, tempo,
   and beats, cover art, and which tracks currently use the item.
-- **Rename** — give the item a clearer name. You can also single-click a tile's
-  name to edit it in place.
+- **Rename** — give the item a clearer name. You can also double-click a tile's
+  name text to edit it in place.
 - **Reanalyse File** — run the key, tempo, and beat detection again, for example
   after you've corrected something.
 - **Auto-classify** / **Treat as Music** / **Treat as Simple** — control whether

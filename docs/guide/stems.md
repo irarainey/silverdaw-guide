@@ -81,6 +81,30 @@ You can trade speed for polish:
   **Medium**, or **Strong** strength. This is set in **Edit ▸ Preferences ▸
   Stems**.
 
+## Getting good performance
+
+Stem separation is one of the most demanding things Silverdaw does: it runs a
+machine-learning model across your audio, which takes real processing power and
+time. On a modest laptop — or on any machine without a compatible graphics card —
+a single separation can take several minutes. A few habits keep it comfortable:
+
+- **Start with a faster setting.** Choose **Fast** (or **Balanced**) for
+  **Quality** the first time, listen to the result, and only step up to **Best**
+  if the separation isn't clean enough. Each step up takes noticeably longer, so
+  there's no need to pay for quality you don't need.
+- **Separate short sections, not whole songs.** You rarely need every stem of an
+  entire track. Trim or [split](/guide/timeline#moving-and-editing-clips) the clip
+  down to just the part you want — a single chorus, a drum break, an eight-bar
+  loop — and separate that. Less audio means far less waiting, and you can always
+  separate another section later.
+- **Use GPU acceleration if you can.** If your computer has a compatible graphics
+  card, turning on GPU acceleration in **Edit ▸ Preferences ▸ Stems** can speed
+  separation up considerably. Without one it still works, just more slowly on the
+  processor.
+- **Be patient.** Especially at higher quality or on a less powerful machine, a
+  separation can take a while. Let it run to the end rather than assuming it has
+  stalled — it's working hard in the background.
+
 ## After separating
 
 Once you have your stems on separate tracks, they behave like any other clips. You

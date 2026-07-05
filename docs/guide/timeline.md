@@ -33,6 +33,9 @@ Select a clip by clicking it, then rearrange freely. The common actions are on t
   timeline — unlink it first, or edit its shared trim in the Clip Editor.
 - **Colour** — right-click a clip and choose **Colour** to tag it, which makes a
   busy arrangement easier to read.
+- **Rename** — double-click a clip's **title strip** (the thin band along its top)
+  to rename it in place. Double-clicking the clip's body opens the
+  [Clip Editor](/guide/clip-editor) instead.
 - **Lock** / **Unlock** — right-click and lock a clip (or press
   <kbd>Ctrl</kbd>+<kbd>L</kbd>) so it can't be moved or edited by accident. A
   locked clip shows a small padlock on its title strip.
@@ -63,7 +66,9 @@ Everything lines up against the project **tempo** and its beat grid.
 - The **first musical clip** you place on a track sets the project tempo:
   Silverdaw seeds the project BPM from that clip's detected tempo. This happens
   once — later clips don't change it, and clips marked as samples don't seed it
-  — and you can fine-tune the tempo afterwards from the transport bar.
+  — and you can fine-tune the tempo afterwards from the transport bar. This is on
+  by default; switch off **Set project tempo from first clip** in
+  **Preferences ▸ Timeline** to keep the project at its current tempo instead.
 - If detection is uncertain, you can set a clip's **BPM by hand** and slide the
   beat grid across its waveform to line it up. This is done in the
   [Clip Editor](/guide/clip-editor#matching-tempo-warp).

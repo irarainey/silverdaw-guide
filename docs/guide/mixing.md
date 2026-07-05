@@ -9,7 +9,9 @@ Each track's header, on the left of the timeline, has the basics:
 
 - **Volume** — the fader sets how loud the track is.
 - **Pan** — just under the fader, places the track in the stereo field, from left
-  to right. It's an equal-power control, so the level stays even as you pan.
+  to right. It's an equal-power control, so the level stays even as you pan. It
+  snaps to the centre as you drag past it, and you can double-click it to centre
+  it instantly.
 - **Mute** — silences the track. (When it's muted, the button offers to
   **Unmute**.)
 - **Solo** — plays only the soloed track(s) and silences the rest. (When it's
@@ -28,6 +30,11 @@ to type the master level.
 Select a track, then open the **Track FX** tab in the bottom panel to shape that
 track's sound. (If nothing is selected, the panel prompts you to *"Select a track
 to edit its Tone, Filter, Compressor, and Reverb & Delay."*)
+
+Every effect slider can be **double-clicked to reset** it to its default value.
+Controls with a natural centre — such as **Filter** and the **Tone** bands — also
+**snap to that centre** as you drag past it, so you can find the neutral position
+without hunting for the exact spot.
 
 - **Tone** — a three-band EQ with **Bass**, **Mid**, and **Treble**. Boost or cut
   each band; double-click a band to reset it to 0 dB.

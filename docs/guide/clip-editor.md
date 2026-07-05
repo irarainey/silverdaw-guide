@@ -1,9 +1,9 @@
 # Editing Clips
 
 For detailed work on a single clip, Silverdaw has the **Clip Editor**. Double-click
-a clip, or right-click it and choose **Open in Editor**, to open it. Everything
-here is non-destructive — your original file is never changed, and you can preview
-changes as you make them.
+a clip's body, or right-click it and choose **Open in Editor**, to open it.
+Everything here is non-destructive — your original file is never changed, and you
+can preview changes as you make them.
 
 Many of these actions are also available directly from a clip's right-click menu on
 the timeline.
@@ -31,6 +31,25 @@ choose **Unlink from Library** first (see [linked clips](/guide/library#linked-c
 
 ![The Clip Editor window](/images/clip-editor.png)
 
+## Editing a clip vs previewing a file
+
+The Clip Editor opens in one of two ways, and it helps to know which you're in:
+
+- **Editing a clip.** Double-click a clip's body on the timeline, or right-click
+  it and choose **Open in Editor**. You get the full editor — warp, pitch,
+  slicing, volume shaping, and turntable effects — and your changes are kept with
+  **Save**.
+- **Previewing a file.** Double-click a [Library](/guide/library) tile (anywhere
+  but its name) to hear the original imported file. The same window opens but
+  shows a **Preview** badge, and in place of the effect panels there's a note
+  explaining that warp, pitch, and effects are set *per clip on the timeline* —
+  not on the original file. Here you can play the file and drag out a section, then
+  use **Save Selection to Library** to turn it into a clip you can edit. The footer
+  shows **Close**.
+
+In short: you shape the sound of a **clip**, while previewing a **file** just lets
+you listen and carve out clips to work with.
+
 ## Getting around the editor
 
 - **Play** with the transport buttons or the <kbd>Space</kbd> bar, and click the
@@ -43,6 +62,11 @@ choose **Unlink from Library** first (see [linked clips](/guide/library#linked-c
   plays the current section over and over — the selected range if you've made one,
   or the whole clip if you haven't. Its tooltip reads **Loop off** when it's turned
   off and **Loop on** once it's active.
+- **Metronome** — the metronome button in the transport plays an audible tick in
+  time with the clip's own tempo while the clip plays in the editor, so you can
+  check it sits in time. It's separate from the
+  [timeline metronome](/guide/timeline#the-metronome), and it isn't shown when
+  you're previewing a raw file from the Library.
 - **Source / Clip** switches the view between the whole source file and just the
   part your clip uses — handy when you want to pull a clip's edges out beyond
   where they currently sit. It only changes what you see; it doesn't change the
@@ -57,13 +81,22 @@ that appear in the Library.
 
 ## Matching tempo (Warp)
 
-A clip can automatically match the project tempo so it plays in time with
-everything else, without changing the source file. Turn on **Warp** (right-click a
-clip and choose **Warp**, or use the Clip Editor) to set this up. You can either
-**Follow project BPM** so the clip tracks the project tempo, or **Pin to** a
-specific BPM. If Silverdaw's detected tempo is off, you can enter the **BPM by
-hand** and slide the beat grid across the waveform until it lines up with the
-audio.
+A clip can match the project tempo so it plays in time with everything else,
+without changing the source file. Right-click a clip and choose **Warp**, or open
+the Clip Editor, and tick **Enable Warp** to set this up. The panel shows the
+resulting **Playback BPM** so you can see the tempo the clip will play at.
+
+How the clip follows the tempo depends on whether Silverdaw detected a tempo for
+the source:
+
+- When a tempo **was detected**, you can **Follow project BPM** — the clip tracks
+  the project tempo, so it stays in time even if you change the project's BPM
+  later — or **Pin to** a set **BPM** to lock the clip to a specific tempo.
+- When **no tempo was detected** (a vocal take, a one-shot, a sound effect), you
+  get **Stretch** instead, which sets the playback speed as a **percentage**: 100%
+  is the original speed, lower is slower, and higher is faster (from 25% to 400%).
+  Silverdaw shows the hint *"No source tempo — use Stretch to fit non-beat
+  material like vocals."*
 
 Warp offers three **modes** for how the stretch is done. As a rough guide:
 
@@ -71,14 +104,44 @@ Warp offers three **modes** for how the stretch is done. As a rough guide:
 - **Tonal** — best for melodic parts and vocals.
 - **Complex** — best for full songs and busy, layered material.
 
+### Fixing the detected tempo
+
+If Silverdaw's detected tempo is wrong, use the **Beat grid** panel in the Clip
+Editor to correct it:
+
+- **Tempo** — type the correct **BPM** and press <kbd>Enter</kbd>. If the tempo
+  was detected at half or double the real value, use **÷2** or **×2** to fix it in
+  one click, and **Restore** puts back the originally detected tempo.
+- **Position** — click **Slide grid to align** and drag left or right across the
+  waveform to line the grid up with the beats. Fine-tune with the **Nudge**
+  buttons (5 ms earlier or later), or use **½ beat** if the grid has locked onto
+  the off-beat.
+
+If the detected tempo is not simply offset but **unreliable or drifting** — common
+with live recordings, free-time intros, or tracks that change speed — it often
+helps to re-detect from a cleaner section:
+
+1. [Split](/guide/timeline#moving-and-editing-clips) or trim the clip down to a
+   short stretch with a clear, steady beat.
+2. Right-click it and choose **Save as Sample (Music)** to bake that section into
+   a new [music sample](/guide/library#music-and-simple-samples) in the Library.
+3. Right-click the new sample in the [Library](/guide/library) and choose
+   **Reanalyse File**. With less — and cleaner — audio to work from, Silverdaw can
+   often lock onto the tempo far more accurately.
+
+You can then work from that corrected sample in place of the original.
+
 ## Shifting pitch
 
 Clips can be **pitch-shifted** independently of their tempo — raise or lower a clip
 without speeding it up or slowing it down. Right-click a clip and choose **Pitch**,
-or open the Clip Editor, to change it. Adjust it in **Semitones** and **Cents** for
-fine tuning, or use the **Key presets** — computed from the clip's detected key —
-to jump straight to a musical key. This is ideal for getting two tracks into the
-same key for a mashup.
+or open the Clip Editor, to change it. Drag the **Semitones** and **Cents** sliders
+for fine tuning, or double-click a slider's number to type an exact value (press
+<kbd>Enter</kbd> to confirm or <kbd>Esc</kbd> to cancel). Both sliders snap back to
+zero as you drag past the centre, and double-clicking a slider resets it to zero.
+You can also use the **Key presets** — computed from the clip's detected key — to
+jump straight to a musical key. This is ideal for getting two tracks into the same
+key for a mashup.
 
 ## Slicing a clip into loops
 

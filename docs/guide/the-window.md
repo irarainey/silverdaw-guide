@@ -15,8 +15,12 @@ Along the top you'll find the main menus:
   clips; and open **Preferences…**.
 - **View** — zoom the timeline in and out, jump to zoom presets, and toggle full
   screen.
-- **Help** — open the documentation, report an issue, send feedback, and see version
+- **Help** — open the **Documentation**, **Give Feedback**, and see version
   information in **About Silverdaw**.
+
+The **Give Feedback** item opens Silverdaw's feedback site (powered by
+**Featurebase**) in your browser, where you can suggest features, vote on ideas,
+and report problems.
 
 ## The transport
 
@@ -56,6 +60,8 @@ Each track has a header on the left with its controls:
 - An **automation** toggle that shows or hides the track's
   [automation lane](/guide/mixing#automation-changing-settings-over-time), where
   you draw curves that change settings over time.
+
+Single-click a track's **name** to rename it in place.
 
 Drag the edge of a track header to resize it, and drag headers to reorder tracks.
 The overall level of your mix is shown by the master output meter.

@@ -19,6 +19,9 @@ From the **File** menu (or the startup screen) you can:
 - **Save As…** (<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>S</kbd>) — save a copy
   under a new name.
 
+To rename the current project, double-click its name in the title bar or click
+the pencil beside it (you can also press <kbd>F2</kbd>).
+
 ## Project properties
 
 Open **File ▸ Project Properties…** to view and set details for the current

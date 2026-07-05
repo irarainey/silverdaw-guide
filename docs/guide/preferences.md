@@ -31,6 +31,11 @@ How the timeline behaves during playback and editing:
 - **Follow playback** — scroll the timeline while playing so the playhead stays
   centred. Turn it off to keep the view still. This can also be toggled from the
   transport bar.
+- **Set project tempo from first clip** — when you drop the first clip onto a new
+  project, adopt its detected tempo as the project BPM. On by default; turn it off
+  to keep the project at its current tempo — you can always set the BPM yourself
+  from the transport bar. (This sets the *project's* tempo from a clip; the
+  setting below instead stretches each dropped clip to match the project.)
 - **Match project tempo on drop** — when you drag a clip onto a track,
   automatically switch on [Warp](/guide/clip-editor#matching-tempo-warp) so the
   clip's tempo matches the project. Turn it off to drop clips at their own tempo;
@@ -119,5 +124,10 @@ run **Separate Stems**, not here.
 
 ---
 
-> Silverdaw also has a **Developer** tab used for building and debugging the
-> application itself. It isn't part of everyday use and can be safely ignored.
+> Silverdaw also has a **Developer** tab, mostly for diagnosing the application.
+> If you're ever asked for logs when giving feedback, turn on **Write diagnostic
+> logs** there — it's off by default and takes effect the next time you launch
+> Silverdaw. Each session's logs are written to a timestamped folder inside the
+> **Log folder**, which defaults to a `Silverdaw\logs` folder in your user folder;
+> use **Browse…** to point it somewhere else. The rest of the tab isn't part of
+> everyday use and can be safely ignored.
