@@ -79,6 +79,7 @@ export default defineConfig({
           items: [
             { text: 'Preferences', link: '/guide/preferences' },
             { text: 'Keyboard Shortcuts', link: '/guide/shortcuts' },
+            { text: 'Feedback & Support', link: '/guide/feedback' },
           ],
         },
       ],
