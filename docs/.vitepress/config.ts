@@ -20,7 +20,7 @@ export default defineConfig({
   appearance: 'dark',
 
   head: [
-    ['meta', { name: 'theme-color', content: '#0f172a' }],
+    ['meta', { name: 'theme-color', content: '#09090b' }],
     ['meta', { property: 'og:type', content: 'website' }],
     ['meta', { property: 'og:title', content: 'Silverdaw Guide' }],
     ['meta', { property: 'og:url', content: 'https://docs.silverdaw.com/' }],

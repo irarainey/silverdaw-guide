@@ -1,21 +1,26 @@
 /*
- * Colour theme to match the Silverdaw marketing site (silverdaw.com).
+ * Colour theme drawn from the Silverdaw application itself (the DAW).
  *
- * The site uses a near-black "zinc" background, silver text, and a cyan/teal
- * accent. These overrides align the guide's VitePress theme with that palette
- * so the two properties feel like one product:
+ * The app is a Tailwind UI built on the "zinc" grey scale with a cyan accent:
+ *   - App shell / frame   bg-zinc-950  #09090b   (window chrome, sidebars)
+ *   - Content panels      bg-zinc-900  #18181b   (library panel, dialogs)
+ *   - Soft surfaces       bg-zinc-800  #27272a   (raised blocks)
+ *   - Dividers            zinc-800     #27272a
+ *   - Control borders     zinc-700     #3f3f46
+ *   - Body text           zinc-200     #e4e4e7   (titles zinc-100 #f4f4f5)
+ *   - Muted text          zinc-400     #a1a1aa
+ *   - Primary action      cyan-700     #0e7490   (hover cyan-600 #0891b2)
+ *   - Focus ring          sky-500      #0ea5e9
  *
- *   --bg-deep     #09090b   --silver         #e4e4e7   --accent       #0891b2
- *   --bg-mid      #18181b   --silver-bright  #f4f4f5   --accent-deep  #0e7490
- *   --border      #27272a   --silver-dim     #a1a1aa   --accent-glow  rgba(8,145,178,.4)
- *
- * The site's body font is the Segoe UI system stack, matched here too.
+ * The guide mirrors this: a darker shell framing a lighter content surface,
+ * with the cyan accent for links and buttons — matching the DAW rather than
+ * forcing the marketing site's near-black everywhere.
  */
 :root {
   --vp-font-family-base: "Segoe UI", system-ui, -apple-system,
     BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
 
-  /* Cyan accent — darker shades for contrast on the light background. */
+  /* Cyan accent — the app's primary-button shades, dark enough for the light background. */
   --vp-c-brand-1: #0e7490;
   --vp-c-brand-2: #0891b2;
   --vp-c-brand-3: #0891b2;
@@ -37,33 +42,34 @@
   );
   --vp-home-hero-image-filter: blur(48px);
 
-  /* Solid brand buttons. */
-  --vp-button-brand-bg: var(--vp-c-brand-3);
-  --vp-button-brand-hover-bg: var(--vp-c-brand-2);
-  --vp-button-brand-active-bg: #0e7490;
+  /* Solid brand buttons — cyan-700 base, cyan-600 hover, matching the app. */
+  --vp-button-brand-bg: #0e7490;
+  --vp-button-brand-hover-bg: #0891b2;
+  --vp-button-brand-active-bg: #155e75;
   --vp-button-brand-border: transparent;
   --vp-button-brand-hover-border: transparent;
   --vp-button-brand-active-border: transparent;
 }
 
 .dark {
-  /* Zinc backgrounds matching the marketing site. */
-  --vp-c-bg: #09090b;
-  --vp-c-bg-alt: #18181b;
-  --vp-c-bg-soft: #18181b;
-  --vp-c-bg-elv: #18181b;
+  /* Content surface = zinc-900 (the app's panel colour) for comfortable reading;
+   * the frame (sidebar / nav / gutter) drops to zinc-950 like the app shell. */
+  --vp-c-bg: #18181b;
+  --vp-c-bg-alt: #09090b;
+  --vp-c-bg-soft: #27272a;
+  --vp-c-bg-elv: #27272a;
+  --vp-c-gutter: #09090b;
 
-  /* Zinc borders / dividers. */
-  --vp-c-border: #27272a;
+  /* Zinc dividers (zinc-800) and lighter control borders (zinc-700). */
+  --vp-c-border: #3f3f46;
   --vp-c-divider: #27272a;
-  --vp-c-gutter: #27272a;
 
-  /* Silver text scale. */
+  /* Silver / zinc text scale. */
   --vp-c-text-1: #f4f4f5;
   --vp-c-text-2: #e4e4e7;
   --vp-c-text-3: #a1a1aa;
 
-  /* Brighter cyan for links so they stay legible on the dark background. */
+  /* Brighter cyan for links so they stay legible on the dark surface. */
   --vp-c-brand-1: #22d3ee;
   --vp-c-brand-2: #0891b2;
   --vp-c-brand-3: #0e7490;
