@@ -54,8 +54,10 @@ you listen and carve out clips to work with.
 
 - **Play** with the transport buttons or the <kbd>Space</kbd> bar, and click the
   waveform to move the playhead.
-- **Zoom** with the mouse wheel or <kbd>+</kbd> / <kbd>-</kbd> / <kbd>0</kbd>, so
-  you can work right down to the sample.
+- **Zoom** by holding <kbd>Ctrl</kbd> and turning the mouse wheel — matching the
+  main timeline — or with <kbd>+</kbd> / <kbd>-</kbd> / <kbd>0</kbd>, so you can
+  work right down to the sample. To pan across the waveform instead, scroll
+  sideways or hold <kbd>Shift</kbd> while scrolling.
 - **Select a range** by dragging across the waveform, then drag the handles at
   its edges to fine-tune it.
 - **Loop** (<kbd>L</kbd>, or the round-arrows button in the transport controls)

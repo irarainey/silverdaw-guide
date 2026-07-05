@@ -30,6 +30,13 @@ tempo (BPM). Tiles also show the track's cover art, or a simple icon when there'
 none. You can hide the artwork for a denser, text-only Library with **Show images
 on library tiles** in [Preferences ▸ General](/guide/preferences#general).
 
+A small **type badge** in the bottom-right corner of each tile marks what the
+item is —
+a **Track** (imported audio), a **Stem** from [stem separation](/guide/stems), or
+a saved **Sample** — so its kind reads at a glance. The tile shows the badge as an
+icon; the [Show Information](#working-with-library-items) dialog spells the type
+out in words.
+
 ![The Library panel with grouped imported items](/images/library-panel.png)
 
 ### Sample rate check
