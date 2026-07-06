@@ -53,20 +53,22 @@ you listen and carve out clips to work with.
 ## Getting around the editor
 
 - **Play** with the transport buttons or the <kbd>Space</kbd> bar, and click the
-  waveform to move the playhead.
+  waveform to move the playhead. <kbd>Home</kbd> and <kbd>End</kbd> jump the
+  playhead to the start and end of the current playback range.
 - **Zoom** by holding <kbd>Ctrl</kbd> and turning the mouse wheel — matching the
   main timeline — or with <kbd>+</kbd> / <kbd>-</kbd> / <kbd>0</kbd>, so you can
-  work right down to the sample. To pan across the waveform instead, scroll
-  sideways or hold <kbd>Shift</kbd> while scrolling.
+  work right down to the sample. **Zoom to Fit** (<kbd>Ctrl</kbd>+<kbd>F</kbd>)
+  sizes the whole view back into the window. To pan across the waveform instead,
+  scroll sideways or hold <kbd>Shift</kbd> while scrolling.
 - **Select a range** by dragging across the waveform, then drag the handles at
   its edges to fine-tune it.
 - **Loop** (<kbd>L</kbd>, or the round-arrows button in the transport controls)
   plays the current section over and over — the selected range if you've made one,
   or the whole clip if you haven't. Its tooltip reads **Loop off** when it's turned
   off and **Loop on** once it's active.
-- **Metronome** — the metronome button in the transport plays an audible tick in
-  time with the clip's own tempo while the clip plays in the editor, so you can
-  check it sits in time. It's separate from the
+- **Metronome** — the metronome button in the transport (or the <kbd>K</kbd> key)
+  plays an audible tick in time with the clip's own tempo while the clip plays in
+  the editor, so you can check it sits in time. It's separate from the
   [timeline metronome](/guide/timeline#the-metronome), and it isn't shown when
   you're previewing a raw file from the Library.
 - **Source / Clip** switches the view between the whole source file and just the

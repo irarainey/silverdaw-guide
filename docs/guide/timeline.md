@@ -10,8 +10,9 @@ line up musically.
 
 Audio lives on horizontal **tracks**, and each piece of audio is a **clip**. You
 can have as many tracks as you need — add one with **File ▸ Add Track…**
-(<kbd>Ctrl</kbd>+<kbd>T</kbd>). Drag a track header to reorder tracks, and drag its
-edge to resize it.
+(<kbd>Ctrl</kbd>+<kbd>T</kbd>). A new track is selected automatically, so pasting a
+clip, the mute / solo shortcuts, and the FX rack all act on it straight away. Drag
+a track header to reorder tracks, and drag its edge to resize it.
 
 ## Moving and editing clips
 
@@ -41,7 +42,8 @@ Select a clip by clicking it, then rearrange freely. The common actions are on t
   locked clip shows a small padlock on its title strip.
 
 To clean up the end of your arrangement, **Edit ▸ Trim Project to Last Clip**
-shortens the project to finish at your final clip.
+(<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>T</kbd>) shortens the project to finish at
+your final clip.
 
 ## Snapping to the grid
 
@@ -49,6 +51,40 @@ By default, clips **snap to the beat grid** as you drag, so they naturally land 
 the beat. When you want to place something freely — for a small, deliberate
 offset — hold **Alt** while you drag to switch off snapping for fine, free
 placement.
+
+## Crossfading between clips
+
+When two clips sit side by side on the same track, you can **crossfade** between
+them so one fades out smoothly as the next fades in — handy for blending the end of
+one loop into the start of another, or easing between two sections.
+
+To create a crossfade, put the two clips next to each other on a track, then **drag
+the facing edge of one clip so it extends over its neighbour**. The region where
+they overlap becomes the crossfade. As you drag, Silverdaw marks the overlap with a
+diagonal hatch; when you release, it draws the crossfade curves across both clips.
+The earlier clip fades out while the later one fades in.
+
+::: tip
+Crossfades are made by dragging a clip's **edge** over its neighbour, not by
+dragging its body — clip bodies can't overlap and simply butt up against each
+other. A [linked](/guide/library#linked-clips) or **locked** clip can't be
+edge-trimmed, so unlink or unlock it first (see
+[Moving and editing clips](#moving-and-editing-clips)).
+:::
+
+Right-click a clip that's part of a crossfade to change or remove it:
+
+- **Crossfade to next** / **Crossfade from previous** — pick the shape of the fade:
+  - **Smooth blend** — an equal-power crossfade that keeps the blend sounding
+    even in level through the transition. Good for most musical transitions.
+  - **Fade out / in** — straight fades, with one clip dropping in level as the
+    other rises. Useful when you want a simpler, more obvious handover.
+- **Remove Crossfade to Next Clip** / **Remove Crossfade from Previous Clip** —
+  take the crossfade off again.
+
+A clip can fade in from the clip before it and fade out into the clip after it at
+the same time. Crossfades play back live and are included when you
+[export your mix](/guide/export).
 
 ## Bar numbering
 
@@ -81,8 +117,31 @@ for you). You can turn this off with **Match project tempo on drop** in
 **Preferences ▸ Timeline** if you'd rather clips keep their own tempo until you
 warp them yourself.
 
+Once a clip's tempo has been detected, Silverdaw also nudges it so its bars line
+up with the project's bar grid — so slicing, splitting, and marker placement stay
+on the beat, even when a clip begins with a little silence before its first beat.
+Clips with no detected beats (such as simple samples) are left exactly where you
+placed them. Switch this off with **Align clips to the beat grid after analysis**
+in **Preferences ▸ Timeline**.
+
 Getting the grid right is what makes loops, slicing, and snapping all fall neatly
 into place.
+
+## Moving the playhead
+
+The **playhead** is the vertical line that marks where playback is. Click anywhere
+on the **ruler** at the top of the timeline to place it there, or drag along the
+ruler to move it (a grab cursor appears over the playhead). Press <kbd>Space</kbd>
+to play or stop from the playhead.
+
+You can also move it from the keyboard:
+
+- <kbd>←</kbd> / <kbd>→</kbd> step the playhead one grid line at a time, and
+  <kbd>Alt</kbd>+<kbd>←</kbd> / <kbd>→</kbd> step it more finely.
+- <kbd>Home</kbd> / <kbd>End</kbd> — or <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>←</kbd> /
+  <kbd>→</kbd> — skip to the start or end of the project and scroll the view there.
+
+Press <kbd>Esc</kbd> at any time to deselect the current clip or track.
 
 ## Markers
 
@@ -90,9 +149,8 @@ into place.
 arrangement — the start of a chorus, a drop, or wherever you want to jump back to.
 They appear as small triangles on the ruler and are saved with the project.
 
-- **Add or remove a marker** — double-click the ruler at the point you want, or
-  press <kbd>M</kbd> to place one at the playhead (press it again at the same
-  place to remove it).
+- **Add or remove a marker** — press <kbd>M</kbd> to place a marker at the
+  playhead (press it again at the same place to remove it).
 - **Move a marker** — drag it along the ruler; it snaps to the grid.
 - **Jump between markers** — press <kbd>Ctrl</kbd>+<kbd>←</kbd> and
   <kbd>Ctrl</kbd>+<kbd>→</kbd> to move the playhead to the previous or next
@@ -106,14 +164,17 @@ instead of jumping to the project ends — see **Previous / next buttons** in
 
 The timing display includes a **Metronome** click. Switch it on to hear an audible
 tick that follows the project tempo, so you can check by ear whether a loop or
-beat sits in time. The metronome is **off by default**, and its on/off state is
-saved with the project.
+beat sits in time. Toggle it from the timing display or by pressing <kbd>K</kbd>.
+The metronome is **off by default**, and its on/off state is saved with the
+project.
 
 ## Zooming
 
 Use the **View** menu to change how much of the timeline you see: **Zoom In**
 (<kbd>Ctrl</kbd>+<kbd>+</kbd>), **Zoom Out** (<kbd>Ctrl</kbd>+<kbd>-</kbd>),
 **Reset Zoom** (<kbd>Ctrl</kbd>+<kbd>0</kbd>), or pick a **Zoom Preset**.
+**Zoom to Fit** (<kbd>Ctrl</kbd>+<kbd>F</kbd>) sizes the whole project to fit the
+timeline width and jumps the view to the start.
 
 ## Automating changes over time
 

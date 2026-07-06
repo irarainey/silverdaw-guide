@@ -53,4 +53,4 @@ If you have already installed Silverdaw and want to dive straight in, head to th
 Otherwise, start with [Installation](/guide/installation), then take the
 [tour of the Silverdaw window](/guide/the-window).
 
-> This guide targets Silverdaw version 1.0.2.
+> This guide targets Silverdaw version 1.0.3.

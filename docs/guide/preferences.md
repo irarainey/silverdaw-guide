@@ -40,6 +40,10 @@ How the timeline behaves during playback and editing:
   automatically switch on [Warp](/guide/clip-editor#matching-tempo-warp) so the
   clip's tempo matches the project. Turn it off to drop clips at their own tempo;
   you can still warp any clip yourself afterwards.
+- **Align clips to the beat grid after analysis** — once a clip's tempo has been
+  detected, nudge it so its beats line up with the timeline's beat grid, keeping
+  splitting and marker placement on the beat. On by default. Clips with no
+  detected beats (such as simple samples) are left where you placed them.
 - **Previous / next buttons** — choose where the transport's previous and next
   buttons jump: **Timeline ends** (the project start and end) or **Markers**
   (step through your [timeline markers](/guide/timeline#markers)).

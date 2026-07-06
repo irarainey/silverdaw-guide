@@ -17,6 +17,9 @@ Each track's header, on the left of the timeline, has the basics:
 - **Solo** — plays only the soloed track(s) and silences the rest. (When it's
   soloed, the button offers to **Unsolo**.)
 
+Select a track by clicking its header, then mute it with <kbd>Shift</kbd>+<kbd>M</kbd>
+or solo it with <kbd>Shift</kbd>+<kbd>S</kbd>.
+
 The overall level of your finished mix is shown by the master output meter.
 
 ::: tip

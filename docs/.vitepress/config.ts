@@ -1,7 +1,7 @@
 import { defineConfig } from 'vitepress'
 
 // The released version of Silverdaw that this guide documents.
-const silverdawVersion = '1.0.2'
+const silverdawVersion = '1.0.3'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
