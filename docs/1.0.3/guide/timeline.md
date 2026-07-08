@@ -4,7 +4,7 @@ The timeline is where you build your mix — laying clips out across tracks and
 arranging them in time. This page covers moving material around and getting it to
 line up musically.
 
-![The timeline with clips arranged across several tracks](/images/timeline-arranging.png)
+![The timeline with clips arranged across several tracks](/1.0.3/images/timeline-arranging.png)
 
 ## Tracks and clips
 
@@ -30,13 +30,13 @@ Select a clip by clicking it, then rearrange freely. The common actions are on t
   first to place the playhead where it should land.
 - **Delete Clip** (<kbd>Delete</kbd>) — remove a clip.
 - **Trim** — drag a clip's edge to shorten or extend how much of it plays. A
-  [linked clip](/guide/library#linked-clips) can't be edge-trimmed on the
+  [linked clip](/1.0.3/guide/library#linked-clips) can't be edge-trimmed on the
   timeline — unlink it first, or edit its shared trim in the Clip Editor.
 - **Colour** — right-click a clip and choose **Colour** to tag it, which makes a
   busy arrangement easier to read.
 - **Rename** — double-click a clip's **title strip** (the thin band along its top)
   to rename it in place. Double-clicking the clip's body opens the
-  [Clip Editor](/guide/clip-editor) instead.
+  [Clip Editor](/1.0.3/guide/clip-editor) instead.
 - **Lock** / **Unlock** — right-click and lock a clip (or press
   <kbd>Ctrl</kbd>+<kbd>L</kbd>) so it can't be moved or edited by accident. A
   locked clip shows a small padlock on its title strip.
@@ -67,7 +67,7 @@ The earlier clip fades out while the later one fades in.
 ::: tip
 Crossfades are made by dragging a clip's **edge** over its neighbour, not by
 dragging its body — clip bodies can't overlap and simply butt up against each
-other. A [linked](/guide/library#linked-clips) or **locked** clip can't be
+other. A [linked](/1.0.3/guide/library#linked-clips) or **locked** clip can't be
 edge-trimmed, so unlink or unlock it first (see
 [Moving and editing clips](#moving-and-editing-clips)).
 :::
@@ -84,12 +84,12 @@ Right-click a clip that's part of a crossfade to change or remove it:
 
 A clip can fade in from the clip before it and fade out into the clip after it at
 the same time. Crossfades play back live and are included when you
-[export your mix](/guide/export).
+[export your mix](/1.0.3/guide/export).
 
 ## Bar numbering
 
 The timeline is numbered in bars, starting at **1** by default. You can change
-where the count starts in [Project Properties](/guide/projects#project-properties)
+where the count starts in [Project Properties](/1.0.3/guide/projects#project-properties)
 using **Bar counter start** — setting it to 0 or lower leaves lead-in bars before
 bar one, which is handy for clips that begin with a silent intro.
 
@@ -107,12 +107,12 @@ Everything lines up against the project **tempo** and its beat grid.
   **Preferences ▸ Timeline** to keep the project at its current tempo instead.
 - If detection is uncertain, you can set a clip's **BPM by hand** and slide the
   beat grid across its waveform to line it up. This is done in the
-  [Clip Editor](/guide/clip-editor#matching-tempo-warp).
+  [Clip Editor](/1.0.3/guide/clip-editor#matching-tempo-warp).
 - The project's own tempo is set in
-  [Project Properties](/guide/projects#project-properties).
+  [Project Properties](/1.0.3/guide/projects#project-properties).
 
 By default, dropping a clip onto a track automatically **matches it to the
-project tempo** (Silverdaw switches on [Warp](/guide/clip-editor#matching-tempo-warp)
+project tempo** (Silverdaw switches on [Warp](/1.0.3/guide/clip-editor#matching-tempo-warp)
 for you). You can turn this off with **Match project tempo on drop** in
 **Preferences ▸ Timeline** if you'd rather clips keep their own tempo until you
 warp them yourself.
@@ -158,7 +158,7 @@ They appear as small triangles on the ruler and are saved with the project.
 
 You can also set the transport's previous / next buttons to step through markers
 instead of jumping to the project ends — see **Previous / next buttons** in
-[Preferences ▸ Timeline](/guide/preferences#timeline).
+[Preferences ▸ Timeline](/1.0.3/guide/preferences#timeline).
 
 ## The metronome
 
@@ -181,4 +181,4 @@ timeline width and jumps the view to the start.
 Effects and levels don't have to stay fixed — you can draw **automation** that
 changes them across the timeline, such as a filter sweep or a fade. Automation is
 edited in a lane under each track; see
-[Automation](/guide/mixing#automation-changing-settings-over-time).
+[Automation](/1.0.3/guide/mixing#automation-changing-settings-over-time).

@@ -28,20 +28,20 @@ the panel shows how many items the project contains. Each tile shows the item's
 name, and — where the details are known — its length, detected key, and detected
 tempo (BPM). Tiles also show the track's cover art, or a simple icon when there's
 none. You can hide the artwork for a denser, text-only Library with **Show images
-on library tiles** in [Preferences ▸ General](/guide/preferences#general).
+on library tiles** in [Preferences ▸ General](/1.0.3/guide/preferences#general).
 
 A small **type badge** in the bottom-right corner of each tile marks what the
 item is —
-a **Track** (imported audio), a **Stem** from [stem separation](/guide/stems), or
+a **Track** (imported audio), a **Stem** from [stem separation](/1.0.3/guide/stems), or
 a saved **Sample** — so its kind reads at a glance. The tile shows the badge as an
 icon; the [Show Information](#working-with-library-items) dialog spells the type
 out in words.
 
-![The Library panel with grouped imported items](/images/library-panel.png)
+![The Library panel with grouped imported items](/1.0.3/images/library-panel.png)
 
 ### Sample rate check
 
-Each project has a [sample rate](/guide/projects#project-properties) (44.1 or
+Each project has a [sample rate](/1.0.3/guide/projects#project-properties) (44.1 or
 48 kHz). When you import a file recorded at a different rate, Silverdaw tells you
 and offers a clear way forward, so your project stays consistent.
 
@@ -60,7 +60,7 @@ you work:
   Library** to keep a reusable copy of it (with its current edits) for use
   elsewhere in the project. Saved clips are grouped under the source they came
   from; use the small chevron on a source to **Show saved clips** or **Hide saved
-  clips**. Copies you drag onto the timeline stay [linked](/guide/library#linked-clips)
+  clips**. Copies you drag onto the timeline stay [linked](/1.0.3/guide/library#linked-clips)
   to the saved clip; to detach one, use **Unlink from Library**.
 - **Save as Sample…** — right-click a clip and choose **Save as Sample…** to
   "bake" it down to a fresh audio sample that commits its current sound. This is
@@ -81,7 +81,7 @@ You can pick the same two kinds directly from a saved clip's right-click menu wi
 **Save as Sample (Music)** and **Save as Sample (Simple)**.
 
 Slicing a clip can also produce new samples — see
-[Slicing loops](/guide/clip-editor#slicing-a-clip-into-loops).
+[Slicing loops](/1.0.3/guide/clip-editor#slicing-a-clip-into-loops).
 
 ## Linked clips
 
@@ -115,7 +115,7 @@ shared properties are:
 - **Brake** and **Backspin**, and
 - the **volume envelope**.
 
-You make these changes in the [Clip Editor](/guide/clip-editor) (they apply when
+You make these changes in the [Clip Editor](/1.0.3/guide/clip-editor) (they apply when
 you click **Save**) or from the clip's right-click **Warp**, **Pitch**,
 **Reverse**, **Brake**, and **Backspin** actions. Either way, Silverdaw warns you
 that saving updates the saved clip and every linked copy. If a shared trim or
@@ -174,7 +174,7 @@ of item):
 
 ::: warning
 If you turn on **Clean up project files on remove** in
-[Preferences ▸ Project](/guide/preferences#project), removing a stem or sample
+[Preferences ▸ Project](/1.0.3/guide/preferences#project), removing a stem or sample
 also **deletes its generated file from disk**, which can't be undone. Your
 original imported files are never deleted. This setting is off by default, so
 normally **Remove** only unlinks the item from the project.

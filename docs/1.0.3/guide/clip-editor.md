@@ -14,7 +14,7 @@ them.
 
 What **Save** affects depends on the kind of clip you opened:
 
-- **A [linked clip](/guide/library#linked-clips)** — or a **saved clip** opened
+- **A [linked clip](/1.0.3/guide/library#linked-clips)** — or a **saved clip** opened
   from the Library — Save updates the saved clip and **every linked copy** on the
   timeline together, so they stay in step. The Save button confirms this with
   *"Save changes to the library and every linked timeline clip."*
@@ -27,9 +27,9 @@ What **Save** affects depends on the kind of clip you opened:
 If a change to the trim or tempo would make a clip overlap its neighbour on a
 track, Silverdaw won't save it and tells you which track clashes — for a linked
 clip it checks every copy. To edit one linked copy on its own, right-click it and
-choose **Unlink from Library** first (see [linked clips](/guide/library#linked-clips)).
+choose **Unlink from Library** first (see [linked clips](/1.0.3/guide/library#linked-clips)).
 
-![The Clip Editor window](/images/clip-editor.png)
+![The Clip Editor window](/1.0.3/images/clip-editor.png)
 
 ## Editing a clip vs previewing a file
 
@@ -39,7 +39,7 @@ The Clip Editor opens in one of two ways, and it helps to know which you're in:
   it and choose **Open in Editor**. You get the full editor — warp, pitch,
   slicing, volume shaping, and turntable effects — and your changes are kept with
   **Save**.
-- **Previewing a file.** Double-click a [Library](/guide/library) tile (anywhere
+- **Previewing a file.** Double-click a [Library](/1.0.3/guide/library) tile (anywhere
   but its name) to hear the original imported file. The same window opens but
   shows a **Preview** badge, and in place of the effect panels there's a note
   explaining that warp, pitch, and effects are set *per clip on the timeline* —
@@ -69,7 +69,7 @@ you listen and carve out clips to work with.
 - **Metronome** — the metronome button in the transport (or the <kbd>K</kbd> key)
   plays an audible tick in time with the clip's own tempo while the clip plays in
   the editor, so you can check it sits in time. It's separate from the
-  [timeline metronome](/guide/timeline#the-metronome), and it isn't shown when
+  [timeline metronome](/1.0.3/guide/timeline#the-metronome), and it isn't shown when
   you're previewing a raw file from the Library.
 - **Source / Clip** switches the view between the whole source file and just the
   part your clip uses — handy when you want to pull a clip's edges out beyond
@@ -80,7 +80,7 @@ you listen and carve out clips to work with.
 
 When you open the editor on an imported file (rather than a clip), the footer
 offers **Save Selection to Library**, which turns the range you've selected into a
-new saved clip you can reuse — the same [saved clips](/guide/library#saved-clips-and-samples)
+new saved clip you can reuse — the same [saved clips](/1.0.3/guide/library#saved-clips-and-samples)
 that appear in the Library.
 
 ## Matching tempo (Warp)
@@ -125,11 +125,11 @@ If the detected tempo is not simply offset but **unreliable or drifting** — co
 with live recordings, free-time intros, or tracks that change speed — it often
 helps to re-detect from a cleaner section:
 
-1. [Split](/guide/timeline#moving-and-editing-clips) or trim the clip down to a
+1. [Split](/1.0.3/guide/timeline#moving-and-editing-clips) or trim the clip down to a
    short stretch with a clear, steady beat.
 2. Right-click it and choose **Save as Sample (Music)** to bake that section into
-   a new [music sample](/guide/library#music-and-simple-samples) in the Library.
-3. Right-click the new sample in the [Library](/guide/library) and choose
+   a new [music sample](/1.0.3/guide/library#music-and-simple-samples) in the Library.
+3. Right-click the new sample in the [Library](/1.0.3/guide/library) and choose
    **Reanalyse File**. With less — and cleaner — audio to work from, Silverdaw can
    often lock onto the tempo far more accurately.
 
@@ -164,7 +164,7 @@ Once you've made your slices you can:
 - **Slice to timeline** — lay the slices back onto the timeline as separate clips
   to rearrange.
 - **Slice to samples** — save each slice as its own sample in the
-  [Library](/guide/library) to reuse and rebuild.
+  [Library](/1.0.3/guide/library) to reuse and rebuild.
 
 Slicing is non-destructive — the source file is untouched.
 

@@ -49,8 +49,8 @@ else easier to follow:
 ## How to use this guide
 
 If you have already installed Silverdaw and want to dive straight in, head to the
-[Quick Start](/guide/quick-start) and build your first remix in a few minutes.
-Otherwise, start with [Installation](/guide/installation), then take the
-[tour of the Silverdaw window](/guide/the-window).
+[Quick Start](/1.0.3/guide/quick-start) and build your first remix in a few minutes.
+Otherwise, start with [Installation](/1.0.3/guide/installation), then take the
+[tour of the Silverdaw window](/1.0.3/guide/the-window).
 
 > This guide targets Silverdaw version 1.0.3.

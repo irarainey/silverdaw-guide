@@ -27,7 +27,7 @@ the pencil beside it (you can also press <kbd>F2</kbd>).
 Open **File ▸ Project Properties…** to view and set details for the current
 project:
 
-![The Project Properties dialog](/images/project-properties.png)
+![The Project Properties dialog](/1.0.3/images/project-properties.png)
 
 - **Project name** — the name of the project.
 - **Tempo (BPM)** — the project's tempo, which the grid, metronome, and

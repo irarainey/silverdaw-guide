@@ -72,7 +72,7 @@ These act on the currently selected track.
 
 ## In the Clip Editor
 
-These apply while the [Clip Editor](/guide/clip-editor) is open.
+These apply while the [Clip Editor](/1.0.3/guide/clip-editor) is open.
 
 | Action | Shortcut |
 | --- | --- |

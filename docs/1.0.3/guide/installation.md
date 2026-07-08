@@ -8,7 +8,7 @@ released under the GNU Affero General Public License v3.0.
 - **Operating system:** Windows 10 (version 1809 or later) or Windows 11, 64-bit.
 - **Disk space:** room for the application, plus your projects and audio files.
 - **Graphics card (optional):** a compatible GPU can speed up
-  [stem separation](/guide/stems), but it is not required — Silverdaw can do the
+  [stem separation](/1.0.3/guide/stems), but it is not required — Silverdaw can do the
   same work on the processor, just more slowly.
 - **Internet connection (first stem separation only):** the first time you
   separate stems, Silverdaw downloads the separation model it needs (about 1 GB).
@@ -75,8 +75,8 @@ When Silverdaw opens, you are greeted by the startup screen, which invites you t
 - **Recent Projects** — jump back into projects you opened recently.
 
 Once you are in, the next step is to make some sound. Head to the
-[Quick Start](/guide/quick-start) to build your first remix, or take the
-[tour of the Silverdaw window](/guide/the-window) first.
+[Quick Start](/1.0.3/guide/quick-start) to build your first remix, or take the
+[tour of the Silverdaw window](/1.0.3/guide/the-window) first.
 
 > If you do not hear anything when you press play, check that the right audio
-> output is selected. See [Choosing your audio output](/guide/the-window#choosing-your-audio-output).
+> output is selected. See [Choosing your audio output](/1.0.3/guide/the-window#choosing-your-audio-output).

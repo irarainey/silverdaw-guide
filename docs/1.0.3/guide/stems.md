@@ -30,7 +30,7 @@ Silverdaw then analyses the audio and produces the separate parts, each on its o
 track for you to remix. Every stem keeps the original clip's tempo, key, and
 artwork, so it stays in step with the rest of your project.
 
-![The Separate Stems dialog](/images/stems-dialog.png)
+![The Separate Stems dialog](/1.0.3/images/stems-dialog.png)
 
 ## The separation models
 
@@ -93,7 +93,7 @@ a single separation can take several minutes. A few habits keep it comfortable:
   if the separation isn't clean enough. Each step up takes noticeably longer, so
   there's no need to pay for quality you don't need.
 - **Separate short sections, not whole songs.** You rarely need every stem of an
-  entire track. Trim or [split](/guide/timeline#moving-and-editing-clips) the clip
+  entire track. Trim or [split](/1.0.3/guide/timeline#moving-and-editing-clips) the clip
   down to just the part you want — a single chorus, a drum break, an eight-bar
   loop — and separate that. Less audio means far less waiting, and you can always
   separate another section later.
@@ -109,5 +109,5 @@ a single separation can take several minutes. A few habits keep it comfortable:
 
 Once you have your stems on separate tracks, they behave like any other clips. You
 can mute the vocals to make an instrumental, keep only the drums as a loop, add
-[effects](/guide/mixing), or [slice them into loops](/guide/clip-editor) — all the
+[effects](/1.0.3/guide/mixing), or [slice them into loops](/1.0.3/guide/clip-editor) — all the
 usual editing applies.

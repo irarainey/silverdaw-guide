@@ -3,12 +3,12 @@
 Open **Edit ▸ Preferences…** to change how Silverdaw works. Preferences apply
 across the whole application (a few settings, like the audio device, can also be
 overridden per project in
-[Project Properties](/guide/projects#project-properties)).
+[Project Properties](/1.0.3/guide/projects#project-properties)).
 
 Preferences are organised into tabs down the left. Changes are held until you
 click **Save**; **Cancel** (or <kbd>Esc</kbd>) discards them.
 
-![The Preferences window with its tabs](/images/preferences.png)
+![The Preferences window with its tabs](/1.0.3/images/preferences.png)
 
 ## General
 
@@ -17,9 +17,9 @@ Appearance and notifications:
 - **Waveform display** — choose whether clips draw a **Single waveform** (one
   combined waveform per clip) or **Left and right** (separate L / R lanes for
   stereo clips). Mono clips always show a single waveform. Your choice applies
-  across both the timeline and the [Clip Editor](/guide/clip-editor).
+  across both the timeline and the [Clip Editor](/1.0.3/guide/clip-editor).
 - **Show images on library tiles** — show embedded cover art (or a fallback
-  audio icon) on each [Library](/guide/library) tile. Turn it off for a denser,
+  audio icon) on each [Library](/1.0.3/guide/library) tile. Turn it off for a denser,
   text-only library.
 - **Show toast notifications** — pop transient messages (errors, save
   confirmations) in the bottom-right corner. Turn it off for a quieter interface.
@@ -37,7 +37,7 @@ How the timeline behaves during playback and editing:
   from the transport bar. (This sets the *project's* tempo from a clip; the
   setting below instead stretches each dropped clip to match the project.)
 - **Match project tempo on drop** — when you drag a clip onto a track,
-  automatically switch on [Warp](/guide/clip-editor#matching-tempo-warp) so the
+  automatically switch on [Warp](/1.0.3/guide/clip-editor#matching-tempo-warp) so the
   clip's tempo matches the project. Turn it off to drop clips at their own tempo;
   you can still warp any clip yourself afterwards.
 - **Align clips to the beat grid after analysis** — once a clip's tempo has been
@@ -46,7 +46,7 @@ How the timeline behaves during playback and editing:
   detected beats (such as simple samples) are left where you placed them.
 - **Previous / next buttons** — choose where the transport's previous and next
   buttons jump: **Timeline ends** (the project start and end) or **Markers**
-  (step through your [timeline markers](/guide/timeline#markers)).
+  (step through your [timeline markers](/1.0.3/guide/timeline#markers)).
 
 ## Project
 
@@ -58,7 +58,7 @@ Defaults and file handling for projects:
 - **Autosave** — snapshot projects with unsaved changes in the background, so
   work can be recovered after a crash. You can set how often it saves (from 5 to
   600 seconds). See
-  [Autosave and crash recovery](/guide/projects#autosave-and-crash-recovery).
+  [Autosave and crash recovery](/1.0.3/guide/projects#autosave-and-crash-recovery).
 - **Clean up project files on remove** — when you remove a stem or sample from
   the Library, also delete its generated file (and the empty folder it leaves
   behind) from disk. Off by default, so removing an item only unlinks it from the
@@ -75,7 +75,7 @@ Where and how Silverdaw plays sound:
 
 - **Default project sample rate** — the rate (**44.1 kHz** or **48 kHz**) new
   projects start with. Existing projects keep their own saved rate, which you can
-  change in [Project Properties](/guide/projects#project-properties).
+  change in [Project Properties](/1.0.3/guide/projects#project-properties).
 - **Output device** — the device Silverdaw plays through. If you press play and
   hear nothing, check here first. You can also switch device at any time from the
   transport bar without leaving the timeline. Each device has a **Keep awake**
@@ -92,7 +92,7 @@ Where and how Silverdaw plays sound:
 ## Effects
 
 Global defaults for the per-clip DJ turntable effects (see
-[Brake and Backspin](/guide/clip-editor#turntable-effects-brake-and-backspin)):
+[Brake and Backspin](/1.0.3/guide/clip-editor#turntable-effects-brake-and-backspin)):
 
 - **Brake** — the **Duration** (**Short**, **Medium**, or **Long**) and the
   **Curve** (**linear**, **curved**, or **steep**) of the record-stop slowdown.
@@ -103,7 +103,7 @@ Changing these updates every clip that already uses the effect.
 
 ## Stems
 
-Defaults for [stem separation](/guide/stems). *Models* are the engines Silverdaw
+Defaults for [stem separation](/1.0.3/guide/stems). *Models* are the engines Silverdaw
 uses to split a song into its parts:
 
 - **Separation models** — shows whether the high-quality models are installed and

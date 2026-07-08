@@ -34,10 +34,53 @@ npm run docs:preview  # preview the production build locally
 
 ## Project layout
 
-- `docs/` - documentation content (Markdown)
-- `docs/.vitepress/config.ts` - site configuration, nav, and sidebar
-- `docs/public/` - static assets and the `CNAME` custom-domain file
+- `docs/` - documentation content (Markdown), organised by version
+- `docs/<version>/guide/` - the guide pages for a specific released version
+- `docs/.vitepress/versions.ts` - the version manifest (source of truth)
+- `docs/.vitepress/config.ts` - site configuration; builds the nav and per-version
+  sidebar from the manifest
+- `docs/.vitepress/theme/` - custom theme: the version switcher and the
+  default-version redirect
+- `docs/public/<version>/images/` - screenshots for a specific version
+- `docs/public/images/` - shared branding assets (logos) used across versions
 - `.github/workflows/` - CI that builds and deploys the site
+
+## Versioning
+
+The guide is versioned by exact Silverdaw release, so users on an older
+application version can read documentation that matches it.
+
+- **URL layout.** Every version lives under its own numbered path, e.g.
+  `docs.silverdaw.com/1.0.3/guide/introduction`. Each version is a
+  self-contained copy with its own screenshots, so its pages never navigate the
+  reader into a different version.
+- **Default version.** The version listed as `latestVersion` in
+  `docs/.vitepress/versions.ts` is the default. The landing page and top
+  navigation point at it, and any visitor who arrives on an unversioned or
+  missing doc path (e.g. an old `/guide/…` link) is redirected to it.
+- **Switching versions.** The version switcher in the top navigation moves the
+  reader to the same page in another version, falling back to that version's
+  introduction if the page does not exist there.
+- **Search.** Only the latest version is indexed, so search results are not
+  polluted with duplicate hits from archived versions.
+
+### Adding a new version
+
+The generation pipeline handles this on each application release:
+
+1. Write the new version's pages to `docs/<newVersion>/guide/` using
+   root-absolute links prefixed with the version, e.g.
+   `[Export](/1.0.4/guide/export)`.
+2. Write that version's screenshots to `docs/public/<newVersion>/images/` and
+   reference them the same way, e.g. `/1.0.4/images/export-dialog.png`. Logos
+   stay shared in `docs/public/images/`.
+3. Prepend the version to `versions` and update `latestVersion` in
+   `docs/.vitepress/versions.ts`.
+4. Update the hero action links in `docs/index.md` to the new version.
+5. Run `npm run docs:build` to verify there are no dead links.
+
+Older version directories are frozen — never edit them after release.
+
 
 ## Deployment
 

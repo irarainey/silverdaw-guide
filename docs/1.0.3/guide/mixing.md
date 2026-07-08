@@ -82,7 +82,7 @@ Open a collapsible **automation lane** under a track — using the **automation*
 toggle on the track header — and draw a **breakpoint curve** — a line with points
 you can shape. You can automate:
 
-![A track with its automation lane open and a breakpoint curve](/images/mixing-automation.png)
+![A track with its automation lane open and a breakpoint curve](/1.0.3/images/mixing-automation.png)
 
 - **Filter**
 - **Pan**

@@ -10,7 +10,7 @@ rendered into the file exactly as it plays.
 Choose **File ▸ Export Mixdown…** (<kbd>Ctrl</kbd>+<kbd>M</kbd>). This is available
 once your project contains audio to render.
 
-![The Export Mixdown dialog](/images/export-dialog.png)
+![The Export Mixdown dialog](/1.0.3/images/export-dialog.png)
 
 ## Choosing a format
 
