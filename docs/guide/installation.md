@@ -17,12 +17,12 @@ released under the GNU Affero General Public License v3.0.
 ## Getting Silverdaw
 
 There are two ways to install Silverdaw. The **Microsoft Store** is the easiest
-and recommended option once it is available. The **portable download** lets you
-try Silverdaw without installing anything.
+and recommended option. The **portable download** lets you try Silverdaw without
+installing anything.
 
 | Option | Best for | Effort | Updates | Windows integration\* |
 | ------ | -------- | ------ | ------- | --------------------- |
-| **Microsoft Store** *(coming soon)* | Everyone | One click | Automatic | Full |
+| **Microsoft Store** | Everyone | One click | Automatic | Full |
 | **Portable download** | Trying it quickly, no install | Unzip and run | Manual | None |
 
 \* *Windows integration* means a Start-menu entry, the `.silverdaw` file
@@ -35,7 +35,10 @@ The easiest way to install Silverdaw is from the **Microsoft Store**. It install
 in one click, with no security prompts, and the
 Store keeps the application up to date for you automatically.
 
-> The Microsoft Store link will be added here soon.
+- [Get Silverdaw from the Microsoft Store](https://apps.microsoft.com/detail/9N8T25L0462F)
+
+Open the link, click **Get**, and Silverdaw installs itself and adds a Start-menu
+entry.
 
 ### Portable download
 
