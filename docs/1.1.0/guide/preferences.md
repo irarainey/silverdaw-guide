@@ -134,5 +134,7 @@ run **Separate Stems**, not here.
 > logs** there — it's off by default and takes effect the next time you launch
 > Silverdaw. Each session's logs are written to a timestamped folder inside the
 > **Log folder**, which defaults to a `Silverdaw\logs` folder in your user folder;
-> use **Browse…** to point it somewhere else. The rest of the tab isn't part of
-> everyday use and can be safely ignored.
+> use **Browse…** to point it somewhere else. Once logging is on, **Help ▸ Send
+> Diagnostic Logs…** packages that session's logs and starts an email to support —
+> see [Sending diagnostic logs](/1.1.0/guide/feedback#sending-diagnostic-logs). The
+> rest of the tab isn't part of everyday use and can be safely ignored.

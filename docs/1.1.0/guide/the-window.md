@@ -16,7 +16,9 @@ Along the top you'll find the main menus:
 - **View** — zoom the timeline in and out, jump to zoom presets, show or hide the
   Library / FX panel, and toggle full screen.
 - **Help** — open the **Documentation** and the **Keyboard Shortcuts** reference,
-  **Submit Feedback**, and see version information in **About Silverdaw**.
+  **Submit Feedback**, and see version information in **About Silverdaw**. When
+  diagnostic logging is turned on, a **Send Diagnostic Logs…** item also appears
+  here (see [Feedback & Support](/1.1.0/guide/feedback#sending-diagnostic-logs)).
 
 The **Submit Feedback** item opens Silverdaw's feedback site (powered by
 **Featurebase**) in your browser, where you can suggest features, vote on ideas,
