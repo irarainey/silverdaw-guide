@@ -25,9 +25,7 @@ export const versions: DocVersion[] = [
 
 // The default version loaded when a visitor arrives without a version in the URL
 // (via the landing page, the top navigation, and the unversioned-link redirect).
-// 1.1.0 is published and reachable via the version switcher, but 1.0.3 stays the
-// default until the application store publish of 1.1.0 is complete.
-export const latestVersion = '1.0.3'
+export const latestVersion = '1.1.0'
 
 /** All known version identifiers, for route matching. */
 export const versionIds: string[] = versions.map((v) => v.version)
