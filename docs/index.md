@@ -11,10 +11,10 @@ hero:
   actions:
     - theme: brand
       text: Quick Start
-      link: /1.1.0/guide/quick-start
+      link: /1.2.0/guide/quick-start
     - theme: alt
       text: Introduction
-      link: /1.1.0/guide/introduction
+      link: /1.2.0/guide/introduction
 
 features:
   - title: Remix & Mashup
