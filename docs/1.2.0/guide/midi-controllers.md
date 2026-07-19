@@ -87,7 +87,7 @@ feedback mappings.
 | Denon DJ | MC7000 |
 | Hercules | DJControl Inpulse 200, DJControl Inpulse 300, DJControl Inpulse 500, DJControl Starlight, DJControl MIX |
 | Numark | DJ2GO2 Touch, Mixtrack 3, Mixtrack Pro 3 |
-| Pioneer DJ | DDJ-200, DDJ-400, DDJ-800, DDJ-1000, DDJ-ERGO, DDJ-FLX4, DDJ-FLX6, DDJ-FLX10, DDJ-RB, DDJ-RR, DDJ-REV5, DDJ-REV7, DDJ-RX, DDJ-RZ, DDJ-RZX, DDJ-SB, DDJ-SB2, DDJ-SB3, DDJ-SR, DDJ-SR2, DDJ-SX, DDJ-SX2, DDJ-SX3, DDJ-SZ, DDJ-WeGO, DDJ-WeGO2, DDJ-WeGO3, DDJ-WeGO4, OMNIS-DUO, OPUS-QUAD, XDJ-AERO, XDJ-R1, XDJ-RR, XDJ-RX, XDJ-RX2, XDJ-RX3, XDJ-XZ |
+| Pioneer DJ | DDJ-200, DDJ-400, DDJ-800, DDJ-1000, DDJ-ERGO, DDJ-FLX4, DDJ-FLX6, DDJ-FLX10, DDJ-RB, DDJ-RR, DDJ-REV5, DDJ-REV7, DDJ-RX, DDJ-RZ, DDJ-RZX, DDJ-SB, DDJ-SB2, DDJ-SB3, DDJ-SR, DDJ-SR2, DDJ-SX, DDJ-SX2, DDJ-SX3, DDJ-SZ, DDJ-WeGO, DDJ-WeGO2, DDJ-WeGO3, DDJ-WeGO4, OMNIS-DUO, XDJ-AERO, XDJ-R1, XDJ-RR, XDJ-RX, XDJ-RX2, XDJ-RX3, XDJ-XZ |
 | Reloop | Beatmix 2 MK2, Beatmix 4 MK2 |
 
 If a controller does not appear, reconnect it and choose **Rescan devices**.
