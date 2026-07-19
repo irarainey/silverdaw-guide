@@ -64,9 +64,13 @@ again. The platter and crossfader lanes show the recorded movements. You can add
 drag, delete, or nudge their points to refine the pattern, and use undo or redo
 while editing.
 
+### Scratch realism
+
 Choose **Scratch realism** in **Edit ▸ Preferences… ▸ Effects** to control the
-character of held-platter scratching. **Off** is cleanest; **Medium** and
-**High** add progressively more vinyl-style texture.
+character of held-platter scratching. It softens the sound while the platter is
+held and adds a little groove texture; it does not affect regular timeline clips.
+**Off** is the clean, direct response, while **Medium** and **High** add
+progressively more vinyl character.
 
 ## Save your scratch
 

@@ -113,9 +113,10 @@ Global defaults for the per-clip DJ turntable effects (see
 [Brake and Backspin](/1.2.0/guide/clip-editor#turntable-effects-brake-and-backspin)):
 
 - **Brake** — the **Duration** (**Short**, **Medium**, or **Long**) and the
-  **Curve** (**linear**, **curved**, or **steep**) of the record-stop slowdown.
+  **Curve** (**linear**, **curved**, or **steep**) of the record-stop slowdown at
+  the end of a clip.
 - **Backspin** — the **Duration** and the **Intensity** (**gentle**, **medium**,
-  or **wild**) of the reverse rewind.
+  or **wild**) of the reverse rewind at the end of a clip.
 
 Changing these updates every clip that already uses the effect.
 
@@ -124,7 +125,8 @@ Changing these updates every clip that already uses the effect.
 These settings shape the [Scratch Editor](/1.2.0/guide/scratch-editor):
 
 - **Scratch realism** — choose **Off**, **Medium**, or **High** for increasingly
-  textured held-platter scratching. **Medium** is the default.
+  textured held-platter scratching. It affects only the Scratch Editor while the
+  platter is held. **Medium** is the default.
 - **Scratch crossfader cut** — choose **Z** or **M** as the key that toggles the
   Scratch Editor crossfader closed and open. **Z** is the default.
 

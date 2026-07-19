@@ -52,6 +52,33 @@ without hunting for the exact spot.
 - **Reverb** and **Delay** sends — how much of this track is sent to the shared
   project effects (below).
 
+### What the track effects sound like
+
+You do not need to know audio jargon to use these controls. Make a small change,
+listen, then keep, reduce, or reset it:
+
+- **Tone** is an EQ — it changes the balance of different parts of the sound.
+  **Bass** is the low thump and weight, **Mid** is much of the body of voices and
+  instruments, and **Treble** is the bright detail in cymbals and similar sounds.
+  Move a band above 0 dB to boost it or below 0 dB to cut it. For example, cutting
+  **Bass** can make a boomy track lighter, while boosting **Treble** can make it
+  clearer.
+- **Filter** removes part of the sound. Move it left to **LPF**: a low-pass filter
+  lets the low sounds through and removes the brighter high sounds, making the
+  track darker. Move it right to **HPF**: a high-pass filter lets the brighter
+  sounds through and removes the bass, making the track lighter and thinner. The
+  centre position is **Off**. Sweeping between these positions is useful for
+  transitions, build-ups, and drops.
+- **Compressor** reduces the difference between the loudest and quietest parts of
+  a track, which can make its level feel steadier. Raise **Amount** gently if a
+  track jumps out in places. It uses automatic makeup gain, so a higher setting
+  can also make the track seem louder; compare it with the setting reset before
+  deciding.
+- **Reverb** and **Delay** are sends: they copy some of the track to the shared
+  project effect, while the original track stays audible. Raise a track's
+  **Reverb** or **Delay** send to feed that effect. You must also raise that
+  effect's **Mix** in **Project FX** to hear it.
+
 ## Project FX
 
 The **Project FX** tab holds the two song-wide effects that every track can send
@@ -60,20 +87,48 @@ each track decides how much of itself to send in using its **Reverb** and
 **Delay** sends in [Track FX](#track-fx).
 
 - **Reverb** — a shared reverb for a sense of space, with four controls:
-  - **Size** — how large the space feels.
-  - **Decay** — how long the tail rings on.
-  - **Tone** — brightens or darkens the reverb.
-  - **Mix** — how much reverb you hear. At 0% the reverb is silent.
+  - **Size** — how large the space feels: small can feel close and tight, while
+    large can feel more like a hall.
+  - **Decay** — how quickly the reverb fades away.
+  - **Tone** — brightens or darkens the reverb itself, without changing the dry
+    track.
+  - **Mix** — how much of the reverb effect you hear. At 0% the reverb is silent.
 - **Delay** — a shared, tempo-locked echo:
   - **Time** — the spacing between echoes, in beats, locked to the project tempo
     (**1/4**, **1/8**, **1/8T** — an eighth-note triplet — or **1/16**).
-  - **Feedback** — how much the echo repeats.
-  - **Tone** — brightens or darkens the echoes.
-  - **Mix** — how much delay you hear. At 0% the delay is silent.
+  - **Feedback** — how much each echo is fed back to make another echo. Higher
+    settings make the repeats last longer.
+  - **Tone** — brightens or darkens the echoes themselves.
+  - **Mix** — how much delay effect you hear. At 0% the delay is silent.
 
 The controls read as a percentage — apart from **Time** — and you can
 **double-click** one to reset it to 0%. This shared setup is what lets several
 tracks sit in the same "room" together.
+
+::: tip
+To hear a shared effect, raise both its **Mix** in **Project FX** and the matching
+track send in **Track FX**. Start with a small send on one track, then adjust the
+shared effect to taste.
+:::
+
+## Turntable and scratch effects
+
+Silverdaw's vinyl-style effects are separate from **Track FX**. They change a
+single clip's ending or the feel of a scratch:
+
+- **Brake** slows the final part of a clip down to a stop, like pressing stop on a
+  turntable. The sound falls in pitch as it slows. Add it from the clip's
+  right-click menu or the Clip Editor; choose its **Duration** and **Curve** in
+  **Edit ▸ Preferences… ▸ Effects**. See
+  [Brake and Backspin](/1.2.0/guide/clip-editor#turntable-effects-brake-and-backspin).
+- **Backspin** replaces the final part of a clip with a fast reverse pull that
+  slows to a stop, like a DJ pulling vinyl back. Add it in the same places and
+  choose its **Duration** and **Intensity** in **Edit ▸ Preferences… ▸ Effects**.
+- **Scratch realism** applies only while a platter is held in the
+  [Scratch Editor](/1.2.0/guide/scratch-editor#scratch-realism). It softens the
+  held sound and adds a small amount of groove texture. **Off** is the clean,
+  direct response; **Medium** and **High** add progressively more vinyl
+  character.
 
 ## Automation: changing settings over time
 

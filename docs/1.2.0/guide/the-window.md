@@ -109,7 +109,7 @@ unchanged.
 
 ## The Clip Editor
 
-Double-click a clip (or right-click it and choose **Open in Editor**) to open the
-**Clip Editor**, a focused window for detailed work on a single clip: matching
+Double-click a clip (or right-click it and choose **Open in Clip Editor**) to open
+the **Clip Editor**, a focused window for detailed work on a single clip: matching
 tempo, shifting pitch, slicing into loops, shaping volume, and more. See
 [Editing Clips](/1.2.0/guide/clip-editor).

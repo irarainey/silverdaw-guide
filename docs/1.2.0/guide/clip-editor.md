@@ -1,7 +1,7 @@
 # Editing Clips
 
 For detailed work on a single clip, Silverdaw has the **Clip Editor**. Double-click
-a clip's body, or right-click it and choose **Open in Editor**, to open it.
+a clip's body, or right-click it and choose **Open in Clip Editor**, to open it.
 Everything here is non-destructive — your original file is never changed, and you
 can preview changes as you make them.
 
@@ -39,7 +39,7 @@ choose **Unlink from Library** first (see [linked clips](/1.2.0/guide/library#li
 The Clip Editor opens in one of two ways, and it helps to know which you're in:
 
 - **Editing a clip.** Double-click a clip's body on the timeline, or right-click
-  it and choose **Open in Editor**. You get the full editor — warp, pitch,
+  it and choose **Open in Clip Editor**. You get the full editor — warp, pitch,
   slicing, volume shaping, and turntable effects — and your changes are kept with
   **Save**.
 - **Previewing a file.** Double-click a [Library](/1.2.0/guide/library) tile (anywhere
@@ -192,11 +192,13 @@ is never altered.
 
 ## Turntable effects: Brake and Backspin
 
-Add a classic DJ move to the end of a clip, from the right-click menu or the Clip
-Editor toolbar (both with live preview):
+Shape the final part of a clip with a classic DJ move, from the right-click menu
+or the Clip Editor toolbar (both with live preview):
 
-- **Brake** — a vinyl record-stop that slows the clip to a halt.
-- **Backspin** — a reverse rewind, like pulling the record back.
+- **Brake** — a vinyl record-stop. It slows the final part of the clip until it
+  stops, making the sound fall in pitch as it slows.
+- **Backspin** — a reverse rewind. It replaces the final part of the clip with a
+  fast pull backwards that slows to a stop, like pulling the record back.
 
 A clip can have one of these at a time. **Reverse**, **Brake**, and **Backspin** are
 mutually exclusive — turn one on and the others stay visible but disabled until you
