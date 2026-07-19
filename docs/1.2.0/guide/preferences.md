@@ -103,7 +103,9 @@ Set up supported [MIDI Controllers](/1.2.0/guide/midi-controllers):
 - **Crossfader direction** — chooses **Left to right** or **Right to left** for
   each enabled controller.
 - **Default deck** — chooses **None**, **Deck 1 (Left)**, or **Deck 2 (Right)**.
-  A deck selection made on the controller takes priority.
+  This applies only when the controller has no saved **Headphone Cue / PFL**
+  setting. A setting made with that control takes priority and is retained for
+  the controller.
 
 ## Effects
 

@@ -21,7 +21,9 @@ Each enabled controller keeps its own settings:
   audio while you move through the timeline. It is off by default.
 - **Crossfader direction** chooses **Left to right** or **Right to left**.
 - **Default deck** chooses **None**, **Deck 1 (Left)**, or **Deck 2 (Right)**.
-  A deck selection made on the controller takes priority over this default.
+  This applies only when the controller has no saved **Headphone Cue / PFL**
+  setting. A setting made with that control takes priority and is retained for
+  the controller.
 
 The crossfader is used when recording in the Scratch Editor. It does not change
 the ordinary project mix.
@@ -34,6 +36,10 @@ Silverdaw can use controls such as:
 - **Play** to start or pause playback.
 - **Cue** to move to the previous marker, and **Shift + Cue** to move to the
   next marker where the controller supports it.
+- **Headphone Cue / PFL** to turn a physical deck's controls on or off in
+  Silverdaw, where the controller supports it. Each deck is independent, so
+  both can be active. In the [Scratch Editor](/1.2.0/guide/scratch-editor),
+  use it to choose the deck for the scratch session.
 - A platter or jog wheel to move the playhead. With **Play audio while moving
   the main timeline** enabled, touching and moving a compatible platter can
   audition audio.

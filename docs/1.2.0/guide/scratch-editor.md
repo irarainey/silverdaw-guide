@@ -40,7 +40,8 @@ move the platter. Click **Cancel** before that first touch to disarm it. Once
 recording begins, click **Stop** to finish the take.
 
 With a supported MIDI deck, use its platter and crossfader to perform the
-scratch.
+scratch. If the controller has a mapped **Headphone Cue / PFL** control, press
+the button for the physical deck you want to use for the scratch session.
 
 ## Experimental virtual-deck controls
 
