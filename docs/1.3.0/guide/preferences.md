@@ -142,10 +142,10 @@ uses to split a song into its parts:
 - **Cleanup** — optional per-stem tidying (**Vocal cleanup**, **Drum cleanup**,
   **Bass cleanup**, and **Other cleanup**), each with a **Light**, **Medium**, or
   **Strong** strength.
-- **Backup model** — a lower-quality fallback used automatically for any stem when
-  the models above aren't installed or can't run on your hardware. It's fetched on
-  first use if it's needed, so you don't normally download it yourself — but a
-  **Locate…** button is available if you already have it.
+- **Backup model** — a lower-quality fallback fetched before the first separation
+  that needs it — for example, when you select **Other** without selecting all
+  four parts. You don't normally download it yourself, but a **Locate…** button
+  is available if you already have it.
   Turn on **Always use the backup model** to force it even when the other models
   are installed.
 - **Hardware acceleration (experimental)** — **Use GPU acceleration for stem

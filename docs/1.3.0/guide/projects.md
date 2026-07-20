@@ -35,8 +35,9 @@ project:
 - **Project duration** — the overall length, entered as `mm:ss` or `h:mm:ss`.
   New projects start at 5 minutes; adding a first clip that runs longer
   automatically extends the project to fit the whole clip.
-- **Sample rate** — the audio rate for the project (44.1 or 48 kHz). Imports are
-  checked against this and offer a clear path if they differ.
+- **Sample rate** — the audio rate for the project (44.1 or 48 kHz). If an
+  imported file differs, choose whether to convert it to the project's rate or
+  switch the project to the file's supported rate.
 - **Bar counter start** — the number the first bar is labelled with. This starts
   at 1 by default, and can be set to 0 or lower to leave lead-in bars before bar
   one (handy for clips with a silent intro).

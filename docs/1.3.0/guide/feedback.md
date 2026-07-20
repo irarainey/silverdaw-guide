@@ -30,7 +30,8 @@ engine crashed while starting, attach the matching `backend-crash-<timestamp>.lo
 as well.
 
 For a problem that happens while Silverdaw is open, turn on **Write diagnostic
-logs** in **Edit ▸ Preferences… ▸ Developer**, reproduce the problem, then choose
-**Help ▸ Send Diagnostic Logs**. Silverdaw saves a zip in your
-`Silverdaw\Logs` folder, reveals it in Windows Explorer, and opens a prepared
-email to `support@silverdaw.com` for you to attach and send.
+logs** in **Edit ▸ Preferences… ▸ Developer**, click **Save**, then close and
+reopen Silverdaw. Reproduce the problem and choose **Help ▸ Send Diagnostic
+Logs**. Silverdaw saves a zip in your configured log folder
+(`Silverdaw\Logs` by default), reveals it in Windows Explorer, and opens a
+prepared email to `support@silverdaw.com` for you to attach and send.

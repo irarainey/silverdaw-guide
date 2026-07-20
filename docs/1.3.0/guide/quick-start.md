@@ -48,7 +48,7 @@ Because everything is non-destructive, your original file is never changed — y
 are only rearranging.
 
 To split a single clip at an exact point instead, move the playhead there and
-choose **Edit ▸ Split at Playhead**.
+choose **Edit ▸ Split Clip at Playhead**.
 
 ## 5. Add some effects
 

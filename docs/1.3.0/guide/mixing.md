@@ -117,8 +117,8 @@ whole project. Each track decides how much of itself to send to the shared
   - **Mix** — how much delay effect you hear. At 0% the delay is silent.
 - **Glue Compressor** — a single **Amount** control that gently brings the
   whole mix together after the shared effects.
-- **Safety Limiter** — turn on **Protect final output** to cap the final output
-  at **-1 dBFS**. It is off by default.
+- **Safety Limiter** — **Protect final output** caps the final output at
+  **-1 dBFS**. It is on by default; clear it to turn the guard off.
 
 The numeric controls read as a percentage — apart from **Time** — and you can
 **double-click** one to reset it to 0%. This shared setup is what lets several

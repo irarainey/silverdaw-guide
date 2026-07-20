@@ -23,8 +23,7 @@ Silverdaw imports these audio formats:
 - AIFF
 - FLAC
 - MP3
-- AAC / M4A / MP4
-- Windows Media audio (WMA)
+- M4A
 
 As soon as a file is imported, Silverdaw analyses it in the background to work out
 its **key**, **tempo (BPM)**, and **beat positions**. This is what lets clips line
@@ -39,11 +38,10 @@ none. You can hide the artwork for a denser, text-only Library with **Show image
 on library tiles** in [Preferences ▸ General](/1.3.0/guide/preferences#general).
 
 A small **type badge** in the bottom-right corner of each tile marks what the
-item is —
-a **Track** (imported audio), a **Stem** from [stem separation](/1.3.0/guide/stems), a
-saved **Sample**, or a **Scratch** — so its kind reads at a glance. The tile shows
-the badge as an icon; the [Show Information](#working-with-library-items) dialog
-spells the type out in words.
+item is — a **Track** (imported audio), a **Stem** from
+[stem separation](/1.3.0/guide/stems), a saved **Sample**, or a **Scratch** — so
+its kind reads at a glance. The tile shows the badge as an icon. **Show
+Information** identifies a Scratch item's baked audio as a **Sample**.
 
 ### Finding audio
 
@@ -54,8 +52,8 @@ the field is focused, to clear the filter.
 ### Sample rate check
 
 Each project has a [sample rate](/1.3.0/guide/projects#project-properties) (44.1 or
-48 kHz). When you import a file recorded at a different rate, Silverdaw tells you
-and offers a clear way forward, so your project stays consistent.
+48 kHz). When you import a file recorded at a different rate, choose **Convert
+to** the project's rate, or **Switch Project to** the file's supported rate.
 
 ## Adding audio to the timeline
 
@@ -178,7 +176,7 @@ Right-click a Library tile for the actions available to it (which vary by the ki
 of item):
 
 - **Show Information** — a read-only summary: file details, detected key, tempo,
-  and beats, cover art, and which tracks currently use the item.
+  and beats, cover art, the item's type, and which tracks currently use it.
 - **Rename** — give the item a clearer name. You can also double-click a tile's
   name text to edit it in place.
 - **Reanalyse File** — run the key, tempo, and beat detection again, for example

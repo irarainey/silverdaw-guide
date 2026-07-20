@@ -31,8 +31,6 @@ Silverdaw then analyses the audio and produces the separate parts, each on its o
 track for you to remix. Every stem keeps the original clip's tempo, key, and
 artwork, so it stays in step with the rest of your project.
 
-![The Separate Stems dialog](/1.3.0/images/stems-dialog.png)
-
 ## Removing reverb & echo from vocals
 
 When you tick **Vocals**, an extra option appears beneath it: **Remove Reverb &
@@ -60,9 +58,8 @@ Silverdaw has two kinds of separation model, and you manage both in
   are then used automatically. The **Separation models** section shows their
   status (**Not downloaded**, **Partly installed**, or **Installed**).
 - **A backup model** — a lower-quality fallback. Silverdaw fetches it
-  automatically the first time you separate stems if the high-quality models
-  aren't installed (or can't run on your hardware), so you can start separating
-  without any setup.
+  automatically when a separation needs it — for example, when you select
+  **Other** without selecting all four parts.
 
 ### Using models you already have
 

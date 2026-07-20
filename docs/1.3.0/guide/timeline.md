@@ -25,8 +25,9 @@ Select a clip by clicking it, then rearrange freely. The common actions are on t
 **Edit** menu and the clip right-click menu:
 
 - **Move** — drag a clip along a track, or to another track.
-- **Edit ▸ Split at Playhead** (<kbd>S</kbd>) — cut a clip into two at the
-  playhead.
+- **Split at Playhead** (<kbd>S</kbd>) — in a clip's right-click menu, choose
+  **Edit ▸ Split at Playhead** to cut it into two at the playhead. The menu-bar
+  command is **Edit ▸ Split Clip at Playhead**.
 - **Edit ▸ Duplicate** (<kbd>D</kbd>) — make a copy.
 - **Edit ▸ Cut**, **Copy**, **Paste** (<kbd>Ctrl</kbd>+<kbd>X</kbd> / <kbd>C</kbd> /
   <kbd>V</kbd>) — move clips around or between tracks. <kbd>Ctrl</kbd>+<kbd>V</kbd>

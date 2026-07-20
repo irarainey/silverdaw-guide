@@ -13,9 +13,9 @@ experimental, less expressive fallback when no deck is available.
 
 ## Open a scratch session
 
-Right-click a timeline clip or a Library item and choose **Open in Scratch
-Editor**. This opens a separate scratch session; it does not change the clip you
-opened.
+To open a separate scratch session, right-click a timeline clip and choose
+**Open ▸ Scratch Editor**. For a Library item, right-click it and choose **Open
+in Scratch Editor**. This does not change the clip you opened.
 
 In **Backing deck**, choose the material to play under the scratch:
 
