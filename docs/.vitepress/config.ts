@@ -15,7 +15,7 @@ function guideSidebar(version: string): DefaultTheme.SidebarItem[] {
         { text: 'Installation', link: `${base}/installation` },
         { text: 'Quick Start: Your First Remix', link: `${base}/quick-start` },
         { text: 'The Silverdaw Window', link: `${base}/the-window` },
-        ...(version === '1.2.0'
+        ...(['1.2.0', '1.3.0'].includes(version)
           ? [{ text: 'MIDI Controllers', link: `${base}/midi-controllers` }]
           : []),
       ],
@@ -33,7 +33,7 @@ function guideSidebar(version: string): DefaultTheme.SidebarItem[] {
       items: [
         { text: 'Arranging the Timeline', link: `${base}/timeline` },
         { text: 'Editing Clips', link: `${base}/clip-editor` },
-        ...(version === '1.2.0'
+        ...(['1.2.0', '1.3.0'].includes(version)
           ? [{ text: 'Scratch Editor', link: `${base}/scratch-editor` }]
           : []),
         { text: 'Mixing & Effects', link: `${base}/mixing` },
