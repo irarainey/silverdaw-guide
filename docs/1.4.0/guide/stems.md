@@ -31,6 +31,8 @@ Silverdaw then analyses the audio and produces the separate parts, each on its o
 track for you to remix. Every stem keeps the original clip's tempo, key, and
 artwork, so it stays in step with the rest of your project.
 
+![The Separate Stems dialog with parts selected](/1.4.0/images/stems-dialog.png)
+
 ## Removing reverb & echo from vocals
 
 When you tick **Vocals**, an extra option appears beneath it: **Remove Reverb &

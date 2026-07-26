@@ -49,6 +49,8 @@ Use the **Filter library** field beside **Import** to find items by their name,
 artist, or BPM. Click its **Clear filter** button, or press <kbd>Esc</kbd> while
 the field is focused, to clear the filter.
 
+![The Library with imported audio, stems, a saved clip, and the Filter library field](/1.4.0/images/library-panel.png)
+
 ### Sample rate check
 
 Each project has a [sample rate](/1.4.0/guide/projects#project-properties) (44.1 or
