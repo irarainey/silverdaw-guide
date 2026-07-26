@@ -93,4 +93,5 @@ the footer **Save** when you are ready to create or update its Library item.
 | Arm, cancel, or stop recording | <kbd>R</kbd> |
 | Play or stop the scratch pattern | <kbd>P</kbd> |
 | Clear the pattern | <kbd>C</kbd> |
+| Toggle the crossfader cut | <kbd>Z</kbd> or <kbd>M</kbd> |
 | Close the editor | <kbd>Esc</kbd> |

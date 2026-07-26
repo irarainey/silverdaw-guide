@@ -12,6 +12,9 @@ once your project contains audio to render.
 
 ![The Export Mixdown dialog](/1.4.0/images/export-dialog.png)
 
+Choose an **Output file**, or use **Browse…** to choose where to save it. When
+you have finished the settings below, click **Export**.
+
 ## Choosing a format
 
 Silverdaw can export to:
@@ -33,6 +36,14 @@ For 16-bit exports, a **Dither** option (TPDF) is available. Dithering is
 recommended, as it smooths out the tiny rounding that happens when reducing to
 16-bit.
 
+Choose a **Sample rate** of **44.1 kHz** or **48 kHz**. For MP3, choose a
+**Bitrate** of **128 kbps**, **192 kbps**, or **320 kbps**.
+
+## Adding tags
+
+**Tags (optional)** lets you add **Title**, **Artist**, **Album**, **Year**,
+**Genre**, and **Comment** details to the exported file.
+
 ## Loudness and level
 
 Optionally, Silverdaw can apply **loudness normalisation** so your export lands at
@@ -41,11 +52,12 @@ a consistent loudness. You can set a **Target LUFS** (the overall loudness) and 
 
 ## Choosing where the render starts and ends
 
-- **Start bar** — choose which bar the render begins from, so you can skip any
+- **Start from bar** — choose which bar the render begins from, so you can skip any
   lead-in.
-- **Length** — the render can follow the timeline, add a short tail of silence
-  after it, or **Trim to end of last clip** so it finishes exactly where your
-  music does.
+- **Tail** — add up to 60 seconds of silence after the timeline, so reverb and
+  delay can ring out.
+- **Length** — choose **Clip at duration** and enter a length, or **Trim to end
+  of last clip** so the render ends where your final clip does.
 
 ## After exporting
 

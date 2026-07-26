@@ -20,7 +20,7 @@ From the **File** menu (or the startup screen) you can:
   under a new name.
 
 To rename the current project, double-click its name in the title bar or click
-the pencil beside it (you can also press <kbd>F2</kbd>).
+the pencil beside it.
 
 ## Project properties
 

@@ -27,7 +27,6 @@ commands in the menus.
 | Copy | <kbd>Ctrl</kbd>+<kbd>C</kbd> |
 | Paste | <kbd>Ctrl</kbd>+<kbd>V</kbd> |
 | Trim Project to Last Clip | <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>T</kbd> |
-| Rename project | <kbd>F2</kbd> |
 
 ## Clips
 

@@ -154,3 +154,18 @@ uses to split a song into its parts:
 
 The **Quality** setting (Fast, Balanced, or Best) is selected when you run
 **Separate Stems**. Silverdaw remembers that choice for the next separation.
+
+## Developer
+
+Tools for diagnosing Silverdaw and MIDI devices:
+
+- **Write diagnostic logs** — records main, renderer, and backend logs for each
+  session. Choose a **Log folder** with **Browse…** if you do not want the
+  default location.
+- **Show Developer Tools** — allows the Chromium Developer Tools window and its
+  shortcuts. Enable this only when diagnosing the application.
+- **Open MIDI Monitor…** — shows the control codes and values sent by enabled
+  MIDI input devices.
+
+Save your changes and restart Silverdaw before changes to diagnostic logs,
+their folder, or Developer Tools take effect.

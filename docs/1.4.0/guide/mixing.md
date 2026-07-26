@@ -27,8 +27,8 @@ The overall level of your finished mix is shown by the master output meter.
 
 ::: tip
 To set an exact level, **double-click a track's gain number** to type a value in
-decibels (dB), or **double-click the master volume readout** in the transport bar
-to type the master level.
+decibels (dB). Use the transport's **Master volume** slider to adjust the overall
+level.
 :::
 
 ## Track FX

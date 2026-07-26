@@ -8,12 +8,12 @@ track, isolate a drum break, or drop the bass line onto its own track.
 Like everything else in Silverdaw, it's non-destructive: your original file is
 never changed.
 
-::: tip First time only: a one-off download
-The first time you separate stems, Silverdaw downloads the separation model it
-needs — a one-time download of about 1 GB, so you'll need an internet connection
-just that once. It's stored on your computer and reused for every separation
-afterwards, so from then on separation works offline. The models are hosted on
-[Hugging Face](https://huggingface.co/silverdaw).
+::: tip Downloading models
+The first stem separation downloads the primary models (about 1 GB), so you need
+an internet connection. A later separation that needs the backup model can
+download that model too. Installed models are stored on your computer and reused,
+so separation works offline once the models it needs are available. The models are
+hosted on [Hugging Face](https://huggingface.co/silverdaw).
 :::
 
 ## Separating a track
@@ -23,9 +23,9 @@ opens with no stems selected: tick the parts you want — **Vocals**, **Drums**,
 **Bass**, and **Other** — choose a **Quality** setting, then click **Start**.
 **Start** stays disabled until you've ticked at least one part.
 
-The first time you separate stems, if the model Silverdaw needs isn't on your
-computer yet, it asks to download it once. Separation begins only after that
-download finishes; every separation after that starts straight away.
+When the model Silverdaw needs is not on your computer, it asks to download it.
+Separation begins after that download finishes. Once the required models are
+installed, later separations start straight away.
 
 Silverdaw then analyses the audio and produces the separate parts, each on its own
 track for you to remix. Every stem keeps the original clip's tempo, key, and

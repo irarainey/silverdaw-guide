@@ -63,7 +63,7 @@ Each track has a header on the left with its controls:
 - A **track effects** toggle that shows or hides the [Track FX](/1.4.0/guide/mixing) for
   that track.
 - An **automation** toggle that shows or hides the track's
-  [automation lane](/1.4.0/guide/mixing#automation-changing-settings-over-time), where
+  [automation lanes](/1.4.0/guide/mixing#automation-changing-settings-over-time), where
   you draw curves that change settings over time.
 
 Single-click a track's **name** to rename it in place.

@@ -10,9 +10,10 @@ released under the GNU Affero General Public License v3.0.
 - **Graphics card (optional):** a compatible GPU can speed up
   [stem separation](/1.4.0/guide/stems), but it is not required — Silverdaw can do the
   same work on the processor, just more slowly.
-- **Internet connection (first stem separation only):** the first time you
-  separate stems, Silverdaw downloads the separation model it needs (about 1 GB).
-  This is a one-time download, after which stem separation works offline.
+- **Internet connection (for stem models):** the first stem separation downloads
+  the primary models (about 1 GB). A later separation that needs the backup model
+  can download that model too. Once the required models are installed, stem
+  separation works offline.
 - **MIDI DJ controller (optional):** connect a supported controller after
   installation, then set it up in [MIDI Controllers](/1.4.0/guide/midi-controllers).
 
@@ -74,7 +75,8 @@ When Silverdaw opens, you are greeted by the startup screen, which invites you t
 
 - **New Project** — begin a fresh, empty project.
 - **Open Project…** — open a project you saved earlier.
-- **Recent Projects** — jump back into projects you opened recently.
+- **Recent Projects** — appears after you have opened projects, letting you jump
+  back into them.
 
 Once you are in, the next step is to make some sound. Head to the
 [Quick Start](/1.4.0/guide/quick-start) to build your first remix, or take the

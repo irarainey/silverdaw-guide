@@ -277,5 +277,5 @@ and jumps the view to the start.
 
 Effects and levels don't have to stay fixed — you can draw **automation** that
 changes them across the timeline, such as a filter sweep or a fade. Automation is
-edited in a lane under each track; see
+edited in lanes under each track; see
 [Automation](/1.4.0/guide/mixing#automation-changing-settings-over-time).
