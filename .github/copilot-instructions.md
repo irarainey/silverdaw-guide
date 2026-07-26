@@ -85,3 +85,8 @@ When generating or updating content, follow this order:
 
 - Markdown/VitePress authoring conventions for pages under `docs/` are defined
   in `.github/instructions/markdown.instructions.md`.
+
+## Git workflow
+
+Never create a Git commit after changing files. Leave all changes uncommitted for
+the user to review and commit.
