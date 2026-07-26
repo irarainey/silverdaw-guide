@@ -3,6 +3,8 @@
 This page is a quick tour of the main parts of the Silverdaw window, so you know
 where everything lives before you start building a mix.
 
+![Overview of the Silverdaw window with its main areas labelled](/1.4.0/images/window-overview.png)
+
 ## The menu bar
 
 Along the top you'll find the main menus:
@@ -87,6 +89,8 @@ The panel across the bottom has three tabs:
 You can collapse the panel when you need more room for the timeline, and expand
 it again when you need it — from the panel's header, with <kbd>Ctrl</kbd>+<kbd>J</kbd>,
 or **View ▸ Toggle Library / FX Panel**.
+
+![The bottom panel showing the Library, Track FX, and Project FX tabs](/1.4.0/images/window-bottom-panel.png)
 
 ## Choosing your audio output
 
