@@ -1,9 +1,9 @@
 name: Deploy Guide to GitHub Pages
 
 on:
-  push:
+  pull_request:
     branches: [main]
-  workflow_dispatch:
+    types: [closed]
 
 # Allow the workflow to publish to GitHub Pages.
 permissions:
@@ -18,12 +18,14 @@ concurrency:
 
 jobs:
   build:
+    if: github.event.pull_request.merged == true
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v7
         with:
           fetch-depth: 0
+          ref: ${{ github.sha }}
 
       - name: Setup Node
         uses: actions/setup-node@v6
