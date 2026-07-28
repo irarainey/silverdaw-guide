@@ -35,7 +35,9 @@ Silverdaw can use controls such as:
 
 - **Play** to start or pause playback.
 - **Cue** to move to the previous marker, and **Shift + Cue** to move to the
-  next marker where the controller supports it.
+  next marker where the controller supports it. The start of an active
+  [timeline range](/1.4.1/guide/timeline#playing-a-timeline-range) counts as a
+  marker for these.
 - **Sync** as a jog modifier that snaps jog movement to timeline grid lines. It
   does not synchronise tempo.
 - **Headphone Cue / PFL** to turn a physical deck's controls on or off in

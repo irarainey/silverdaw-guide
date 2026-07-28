@@ -55,11 +55,16 @@ These act on the currently selected track.
 | --- | --- |
 | Play / Stop | <kbd>Space</kbd> |
 | Toggle the metronome | <kbd>K</kbd> |
+| Toggle **Loop Selection** for the timeline range | <kbd>L</kbd> |
 | Move playhead one grid line | <kbd>←</kbd> / <kbd>→</kbd> |
 | Move playhead by a zoom-dependent fine step | <kbd>Alt</kbd>+<kbd>←</kbd> / <kbd>→</kbd> |
 | Toggle a marker at the playhead | <kbd>M</kbd> |
 | Previous / next marker | <kbd>Ctrl</kbd>+<kbd>←</kbd> / <kbd>→</kbd> |
 | Skip to project start / end | <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>←</kbd> / <kbd>→</kbd> or <kbd>Home</kbd> / <kbd>End</kbd> |
+
+With a [timeline range](/1.4.1/guide/timeline#playing-a-timeline-range) selected,
+<kbd>Space</kbd> plays it from its start, and the marker shortcuts treat the
+range start as a marker.
 
 ## View
 

@@ -15,7 +15,8 @@ Audio lives on horizontal **tracks**, and each piece of audio is a **clip**. You
 can have as many tracks as you need — add one with **File ▸ Add Track…**
 (<kbd>Ctrl</kbd>+<kbd>T</kbd>). A new track is selected automatically, so pasting a
 clip, the mute / solo shortcuts, and the FX rack all act on it straight away. Drag
-a track header to reorder tracks, and drag its edge to resize it.
+a track header to reorder tracks, and drag its edge to resize it — it stops
+shrinking where its own buttons would start to squash.
 
 You can also import directly as you arrange: drag a single audio file from
 Windows Explorer onto a track to import and place it there. Drop it on empty
@@ -217,13 +218,21 @@ whole project. The range is shaded over every track. Dragging the playhead itsel
 still only moves the playhead.
 
 The range snaps to the timeline grid. Hold <kbd>Alt</kbd> while dragging to
-place its boundaries freely between grid lines. A click on the ruler without
-dragging clears the range and moves the playhead.
+place its boundaries freely between grid lines. Drag to either edge of the view
+and the timeline scrolls along with you, so a range can be longer than the part
+of the project you can see; when you let go, the view comes back to the playhead
+at the range start. A click on the ruler without dragging clears the range and
+moves the playhead.
 
 With a range selected, the transport's Play control becomes **Play Selection** and
-starts at its beginning. Playback pauses when it reaches the end of the range.
-Turn on **Loop Selection** in the transport to repeat the range instead; Reverb
-and Delay tails continue naturally as it wraps.
+starts at its beginning — as does <kbd>Space</kbd>. If the range starts off-screen,
+the view scrolls to it. Playback pauses exactly at the end of the range, so playing
+again replays the range from its start rather than carrying on past it.
+
+Turn on **Loop Selection** in the transport, or press <kbd>L</kbd>, to repeat the
+range instead of stopping at its end. The loop restarts seamlessly, and Reverb and
+Delay tails continue naturally as it wraps. <kbd>L</kbd> does nothing when no range
+is selected.
 
 <kbd>Esc</kbd> clears the range and turns off **Loop Selection** first. Without a
 range, it then clears selected clips (and any selected automation point), keeping
@@ -231,8 +240,10 @@ the selected track; press it again to clear the track too. The range and its loo
 setting are saved with the project, but are not undoable. Clear the range when
 you want the usual full-project playback.
 
-The transport's previous and next buttons also treat the range start as a jump
-point while a range is active.
+While a range is active, its start also acts as a temporary jump point: the
+transport's previous and next buttons, <kbd>Ctrl</kbd>+<kbd>←</kbd> /
+<kbd>Ctrl</kbd>+<kbd>→</kbd>, and a MIDI controller's Cue buttons all step to it,
+without adding a saved marker.
 
 <!-- Image placeholder: a shaded timeline range and the Loop Selection transport control. -->
 
@@ -249,7 +260,8 @@ They appear as small triangles on the ruler and are saved with the project.
   never get in each other's way.)
 - **Jump between markers** — press <kbd>Ctrl</kbd>+<kbd>←</kbd> and
   <kbd>Ctrl</kbd>+<kbd>→</kbd> to move the playhead to the previous or next
-  marker.
+  marker. The start of an active [timeline range](#playing-a-timeline-range)
+  counts as a marker here too.
 
 You can also set the transport's previous / next buttons to step through markers
 instead of jumping to the project ends — see **Previous / next buttons** in

@@ -161,7 +161,9 @@ Click the **A** button on a track header to show its automation lane, then draw 
 **Filter**. The **A** button beside **Pan** opens a Pan lane instead.
 
 Use the `+` button (**Add automation lane**) to show another parameter at the
-same time, then choose its parameter in the **Automation parameter** picker. A
+same time, then choose its parameter in the lane's parameter picker. If the track
+header is too narrow to show a parameter's full name, the picker shortens it and
+gives the full name in its tooltip. A
 parameter can appear in only one visible lane. The `x` button (**Remove this
 automation lane**) only hides its lane; it does not delete the curve. Each lane
 has its own height, and the visible lanes, their order, and their heights are

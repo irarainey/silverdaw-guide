@@ -71,6 +71,8 @@ Each track has a header on the left with its controls:
 Single-click a track's **name** to rename it in place.
 
 Drag the edge of a track header to resize it, and drag headers to reorder tracks.
+Headers stop shrinking at the point where their own buttons would start to
+squash, so the controls always stay usable.
 The overall level of your mix is shown by the master output meter.
 
 ![Close-up of a single track header showing its controls](/1.4.1/images/window-track-header.png)
