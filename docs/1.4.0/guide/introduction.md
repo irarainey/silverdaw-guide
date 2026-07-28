@@ -63,4 +63,8 @@ If you have already installed Silverdaw and want to dive straight in, head to th
 Otherwise, start with [Installation](/1.4.0/guide/installation), then take the
 [tour of the Silverdaw window](/1.4.0/guide/the-window).
 
+If terms like *sample rate*, *bit depth*, or *WAV* are new to you,
+[Digital Audio Basics](/1.4.0/guide/digital-audio-basics) explains them in plain
+language. You do not need it to make a mix.
+
 > This guide targets Silverdaw version 1.4.0.

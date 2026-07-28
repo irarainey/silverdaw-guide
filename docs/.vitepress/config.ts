@@ -46,6 +46,14 @@ function guideSidebar(version: string): DefaultTheme.SidebarItem[] {
     {
       text: 'Reference',
       items: [
+        ...(['1.4.0'].includes(version)
+          ? [
+              {
+                text: 'Digital Audio Basics',
+                link: `${base}/digital-audio-basics`,
+              },
+            ]
+          : []),
         { text: 'Preferences', link: `${base}/preferences` },
         { text: 'Keyboard Shortcuts', link: `${base}/shortcuts` },
         { text: 'Feedback & Support', link: `${base}/feedback` },
