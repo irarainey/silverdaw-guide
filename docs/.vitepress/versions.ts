@@ -19,6 +19,7 @@ export interface DocVersion {
 // Newest first. The first entry is treated as the latest by convention, but the
 // default served to visitors is controlled explicitly by `latestVersion` below.
 export const versions: DocVersion[] = [
+  { version: '1.4.2', label: 'v1.4.2' },
   { version: '1.4.1', label: 'v1.4.1' },
   { version: '1.4.0', label: 'v1.4.0' },
   { version: '1.3.0', label: 'v1.3.0' },
@@ -29,7 +30,7 @@ export const versions: DocVersion[] = [
 
 // The default version loaded when a visitor arrives without a version in the URL
 // (via the landing page, the top navigation, and the unversioned-link redirect).
-export const latestVersion = '1.4.1'
+export const latestVersion = '1.4.2'
 
 /** All known version identifiers, for route matching. */
 export const versionIds: string[] = versions.map((v) => v.version)
