@@ -2,7 +2,7 @@
 
 Silverdaw can use supported MIDI DJ controllers to control playback, navigate the
 timeline, change the selected track's mixer settings, and perform scratches in
-the [Scratch Editor](/1.4.2/guide/scratch-editor).
+the [Scratch Editor](/1.4/guide/scratch-editor).
 
 ## Connect and enable a controller
 
@@ -36,13 +36,13 @@ Silverdaw can use controls such as:
 - **Play** to start or pause playback.
 - **Cue** to move to the previous marker, and **Shift + Cue** to move to the
   next marker where the controller supports it. The start of an active
-  [timeline range](/1.4.2/guide/timeline#playing-a-timeline-range) counts as a
+  [timeline range](/1.4/guide/timeline#playing-a-timeline-range) counts as a
   marker for these.
 - **Sync** as a jog modifier that snaps jog movement to timeline grid lines. It
   does not synchronise tempo.
 - **Headphone Cue / PFL** to turn a physical deck's controls on or off in
   Silverdaw, where the controller supports it. Each deck is independent, so
-  both can be active. In the [Scratch Editor](/1.4.2/guide/scratch-editor),
+  both can be active. In the [Scratch Editor](/1.4/guide/scratch-editor),
   use it to choose the deck for the scratch session.
 - A platter or jog wheel to move the playhead. With **Play audio while moving
   the main timeline** enabled, touching and moving a compatible platter can
@@ -63,7 +63,7 @@ Silverdaw can use controls such as:
 - Channel faders, EQ, filters, and master level controls to adjust the selected
   track or project when the profile provides them.
 
-While the [Scratch Editor](/1.4.2/guide/scratch-editor) is open, its controls
+While the [Scratch Editor](/1.4/guide/scratch-editor) is open, its controls
 take over the controller's platter, crossfader, and playback controls for the
 scratch session.
 
@@ -79,7 +79,7 @@ physical control instead of making an abrupt jump. Move the control until its
 position is synchronised before making a precise adjustment.
 
 The crossfader does not use this soft catch-up. Before recording in the
-[Scratch Editor](/1.4.2/guide/scratch-editor), move the physical crossfader once
+[Scratch Editor](/1.4/guide/scratch-editor), move the physical crossfader once
 to send its current position to Silverdaw.
 
 ## Supported MIDI decks

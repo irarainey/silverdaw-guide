@@ -8,14 +8,14 @@ released under the GNU Affero General Public License v3.0.
 - **Operating system:** Windows 10 (version 1809 or later) or Windows 11, 64-bit.
 - **Disk space:** room for the application, plus your projects and audio files.
 - **Graphics card (optional):** a compatible GPU can speed up
-  [stem separation](/1.4.2/guide/stems), but it is not required — Silverdaw can do the
+  [stem separation](/1.4/guide/stems), but it is not required — Silverdaw can do the
   same work on the processor, just more slowly.
 - **Internet connection (for stem models):** the first stem separation downloads
   the primary models (about 1 GB). A later separation that needs the backup model
   can download that model too. Once the required models are installed, stem
   separation works offline.
 - **MIDI DJ controller (optional):** connect a supported controller after
-  installation, then set it up in [MIDI Controllers](/1.4.2/guide/midi-controllers).
+  installation, then set it up in [MIDI Controllers](/1.4/guide/midi-controllers).
 
 ## Getting Silverdaw
 
@@ -79,8 +79,8 @@ When Silverdaw opens, you are greeted by the startup screen, which invites you t
   back into them.
 
 Once you are in, the next step is to make some sound. Head to the
-[Quick Start](/1.4.2/guide/quick-start) to build your first remix, or take the
-[tour of the Silverdaw window](/1.4.2/guide/the-window) first.
+[Quick Start](/1.4/guide/quick-start) to build your first remix, or take the
+[tour of the Silverdaw window](/1.4/guide/the-window) first.
 
 > If you do not hear anything when you press play, check that the right audio
-> output is selected. See [Choosing your audio output](/1.4.2/guide/the-window#choosing-your-audio-output).
+> output is selected. See [Choosing your audio output](/1.4/guide/the-window#choosing-your-audio-output).

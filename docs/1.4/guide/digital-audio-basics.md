@@ -24,7 +24,7 @@ Every sound wave has two basic properties:
 - **Amplitude** — how big the wave is. This is what you hear as **volume**.
 
 Those two ideas sit behind a lot of Silverdaw. The **Tone** and **Filter**
-controls in [Mixing & Effects](/1.4.2/guide/mixing) work on frequency, turning
+controls in [Mixing & Effects](/1.4/guide/mixing) work on frequency, turning
 ranges of the sound up or down. Every fader, gain number, and meter works on
 amplitude.
 
@@ -59,12 +59,12 @@ Neither is "better" for a remix. What matters is that everything in a project
 agrees.
 
 - Each project has one **Sample rate**, set in **File ▸ Project Properties…**.
-  See [Projects](/1.4.2/guide/projects#project-properties).
+  See [Projects](/1.4/guide/projects#project-properties).
 - New projects use the **Default project sample rate** from
-  [Preferences ▸ Audio](/1.4.2/guide/preferences#audio).
+  [Preferences ▸ Audio](/1.4/guide/preferences#audio).
 - If you import a file recorded at a different rate, Silverdaw asks whether to
   **Convert to** the project's rate or **Switch Project to** the file's rate.
-  See [Importing & the Library](/1.4.2/guide/library#sample-rate-check).
+  See [Importing & the Library](/1.4/guide/library#sample-rate-check).
 
 ::: tip
 If most of your material comes from music files, 44.1 kHz is a sensible default.
@@ -98,7 +98,7 @@ those small changes never run out of space.
 In Silverdaw you do not have to think about this while you work. Audio is
 processed internally in 32-bit floating point from start to finish, and only
 converted to a final bit depth when you
-[export a mixdown](/1.4.2/guide/export). Export defaults to **16-bit**, with
+[export a mixdown](/1.4/guide/export). Export defaults to **16-bit**, with
 24-bit and 32-bit float available depending on the format.
 
 ::: tip
@@ -106,7 +106,7 @@ When you export at 16-bit, turn on the **Dither** option. It smooths out the
 tiny rounding that happens when the audio is reduced to fewer levels.
 :::
 
-The **Bit Crusher** in [Track FX](/1.4.2/guide/mixing#track-fx) uses the same
+The **Bit Crusher** in [Track FX](/1.4/guide/mixing#track-fx) uses the same
 ideas deliberately in reverse: its **Bits** control coarsens the loudness
 measurements and its **Rate** control coarsens how often they are taken, giving
 a crunchy, lo-fi sound.
@@ -145,10 +145,10 @@ stereo file.
 - **Pan**, on each track header, places that track in the stereo field.
 - **Transform ▸ Split Stereo Channels…** splits a stereo clip's **Left** and
   **Right** sides onto their own clips, which is useful when the two sides carry
-  different material. See [Arranging the Timeline](/1.4.2/guide/timeline).
+  different material. See [Arranging the Timeline](/1.4/guide/timeline).
 - Clips can be drawn as a **Single waveform** or as **Left and right** lanes —
   set **Waveform display** in
-  [Preferences ▸ General](/1.4.2/guide/preferences#general). Mono clips always
+  [Preferences ▸ General](/1.4/guide/preferences#general). Mono clips always
   show a single waveform.
 
 ## Loudness and levels
@@ -165,9 +165,9 @@ off, which is called **clipping** and sounds harsh and distorted. Watching the
 master output meter and leaving a little space below the top is the simplest way
 to avoid it. Silverdaw also has a **Safety Limiter**, whose **Protect final
 output** option caps the final output at -1 dBFS. It is on by default — see
-[Mixing & Effects](/1.4.2/guide/mixing).
+[Mixing & Effects](/1.4/guide/mixing).
 
-Two more terms appear in the [Export Mixdown](/1.4.2/guide/export) dialog, where
+Two more terms appear in the [Export Mixdown](/1.4/guide/export) dialog, where
 loudness normalisation can put your export at a consistent level:
 
 - **LUFS** measures *perceived* loudness over the whole track — how loud it
@@ -219,6 +219,6 @@ compressing audio that was already compressed makes it worse.
 
 ## Where next
 
-- [Importing & the Library](/1.4.2/guide/library) — getting audio into a project.
-- [Mixing & Effects](/1.4.2/guide/mixing) — shaping levels and tone.
-- [Exporting a Mixdown](/1.4.2/guide/export) — turning the project into a file.
+- [Importing & the Library](/1.4/guide/library) — getting audio into a project.
+- [Mixing & Effects](/1.4/guide/mixing) — shaping levels and tone.
+- [Exporting a Mixdown](/1.4/guide/export) — turning the project into a file.

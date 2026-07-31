@@ -1,8 +1,8 @@
 # Scratch Editor
 
 The **Scratch Editor** lets you record or draw vinyl-style scratch patterns, then
-save them as reusable audio in the [Library](/1.4.2/guide/library). It works with
-a supported [MIDI controller](/1.4.2/guide/midi-controllers) or its on-screen
+save them as reusable audio in the [Library](/1.4/guide/library). It works with
+a supported [MIDI controller](/1.4/guide/midi-controllers) or its on-screen
 controls.
 
 ::: warning

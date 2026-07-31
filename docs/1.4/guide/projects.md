@@ -27,7 +27,7 @@ the pencil beside it.
 Open **File ▸ Project Properties…** to view and set details for the current
 project:
 
-![The Project Properties dialog](/1.4.2/images/project-properties.png)
+![The Project Properties dialog](/1.4/images/project-properties.png)
 
 - **Project name** — the name of the project.
 - **Tempo (BPM)** — the project's tempo, which the grid, metronome, and
@@ -62,7 +62,7 @@ them using **Relink** (see below).
 
 You can also copy generated stems and samples from another saved project with
 **File ▸ Import from Project…**. See
-[Importing from another project](/1.4.2/guide/library#importing-from-another-project).
+[Importing from another project](/1.4/guide/library#importing-from-another-project).
 
 ## Relinking moved files
 

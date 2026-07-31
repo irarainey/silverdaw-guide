@@ -35,11 +35,11 @@ the panel shows how many items the project contains. Each tile shows the item's
 name, and — where the details are known — its length, detected key, and detected
 tempo (BPM). Tiles also show the track's cover art, or a simple icon when there's
 none. You can hide the artwork for a denser, text-only Library with **Show images
-on library tiles** in [Preferences ▸ General](/1.4.2/guide/preferences#general).
+on library tiles** in [Preferences ▸ General](/1.4/guide/preferences#general).
 
 A small **type badge** in the bottom-right corner of each tile marks what the
 item is — a **Track** (imported audio), a **Stem** from
-[stem separation](/1.4.2/guide/stems), a saved **Sample**, or a **Scratch** — so
+[stem separation](/1.4/guide/stems), a saved **Sample**, or a **Scratch** — so
 its kind reads at a glance. The tile shows the badge as an icon. **Show
 Information** identifies a Scratch item's baked audio as a **Sample**.
 
@@ -49,11 +49,11 @@ Use the **Filter library** field beside **Import** to find items by their name,
 artist, or BPM. Click its **Clear filter** button, or press <kbd>Esc</kbd> while
 the field is focused, to clear the filter.
 
-![The Library with imported audio, stems, a saved clip, and the Filter library field](/1.4.2/images/library-panel.png)
+![The Library with imported audio, stems, a saved clip, and the Filter library field](/1.4/images/library-panel.png)
 
 ### Sample rate check
 
-Each project has a [sample rate](/1.4.2/guide/projects#project-properties) (44.1 or
+Each project has a [sample rate](/1.4/guide/projects#project-properties) (44.1 or
 48 kHz). When you import a file recorded at a different rate, choose **Convert
 to** the project's rate, or **Switch Project to** the file's supported rate.
 
@@ -70,7 +70,7 @@ project folder; it does not list the project you already have open.
 Silverdaw copies the selected files into the current project, so the copy is
 independent and the source project is never changed. A Scratch sample also brings
 its linked Scratch pattern and source-audio snapshot, so it remains usable in the
-[Scratch Editor](/1.4.2/guide/scratch-editor). Missing or unreadable files are
+[Scratch Editor](/1.4/guide/scratch-editor). Missing or unreadable files are
 shown as unavailable and cannot be selected.
 
 Tracks, timeline clips, markers, automation, and settings are not imported. Use
@@ -103,7 +103,7 @@ you work:
   to Library** to keep a reusable copy of it (with its current edits) for use
   elsewhere in the project. Saved clips are grouped under the source they came
   from; use the small chevron on a source to **Show saved clips** or **Hide saved
-  clips**. Copies you drag onto the timeline stay [linked](/1.4.2/guide/library#linked-clips)
+  clips**. Copies you drag onto the timeline stay [linked](/1.4/guide/library#linked-clips)
   to the saved clip; to detach one, use **Unlink from Library**.
 - **Save as Sample…** — right-click a clip and choose **Library ▸ Save as
   Sample…** to "bake" it down to a fresh audio sample that commits its current sound. This is
@@ -123,7 +123,7 @@ When you save a sample, Silverdaw asks which kind you want:
 Choose **Music** or **Simple** in the **Save as Sample…** dialog.
 
 Slicing a clip can also produce new samples — see
-[Slicing loops](/1.4.2/guide/clip-editor#slicing-a-clip-into-loops).
+[Slicing loops](/1.4/guide/clip-editor#slicing-a-clip-into-loops).
 
 ## Linked clips
 
@@ -157,7 +157,7 @@ shared properties are:
 - **Brake** and **Backspin**, and
 - the **volume envelope**.
 
-You make these changes in the [Clip Editor](/1.4.2/guide/clip-editor) (they apply when
+You make these changes in the [Clip Editor](/1.4/guide/clip-editor) (they apply when
 you click **Save**) or from **Transform ▸ Warp**, **Transform ▸ Pitch**, and
 **Effects ▸ Reverse**, **Brake**, or **Backspin** in the clip's right-click menu.
 Either way, Silverdaw warns you
@@ -210,7 +210,7 @@ of item):
   Music**.
 - **Update Image…** — set your own cover picture for the tile.
 - **Open in Scratch Editor** — create or continue a scratch pattern from the
-  item. See [Scratch Editor](/1.4.2/guide/scratch-editor).
+  item. See [Scratch Editor](/1.4/guide/scratch-editor).
 - **Remove Image** / **Restore Image** — hide or bring back a tile's cover art,
   without deleting the picture file.
 - **Remove** — take the item out of the project. Sources still in use by a clip
@@ -219,7 +219,7 @@ of item):
 
 ::: warning
 If you turn on **Clean up project files on remove** in
-[Preferences ▸ Project](/1.4.2/guide/preferences#project), removing a stem or sample
+[Preferences ▸ Project](/1.4/guide/preferences#project), removing a stem or sample
 also **deletes its generated file from disk**, which can't be undone. Your
 original imported files are never deleted. This setting is off by default, so
 normally **Remove** only unlinks the item from the project.

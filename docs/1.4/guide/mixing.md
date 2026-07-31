@@ -139,13 +139,13 @@ single clip's ending or the feel of a scratch:
   turntable. The sound falls in pitch as it slows. Add it from **Effects ▸
   Brake** in a clip's right-click menu or the Clip Editor; choose its **Duration** and **Curve** in
   **Edit ▸ Preferences… ▸ Effects**. See
-  [Brake and Backspin](/1.4.2/guide/clip-editor#turntable-effects-brake-and-backspin).
+  [Brake and Backspin](/1.4/guide/clip-editor#turntable-effects-brake-and-backspin).
 - **Backspin** replaces the final part of a clip with a fast reverse pull that
   slows to a stop, like a DJ pulling vinyl back. Add it from **Effects ▸
   Backspin** in the same places and
   choose its **Duration** and **Intensity** in **Edit ▸ Preferences… ▸ Effects**.
 - **Scratch realism** applies only while a platter is held in the
-  [Scratch Editor](/1.4.2/guide/scratch-editor#scratch-realism). It softens the
+  [Scratch Editor](/1.4/guide/scratch-editor#scratch-realism). It softens the
   held sound and adds a small amount of groove texture. **Off** is the clean,
   direct response; **Medium** and **High** add progressively more vinyl
   character.
@@ -169,7 +169,7 @@ automation lane**) only hides its lane; it does not delete the curve. Each lane
 has its own height, and the visible lanes, their order, and their heights are
 saved with the project. You can automate:
 
-![A track with its automation lane open and a breakpoint curve](/1.4.2/images/mixing-automation.png)
+![A track with its automation lane open and a breakpoint curve](/1.4/images/mixing-automation.png)
 
 <!-- Image placeholder: two visible automation lanes for different parameters on one track. -->
 

@@ -62,7 +62,7 @@ These act on the currently selected track.
 | Previous / next marker | <kbd>Ctrl</kbd>+<kbd>←</kbd> / <kbd>→</kbd> |
 | Skip to project start / end | <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>←</kbd> / <kbd>→</kbd> or <kbd>Home</kbd> / <kbd>End</kbd> |
 
-With a [timeline range](/1.4.2/guide/timeline#playing-a-timeline-range) selected,
+With a [timeline range](/1.4/guide/timeline#playing-a-timeline-range) selected,
 <kbd>Space</kbd> plays it from its start, and the marker shortcuts treat the
 range start as a marker.
 
@@ -80,7 +80,7 @@ range start as a marker.
 
 ## In the Clip Editor
 
-These apply while the [Clip Editor](/1.4.2/guide/clip-editor) is open.
+These apply while the [Clip Editor](/1.4/guide/clip-editor) is open.
 
 | Action | Shortcut |
 | --- | --- |
@@ -98,7 +98,7 @@ These apply while the [Clip Editor](/1.4.2/guide/clip-editor) is open.
 
 ## In the Scratch Editor
 
-These apply while the [Scratch Editor](/1.4.2/guide/scratch-editor) is open.
+These apply while the [Scratch Editor](/1.4/guide/scratch-editor) is open.
 
 | Action | Shortcut |
 | --- | --- |

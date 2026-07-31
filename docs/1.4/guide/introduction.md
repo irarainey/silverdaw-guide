@@ -59,12 +59,12 @@ else easier to follow:
 ## How to use this guide
 
 If you have already installed Silverdaw and want to dive straight in, head to the
-[Quick Start](/1.4.2/guide/quick-start) and build your first remix in a few minutes.
-Otherwise, start with [Installation](/1.4.2/guide/installation), then take the
-[tour of the Silverdaw window](/1.4.2/guide/the-window).
+[Quick Start](/1.4/guide/quick-start) and build your first remix in a few minutes.
+Otherwise, start with [Installation](/1.4/guide/installation), then take the
+[tour of the Silverdaw window](/1.4/guide/the-window).
 
 If terms like *sample rate*, *bit depth*, or *WAV* are new to you,
-[Digital Audio Basics](/1.4.2/guide/digital-audio-basics) explains them in plain
+[Digital Audio Basics](/1.4/guide/digital-audio-basics) explains them in plain
 language. You do not need it to make a mix.
 
-> This guide targets Silverdaw version 1.4.2.
+> This guide targets Silverdaw version 1.4.x.

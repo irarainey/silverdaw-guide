@@ -2,7 +2,7 @@
 
 This short walkthrough takes you from an empty project to a simple remix: import a
 song, chop it into loops, add a couple of effects, and export the result. It
-assumes Silverdaw is already [installed](/1.3.0/guide/installation) and open.
+assumes Silverdaw is already [installed](/1.3/guide/installation) and open.
 
 You will need at least one audio file to work with — a song, a loop, or a vocal.
 
@@ -76,7 +76,7 @@ live, so you can hear them straight away.
 That's a complete remix, start to finish. From here, explore the rest of the
 guide to go deeper:
 
-- [Arranging the Timeline](/1.3.0/guide/timeline)
-- [Editing Clips](/1.3.0/guide/clip-editor)
-- [Mixing & Effects](/1.3.0/guide/mixing)
-- [Stem Separation](/1.3.0/guide/stems)
+- [Arranging the Timeline](/1.3/guide/timeline)
+- [Editing Clips](/1.3/guide/clip-editor)
+- [Mixing & Effects](/1.3/guide/mixing)
+- [Stem Separation](/1.3/guide/stems)

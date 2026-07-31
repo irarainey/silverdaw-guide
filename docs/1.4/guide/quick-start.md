@@ -2,7 +2,7 @@
 
 This short walkthrough takes you from an empty project to a simple remix: import a
 song, chop it into loops, add a couple of effects, and export the result. It
-assumes Silverdaw is already [installed](/1.4.2/guide/installation) and open.
+assumes Silverdaw is already [installed](/1.4/guide/installation) and open.
 
 You will need at least one audio file to work with — a song, a loop, or a vocal.
 
@@ -20,7 +20,7 @@ already placed on it.
 You can instead open the **Library** tab in the bottom panel, click **Import**,
 pick an audio file, then drag its tile onto a timeline track.
 
-![The Library panel with imported audio](/1.4.2/images/quickstart-import.png)
+![The Library panel with imported audio](/1.4/images/quickstart-import.png)
 
 Silverdaw analyses the file in the background to detect its tempo (BPM), key, and
 beat positions, so it can line clips up musically later.
@@ -46,7 +46,7 @@ Now turn the song into loops you can rearrange:
 2. Each slice is now its own clip. Drag them around, delete the ones you do not
    want, and **Duplicate** (press <kbd>D</kbd>) the ones you like to repeat them.
 
-![The clip right-click menu open on Chop to Grid](/1.4.2/images/quickstart-chop-to-grid.png)
+![The clip right-click menu open on Chop to Grid](/1.4/images/quickstart-chop-to-grid.png)
 
 Because everything is non-destructive, your original file is never changed — you
 are only rearranging.
@@ -59,7 +59,7 @@ choose **Edit ▸ Split Clip at Playhead**.
 Select a track by clicking its header on the left, then open the **Track FX** tab
 in the bottom panel. Here you can shape the track's sound:
 
-![The Track FX panel with its effect modules](/1.4.2/images/quickstart-track-fx.png)
+![The Track FX panel with its effect modules](/1.4/images/quickstart-track-fx.png)
 
 - **Tone** — boost or cut **Bass**, **Mid**, and **Treble**.
 - **Filter** — sweep from a low-pass to a high-pass filter for classic DJ
@@ -82,7 +82,7 @@ live, so you can hear them straight away.
 That's a complete remix, start to finish. From here, explore the rest of the
 guide to go deeper:
 
-- [Arranging the Timeline](/1.4.2/guide/timeline)
-- [Editing Clips](/1.4.2/guide/clip-editor)
-- [Mixing & Effects](/1.4.2/guide/mixing)
-- [Stem Separation](/1.4.2/guide/stems)
+- [Arranging the Timeline](/1.4/guide/timeline)
+- [Editing Clips](/1.4/guide/clip-editor)
+- [Mixing & Effects](/1.4/guide/mixing)
+- [Stem Separation](/1.4/guide/stems)

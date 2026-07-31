@@ -3,7 +3,11 @@ import DefaultTheme from 'vitepress/theme'
 import { useData, useRouter } from 'vitepress'
 import { onMounted, watch } from 'vue'
 import VersionSwitcher from './components/VersionSwitcher.vue'
-import { latestVersion, isKnownVersion } from '../versions'
+import {
+  latestVersion,
+  isKnownVersion,
+  legacyVersionRedirects,
+} from '../versions'
 
 const { Layout } = DefaultTheme
 const { page } = useData()
@@ -19,6 +23,20 @@ function redirectToDefaultVersion() {
 
   const path = window.location.pathname
   const segment = path.split('/').filter(Boolean)[0] ?? ''
+
+  // Previous patch-specific guide URL -> its canonical major/minor URL. Static
+  // pages handle known routes; this fallback also covers missing legacy routes.
+  const redirectedVersion = legacyVersionRedirects[segment]
+  if (redirectedVersion) {
+    const redirectedPath = path.replace(
+      `/${segment}`,
+      `/${redirectedVersion}`,
+    )
+    router.go(
+      `${redirectedPath}${window.location.search}${window.location.hash}`,
+    )
+    return
+  }
 
   // Unversioned guide link (e.g. /guide/export) -> latest version.
   const unversioned = path.match(/^\/guide\/(.*)$/)
