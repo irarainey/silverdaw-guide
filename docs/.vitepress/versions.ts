@@ -18,6 +18,7 @@ export interface DocVersion {
 // Newest first. The first entry is treated as the latest by convention, but the
 // default served to visitors is controlled explicitly by `latestVersion` below.
 export const versions: DocVersion[] = [
+  { version: '1.5', label: '1.5.x' },
   { version: '1.4', label: '1.4.x' },
   { version: '1.3', label: '1.3.x' },
   { version: '1.2', label: '1.2.x' },
@@ -27,10 +28,11 @@ export const versions: DocVersion[] = [
 
 // The default version loaded when a visitor arrives without a version in the URL
 // (via the landing page, the top navigation, and the unversioned-link redirect).
-export const latestVersion = '1.4'
+export const latestVersion = '1.5'
 
 /** Previous patch-specific URL segments and their canonical minor guides. */
 export const legacyVersionRedirects: Record<string, string> = {
+  '1.5.0': '1.5',
   '1.4.2': '1.4',
   '1.4.1': '1.4',
   '1.4.0': '1.4',
