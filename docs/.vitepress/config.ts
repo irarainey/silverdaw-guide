@@ -1,6 +1,73 @@
 import { defineConfig } from 'vitepress'
 import type { DefaultTheme } from 'vitepress'
-import { versions, latestVersion, isKnownVersion } from './versions'
+import { cp, mkdir, readdir, writeFile } from 'node:fs/promises'
+import { dirname, join } from 'node:path'
+import {
+  versions,
+  latestVersion,
+  isKnownVersion,
+  legacyVersionRedirects,
+} from './versions'
+
+async function findHtmlFiles(root: string, relative = ''): Promise<string[]> {
+  const entries = await readdir(join(root, relative), { withFileTypes: true })
+  const files = await Promise.all(
+    entries.map((entry) => {
+      const entryPath = join(relative, entry.name)
+      return entry.isDirectory()
+        ? findHtmlFiles(root, entryPath)
+        : Promise.resolve(entry.name.endsWith('.html') ? [entryPath] : [])
+    }),
+  )
+  return files.flat()
+}
+
+// GitHub Pages cannot configure HTTP redirects. Generate tiny static pages at
+// every previous patch-specific URL so existing links reach the canonical
+// major/minor path without depending on the site's 404 fallback.
+async function writeLegacyVersionRedirects(outDir: string): Promise<void> {
+  for (const [legacyVersion, currentVersion] of Object.entries(
+    legacyVersionRedirects,
+  )) {
+    const currentRoot = join(outDir, currentVersion)
+    const pages = await findHtmlFiles(currentRoot)
+
+    for (const page of pages) {
+      const pageUrl = page
+        .replaceAll('\\', '/')
+        .replace(/(?:^|\/)index\.html$/, '')
+        .replace(/\.html$/, '')
+      const target = `/${currentVersion}${pageUrl ? `/${pageUrl}` : ''}`
+      const output = join(outDir, legacyVersion, page)
+      const targetWithOrigin = `https://docs.silverdaw.com${target}`
+      const html = `<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="robots" content="noindex">
+    <meta http-equiv="refresh" content="0; url=${target}">
+    <link rel="canonical" href="${targetWithOrigin}">
+    <title>Redirecting to the Silverdaw Guide</title>
+    <script>location.replace(${JSON.stringify(target)} + location.search + location.hash)</script>
+  </head>
+  <body>
+    <p><a href="${target}">Continue to the Silverdaw Guide</a></p>
+  </body>
+</html>
+`
+      await mkdir(dirname(output), { recursive: true })
+      await writeFile(output, html)
+    }
+
+    // Static assets cannot execute an HTML redirect, so preserve their previous
+    // URLs by mirroring the canonical release-series images into the legacy path.
+    await cp(
+      join(currentRoot, 'images'),
+      join(outDir, legacyVersion, 'images'),
+      { recursive: true },
+    )
+  }
+}
 
 // Build the guide sidebar for a specific documentation version. Every link is
 // prefixed with the version so each version's sidebar stays self-contained and
@@ -15,7 +82,7 @@ function guideSidebar(version: string): DefaultTheme.SidebarItem[] {
         { text: 'Installation', link: `${base}/installation` },
         { text: 'Quick Start: Your First Remix', link: `${base}/quick-start` },
         { text: 'The Silverdaw Window', link: `${base}/the-window` },
-        ...(['1.2.0', '1.3.0', '1.4.0', '1.4.1', '1.4.2'].includes(version)
+        ...(['1.2', '1.3', '1.4'].includes(version)
           ? [{ text: 'MIDI Controllers', link: `${base}/midi-controllers` }]
           : []),
       ],
@@ -33,7 +100,7 @@ function guideSidebar(version: string): DefaultTheme.SidebarItem[] {
       items: [
         { text: 'Arranging the Timeline', link: `${base}/timeline` },
         { text: 'Editing Clips', link: `${base}/clip-editor` },
-        ...(['1.2.0', '1.3.0', '1.4.0', '1.4.1', '1.4.2'].includes(version)
+        ...(['1.2', '1.3', '1.4'].includes(version)
           ? [{ text: 'Scratch Editor', link: `${base}/scratch-editor` }]
           : []),
         { text: 'Mixing & Effects', link: `${base}/mixing` },
@@ -46,7 +113,7 @@ function guideSidebar(version: string): DefaultTheme.SidebarItem[] {
     {
       text: 'Reference',
       items: [
-        ...(['1.4.0', '1.4.1', '1.4.2'].includes(version)
+        ...(version === '1.4'
           ? [
               {
                 text: 'Digital Audio Basics',
@@ -80,6 +147,7 @@ export default defineConfig({
 
   lastUpdated: true,
   cleanUrls: true,
+  buildEnd: async ({ outDir }) => writeLegacyVersionRedirects(outDir),
 
   // Default to dark mode while keeping the light/dark toggle available.
   appearance: 'dark',

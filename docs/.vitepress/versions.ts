@@ -1,36 +1,47 @@
 // Version manifest for the Silverdaw guide.
 //
 // This is the single source of truth for which documentation versions exist and
-// which one is the default. Each released version of the Silverdaw application
-// gets its own self-contained copy of the guide under `docs/<version>/`, with
-// versioned screenshots under `docs/public/<version>/images/`.
+// which one is the default. Each minor Silverdaw release gets its own
+// self-contained copy of the guide under `docs/<major.minor>/`, with versioned
+// screenshots under `docs/public/<major.minor>/images/`.
 //
-// The generation pipeline updates this file on each app release: it prepends the
-// new version to `versions` and points `latestVersion` at it. Older entries are
-// left untouched so their permalinks stay stable forever.
+// Patch releases share their minor release's guide because they contain bug
+// fixes only and do not require the site to be republished.
 
 export interface DocVersion {
-  /** Exact application release this guide corresponds to, e.g. "1.0.3". */
+  /** Major/minor URL segment for this guide, e.g. "1.4". */
   version: string
-  /** Human-readable label shown in the version switcher, e.g. "v1.0.3". */
+  /** Human-readable patch-series label shown in the version switcher. */
   label: string
 }
 
 // Newest first. The first entry is treated as the latest by convention, but the
 // default served to visitors is controlled explicitly by `latestVersion` below.
 export const versions: DocVersion[] = [
-  { version: '1.4.2', label: 'v1.4.2' },
-  { version: '1.4.1', label: 'v1.4.1' },
-  { version: '1.4.0', label: 'v1.4.0' },
-  { version: '1.3.0', label: 'v1.3.0' },
-  { version: '1.2.0', label: 'v1.2.0' },
-  { version: '1.1.0', label: 'v1.1.0' },
-  { version: '1.0.3', label: 'v1.0.3' },
+  { version: '1.4', label: '1.4.x' },
+  { version: '1.3', label: '1.3.x' },
+  { version: '1.2', label: '1.2.x' },
+  { version: '1.1', label: '1.1.x' },
+  { version: '1.0', label: '1.0.x' },
 ]
 
 // The default version loaded when a visitor arrives without a version in the URL
 // (via the landing page, the top navigation, and the unversioned-link redirect).
-export const latestVersion = '1.4.2'
+export const latestVersion = '1.4'
+
+/** Previous patch-specific URL segments and their canonical minor guides. */
+export const legacyVersionRedirects: Record<string, string> = {
+  '1.4.2': '1.4',
+  '1.4.1': '1.4',
+  '1.4.0': '1.4',
+  '1.3.0': '1.3',
+  '1.2.0': '1.2',
+  '1.1.0': '1.1',
+  '1.0.3': '1.0',
+  '1.0.2': '1.0',
+  '1.0.1': '1.0',
+  '1.0.0': '1.0',
+}
 
 /** All known version identifiers, for route matching. */
 export const versionIds: string[] = versions.map((v) => v.version)
