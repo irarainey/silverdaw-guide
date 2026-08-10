@@ -74,15 +74,19 @@ then step straight into the results without reaching for the mouse.
 
 ## Listening before you import
 
-Click a file's **Play** button — or double-click its name — to hear it through
-your audio output. Click **Pause** to stop, and **Back to start** to return to the
-beginning. The row shows a running position while it plays.
+Click anywhere on a file's row to select it. To hear it through your audio
+output, click its **Play** button, or double-click the row away from its
+buttons. Click **Pause** to pause the audition, and **Back to start** to return
+to the beginning. The row shows a running position while it plays.
 
 Only one thing plays at a time, so auditioning a file stops project playback.
 
 ::: tip
-The file you are listening to is pinned to the top of the panel, marked
-**Playing** or **Paused**, so you never lose it while you scroll or filter.
+A strip at the top of the panel keeps the file you are listening to within
+reach. While a file is playing it appears there, marked **Playing**, with its
+own controls — so you can stop it however far you have scrolled or whatever you
+have filtered to. The file stays listed in its folder as well. Pause the
+audition, or let it reach the end, and the strip reads **Nothing playing**.
 :::
 
 Some formats have to be decoded before they can be played. The button briefly

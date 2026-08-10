@@ -39,7 +39,9 @@ Your audio appears as a **clip** — a block showing its waveform. Press the
 > The first clip you add to the timeline also sets your project's tempo:
 > Silverdaw matches the project BPM to that clip's detected tempo. This happens
 > only once — later clips won't change it — and you can adjust the tempo
-> yourself afterwards from the transport bar.
+> yourself afterwards from the transport bar. Change it whenever you like: your
+> arrangement is retimed to stay in time. See
+> [Changing the project tempo](/1.6/guide/timeline#changing-the-project-tempo).
 
 > Clips snap to the timeline grid as you drag, so they naturally land on the
 > beat. The grid control at the bottom of the window sets how fine that grid is,

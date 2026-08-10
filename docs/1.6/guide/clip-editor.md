@@ -125,8 +125,9 @@ Editor to correct it:
   the editor. You can also
   scroll the mouse wheel over a BPM field to change it by 1 BPM at a time — hold
   <kbd>Alt</kbd> for fine 0.01 BPM steps. The same wheel adjustment works on the
-  Warp **Pin to** BPM and the project tempo, and BPM values always show two
-  decimals (for example, 120.00).
+  Warp **Pin to** BPM and on the
+  [project tempo](/1.6/guide/timeline#setting-the-tempo-in-the-transport-bar),
+  and BPM values always show two decimals (for example, 120.00).
 - **Position** — click **Slide grid to align** and drag left or right across the
   waveform to line the grid up with the beats. Fine-tune with the **Nudge**
   buttons (5 ms earlier or later), or use **½ beat** if the grid has locked onto

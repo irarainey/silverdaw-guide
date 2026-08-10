@@ -195,3 +195,8 @@ control's slider sets the resting value, and a drawn curve overlays it over time
 While a curve is active, the slider follows the automation as the track plays, so
 you can watch each control move. Automation plays back live and renders exactly the
 same way in your exported mix.
+
+Automation is anchored to the music, not to the clock. If you
+[change the project tempo](/1.6/guide/timeline#changing-the-project-tempo), every
+automation lane is stretched or squashed to match, so a sweep drawn across the
+chorus still runs across the chorus.

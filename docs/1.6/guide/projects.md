@@ -31,7 +31,9 @@ project:
 
 - **Project name** — the name of the project.
 - **Tempo (BPM)** — the project's tempo, which the grid, metronome, and
-  tempo-matching all follow.
+  tempo-matching all follow. Change it whenever you like: your arrangement is
+  retimed to stay in time. See
+  [Changing the project tempo](/1.6/guide/timeline#changing-the-project-tempo).
 - **Project duration** — the overall length, entered as `mm:ss` or `h:mm:ss`.
   New projects start at 5 minutes; adding a first clip that runs longer
   automatically extends the project to fit the whole clip.

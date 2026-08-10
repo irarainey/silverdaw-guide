@@ -39,9 +39,12 @@ When you have a [timeline range](/1.6/guide/timeline#playing-a-timeline-range),
 the play button becomes **Play Selection**. The **Loop Selection** button beside
 the transport repeats that range until you turn it off or clear the range.
 
-The timing display shows your position in the project and includes a
-**Metronome** click you can switch on to hear a tick in time with the project
-tempo. See [the metronome](/1.6/guide/timeline#the-metronome) for more.
+The timing display shows your position in the project and the project's **BPM**,
+which you can change at any time — your arrangement is retimed to stay in time.
+See [Changing the project tempo](/1.6/guide/timeline#changing-the-project-tempo).
+It also includes a **Metronome** click you can switch on to hear a tick in time
+with the project tempo. See
+[the metronome](/1.6/guide/timeline#the-metronome) for more.
 
 ## The timeline
 

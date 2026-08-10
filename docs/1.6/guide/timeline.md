@@ -198,17 +198,18 @@ Everything lines up against the project **tempo** and its beat grid.
 - The **first musical clip** you place on a track sets the project tempo:
   Silverdaw seeds the project BPM from that clip's detected tempo. This happens
   once — later clips don't change it, and clips marked as samples don't seed it
-  — and you can fine-tune the tempo afterwards from the transport bar: type a
-  value, or scroll the mouse wheel over it (or use <kbd>↑</kbd> / <kbd>↓</kbd>) to
-  change it by 1 BPM, holding <kbd>Alt</kbd> for fine 0.01 BPM steps. This is on
+  — and you can fine-tune the tempo afterwards from the transport bar (see
+  [Changing the project tempo](#changing-the-project-tempo)). This is on
   by default; switch off **Set project tempo from first clip** in
   **Preferences ▸ Timeline** to keep the project at its current tempo instead.
 - If detection is uncertain, you can set a clip's **BPM by hand** and slide the
   beat grid across its waveform to line it up. This is done in the
   [Clip Editor](/1.6/guide/clip-editor#matching-tempo-warp), and is explained in
   [Beat markers and how they are worked out](#beat-markers-and-how-they-are-worked-out).
-- The project's own tempo is set in
-  [Project Properties](/1.6/guide/projects#project-properties).
+- The project's own tempo can be set from the transport bar or in
+  [Project Properties](/1.6/guide/projects#project-properties), and can be
+  changed at any time — see
+  [Changing the project tempo](#changing-the-project-tempo).
 
 By default, dropping a musical clip onto a track automatically **matches it to
 the project tempo** (Silverdaw switches on
@@ -235,19 +236,62 @@ into place.
 
 ### Changing the project tempo
 
-You can change the project tempo at any time — from the transport bar or in
-[Project Properties](/1.6/guide/projects#project-properties) — and your
-arrangement keeps its musical shape. Everything that names a musical place moves
-with the music, so a clip on bar 9 stays on bar 9:
+The project tempo is not something you have to settle on up front. **You can
+change it at any time** — before you start, halfway through, or once the whole
+remix is arranged — from the transport bar or in
+[Project Properties](/1.6/guide/projects#project-properties). Silverdaw retimes
+the arrangement around the new tempo, so you don't have to move or redraw it by
+hand.
 
-- clips and their [volume shapes](/1.6/guide/clip-editor#shaping-a-clips-volume),
-- [markers](#markers), the playhead, and any
-  [timeline range](#playing-a-timeline-range), and
-- [track automation](/1.6/guide/mixing#automation-changing-settings-over-time).
+Everything that names a musical place moves with the music, so a clip on bar 9
+stays on bar 9:
 
-While **Auto-warp clips to project tempo** is on, clips already on the timeline
-are also brought onto the new tempo. A clip pinned to a fixed stretch keeps that
-stretch.
+- **Clips** keep their bar and beat positions. A clip that follows the project
+  tempo is also re-stretched, so it still fills the same number of bars and stays
+  in time with everything else.
+- **Clip [volume shapes](/1.6/guide/clip-editor#shaping-a-clips-volume)** are
+  resized whenever the clip they are drawn on is re-stretched, so each fade and
+  dip stays over the same part of the sound.
+- **[Track automation](/1.6/guide/mixing#automation-changing-settings-over-time)**
+  lines are stretched or squashed to match, so a filter sweep written across the
+  chorus still runs across the chorus.
+- **[Markers](#markers)**, the playhead, and any
+  [timeline range](#playing-a-timeline-range) move with the bars they mark.
+
+Slow the project down and the arrangement spreads out; speed it up and it packs
+in — but its musical shape, and the way it lines up, are unchanged.
+
+Which clips are re-stretched depends on how each one is set:
+
+- While **Auto-warp clips to project tempo** is on (**Preferences ▸ Timeline**),
+  a clip with a detected tempo is warped to the new project tempo for you.
+- A clip set to **Follow project BPM** in the
+  [Clip Editor](/1.6/guide/clip-editor#matching-tempo-warp) always tracks the
+  project tempo.
+- A clip **pinned** to a fixed tempo or stretch is deliberately left alone. It
+  keeps its own speed and length, and simply moves to keep its place in the bars,
+  so it covers a different number of bars at the new tempo.
+
+::: tip
+Try your remix at a few different tempos. Nudge the BPM up or down while it plays
+and listen — you can always set it back.
+:::
+
+#### Setting the tempo in the transport bar
+
+The transport bar's **BPM** box is the quickest way to set the tempo.
+
+- **Type a tempo.** Click the box and its value is selected, so you can type
+  straight over it. Press <kbd>Enter</kbd>, or click away, to apply it. Press
+  <kbd>Esc</kbd> to leave the tempo as it was. Click and drag across the value
+  instead if you want to replace only part of it.
+- **Nudge it.** Use <kbd>↑</kbd> / <kbd>↓</kbd>, the small arrows beside the
+  value, or the mouse wheel over the box, to move the tempo by 1 BPM at a time.
+  Hold <kbd>Alt</kbd> for fine 0.01 BPM steps.
+
+Tempos are always shown to two decimal places. If you make several quick
+adjustments in a row, Silverdaw waits until you stop before retiming the
+arrangement, so a large change stays smooth.
 
 ## Beat markers and how they are worked out
 
