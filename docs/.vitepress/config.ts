@@ -92,6 +92,7 @@ function guideSidebar(version: string): DefaultTheme.SidebarItem[] {
           '1.8',
           '1.9',
           '1.10',
+          '1.11',
         ].includes(version)
           ? [{ text: 'MIDI Controllers', link: `${base}/midi-controllers` }]
           : []),
@@ -101,11 +102,11 @@ function guideSidebar(version: string): DefaultTheme.SidebarItem[] {
       text: 'Projects & Audio',
       items: [
         { text: 'Projects', link: `${base}/projects` },
-        ...(['1.6', '1.7', '1.8', '1.9', '1.10'].includes(version)
+        ...(['1.6', '1.7', '1.8', '1.9', '1.10', '1.11'].includes(version)
           ? [{ text: 'Browsing Files', link: `${base}/files` }]
           : []),
         { text: 'Importing & the Library', link: `${base}/library` },
-        ...(['1.9', '1.10'].includes(version)
+        ...(['1.9', '1.10', '1.11'].includes(version)
           ? [{ text: 'Recording Audio', link: `${base}/recording` }]
           : []),
         { text: 'Stem Separation', link: `${base}/stems` },
@@ -126,23 +127,29 @@ function guideSidebar(version: string): DefaultTheme.SidebarItem[] {
           '1.8',
           '1.9',
           '1.10',
+          '1.11',
         ].includes(version)
           ? [{ text: 'Scratch Editor', link: `${base}/scratch-editor` }]
           : []),
         { text: 'Mixing & Effects', link: `${base}/mixing` },
-        ...(['1.7', '1.8', '1.9', '1.10'].includes(version)
+        ...(['1.7', '1.8', '1.9', '1.10', '1.11'].includes(version)
           ? [{ text: 'Plugins', link: `${base}/plugins` }]
           : []),
       ],
     },
     {
       text: 'Finishing',
-      items: [{ text: 'Exporting a Mixdown', link: `${base}/export` }],
+      items: [
+        { text: 'Exporting a Mixdown', link: `${base}/export` },
+        ...(version === '1.11'
+          ? [{ text: 'Exporting Individual Tracks', link: `${base}/export-tracks` }]
+          : []),
+      ],
     },
     {
       text: 'Reference',
       items: [
-        ...(['1.4', '1.5', '1.6', '1.7', '1.8', '1.9', '1.10'].includes(version)
+        ...(['1.4', '1.5', '1.6', '1.7', '1.8', '1.9', '1.10', '1.11'].includes(version)
           ? [
               {
                 text: 'Digital Audio Basics',
