@@ -11,10 +11,10 @@ hero:
   actions:
     - theme: brand
       text: Quick Start
-      link: /1.10/guide/quick-start
+      link: /1.11/guide/quick-start
     - theme: alt
       text: Introduction
-      link: /1.10/guide/introduction
+      link: /1.11/guide/introduction
 
 features:
   - title: Make your first remix
