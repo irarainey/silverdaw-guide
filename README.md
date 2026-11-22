@@ -32,6 +32,13 @@ npm run docs:build    # build the production site to docs/.vitepress/dist
 npm run docs:preview  # preview the production build locally
 ```
 
+## Guide screenshots
+
+On Windows, run `npm run screenshots` to regenerate every screenshot linked by
+the current guide from the released app and a temporary copy of California
+Mashup. See the [capture-guide-screenshots skill](.github/skills/capture-guide-screenshots/SKILL.md)
+for prerequisites, pacing, and how to add a scene. No agent is required.
+
 ## Project layout
 
 - `docs/` - documentation content (Markdown), organised by version

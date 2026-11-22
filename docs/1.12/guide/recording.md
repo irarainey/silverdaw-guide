@@ -17,7 +17,10 @@ Choose **File ▸ Record Audio…**, or click the record button in the
 Everything happens in one window, in two stages: you set up and record, then you
 review what you captured and choose what to do with it.
 
-<!-- Image placeholder: the Record Audio dialog set up and ready to record, showing the Input, Backing, Record Window, Metronome, Monitor, and Recording sections. -->
+![Record Audio before a take, with input, backing, and recording settings visible](/1.12/images/record-setup.png)
+
+The screenshots on this page use a generated tone as an example input. On
+your computer, the input list shows your own audio devices.
 
 ## Setting up
 
@@ -157,7 +160,7 @@ of the range.
 **Cancel** abandons a take in progress and throws it away, leaving your project
 exactly as it was.
 
-<!-- Image placeholder: the Record Audio dialog while recording, showing the live waveform and the elapsed time. -->
+![A pulsing example waveform and elapsed time in Record Audio, with Stop available](/1.12/images/record-live.png)
 
 Silverdaw keeps a moment of audio from just before the point where recording
 began, so a note played fractionally early is not cut off.
@@ -175,7 +178,7 @@ your project yet.
 You see the take's waveform, along with its length, whether it is mono or
 stereo, and its tempo.
 
-<!-- Image placeholder: a finished take in the review stage of the Record Audio dialog, showing the waveform, summary, and the Discard / Record Again / Add to Library / Add to Timeline buttons. -->
+![A four-second example take in review, with its waveform and the choices to keep, redo, or discard it](/1.12/images/record-review.png)
 
 - **Play** (or <kbd>Space</kbd>) auditions the take. The button becomes **Stop**
   while it is playing. Click the waveform to play from a particular point.
@@ -240,7 +243,7 @@ measured round trip in milliseconds; click **Use Measurement** to apply it.
 If the measurement fails, the button becomes **Try Again**. **Stop** abandons a
 measurement in progress, and **Clear** removes a stored calibration.
 
-<!-- Image placeholder: the Calibrate Recording Latency dialog showing a successful measured round trip. -->
+![Calibrate Recording Latency before measuring, with Measure and the manual entry field](/1.12/images/record-calibration.png)
 
 ### Entering a figure by hand
 

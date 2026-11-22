@@ -4,7 +4,7 @@ Most of your time in Silverdaw is spent in three places: the timeline, where
 you arrange audio; the track headers, where you balance it; and the bottom panel,
 where you find your material and effects. Here's how to find what you need.
 
-![Overview of the Silverdaw window with its main areas labelled](/1.12/images/window-overview.png)
+![The Silverdaw window showing the transport, timeline, track headers, and Library](/1.12/images/window-overview.png)
 
 ## The menu bar
 

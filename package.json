@@ -4,11 +4,13 @@
   "description": "User guide and documentation for Silverdaw, the open-source DAW",
   "type": "module",
   "scripts": {
+    "screenshots": "node scripts/capture-screenshots.mjs",
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
     "docs:preview": "npm run docs:build && vitepress preview docs"
   },
   "devDependencies": {
+    "playwright-core": "1.65.1",
     "vitepress": "^1.6.3",
     "vue": "^3.5.13"
   }

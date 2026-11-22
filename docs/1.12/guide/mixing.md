@@ -111,6 +111,8 @@ whole project. Each track decides how much of itself to send to the shared
 **Reverb** and **Delay** using its **Reverb** and **Delay** sends in
 [Track FX](#track-fx).
 
+![The shared Reverb controls in Project FX, where you shape the sound sent from individual tracks](/1.12/images/shared-reverb.png)
+
 - **Reverb** — a shared reverb for a sense of space, with four controls:
   - **Size** — how large the space feels: small can feel close and tight, while
     large can feel more like a hall.
@@ -188,7 +190,7 @@ saved with the project. You can automate:
 
 ![A track with its automation lane open and a breakpoint curve](/1.12/images/mixing-automation.png)
 
-<!-- Image placeholder: two visible automation lanes for different parameters on one track. -->
+![Two automation lanes below the vocal track](/1.12/images/mixing-two-lanes.png)
 
 - **Filter**
 - **Pan**

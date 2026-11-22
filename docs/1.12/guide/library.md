@@ -56,7 +56,7 @@ Use the **Filter library** field beside **Import** to find items by their name,
 artist, or BPM. Click its **Clear filter** button, or press <kbd>Esc</kbd> while
 the field is focused, to clear the filter.
 
-![The Library with imported audio, stems, a saved clip, and the Filter library field](/1.12/images/library-panel.png)
+![The Library with an imported track, its stems, and the Filter library field](/1.12/images/library-panel.png)
 
 ### Sample rate check
 
@@ -84,7 +84,7 @@ shown as unavailable and cannot be selected.
 Tracks, timeline clips, markers, automation, and settings are not imported. Use
 <kbd>Ctrl</kbd>+<kbd>Z</kbd> to remove the imported items from the project.
 
-<!-- Image placeholder: the Import from Project dialog with a source project and selected stems, samples, and recordings. -->
+![Import from Project with California Mashup open and its vocal stem selected](/1.12/images/import-from-project.png)
 
 ## Adding audio to the timeline
 

@@ -163,6 +163,8 @@ they overlap becomes the crossfade. As you drag, Silverdaw marks the overlap wit
 diagonal hatch; when you release, it draws the crossfade curves across both clips.
 The earlier clip fades out while the later one fades in.
 
+![Two vocal clips overlapping on the same track, with opposing fade curves across the overlap](/1.12/images/timeline-crossfade.png)
+
 ::: tip
 Crossfades are made by dragging a clip's **edge** over its neighbour, not by
 dragging its body — clip bodies can't overlap and simply butt up against each
@@ -449,7 +451,7 @@ stops at the range end with no extra tail. See
 [mixdown export](/1.12/guide/export#exporting-only-a-range) or
 [individual track export](/1.12/guide/export-tracks#exporting-only-a-range).
 
-<!-- Image placeholder: a shaded timeline range and the Loop Selection transport control. -->
+![A shaded range above the vocal and drum tracks with Loop Selection turned on](/1.12/images/timeline-range.png)
 
 ## Markers
 
