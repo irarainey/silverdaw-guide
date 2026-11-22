@@ -26,6 +26,8 @@ Use the time columns to answer three different questions:
 | What part of the file does the clip use? | **File range** gives the start and end in the file the clip plays. A sample cut from a song can start at zero in its own file. |
 | Where was that passage in the song? | **Original recording range** gives its position in the original, when known. A *source window only* gives the input section, not every sound played: a scratch can skip or repeat parts. **Cannot be determined** means the range is unknown. |
 
+![One placement row with its timeline range, duration, file range, and original recording range side by side](/1.12/images/sample-report-placement.png)
+
 **Placements** counts each use. **Known distinct passages** merges exact ranges
 that overlap or touch. For example, placing the same four-second loop three
 times gives three placements but just one known four-second passage. Source

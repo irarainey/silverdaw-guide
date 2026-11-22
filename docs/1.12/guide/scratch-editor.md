@@ -66,6 +66,8 @@ crossfader lanes show the movements you recorded; add, drag, delete, or nudge
 their points to refine the timing. Undo and redo let you compare edits.
 If you'd rather start a fresh pattern, choose **Clear**.
 
+![A transformer-style pattern: repeated crossfader cuts break the platter movements into short bursts](/1.12/images/scratch-pattern.png)
+
 ### Scratch realism
 
 Choose **Scratch realism** in **Edit ▸ Preferences… ▸ Effects** to control the
@@ -81,6 +83,11 @@ the recorded scratch actions into a new (or updated) reusable **Scratch** sample
 in the Library. Drag that sample onto the timeline and edit the resulting clip
 like any other clip. Saving closes the editor; it does not replace the timeline
 clip that opened the session.
+
+Right-click the saved **Scratch** sample in the Library and choose **Open in
+Scratch Editor** to work on the same pattern again.
+
+![The Scratch Editor reopened from the Library with the saved platter movements and crossfader cuts ready to edit](/1.12/images/scratch-reopened.png)
 
 If you close with unsaved changes, **Unsaved Scratch Pattern** offers **Don't
 Save** or **Save**. Saving keeps the pattern so you can continue editing it; use

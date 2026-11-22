@@ -27,6 +27,8 @@ Plugins**. While it runs, the status beside the button counts through your
 plugins — **Scanning plugins…**, then **Scanning 12 of 40…**. The chooser fills
 in once the scan finishes.
 
+![The Plugins tab with the plugin chooser and Scan Plugins button](/1.12/images/plugin-discovery.png)
+
 The scan runs outside Silverdaw itself, so a faulty plugin cannot bring the app
 down. If a plugin does fail, it is remembered so it is not tried again on its
 own. Selecting **Scan Plugins** clears those remembered failures and gives every

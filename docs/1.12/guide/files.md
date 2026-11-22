@@ -20,7 +20,7 @@ the app.
 You can add as many folders as you want. Each one appears as a top-level folder
 in the list, with everything inside it nested underneath.
 
-<!-- Image placeholder: the Files tab with an added folder expanded, showing cover art, title, artist, album, type, and length columns. -->
+![The Music folder expanded in Files, with a track's title, artist, album, file type, and length](/1.12/images/files-browser.png)
 
 ### While a folder is being read
 

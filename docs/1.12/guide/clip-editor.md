@@ -137,6 +137,8 @@ Editor to correct it:
   buttons (5 ms earlier or later), or use **½ beat** if the grid has locked onto
   the off-beat.
 
+![Beat grid in alignment mode, with tempo correction above the controls for nudging the grid](/1.12/images/clip-beat-grid.png)
+
 When you **Save** after moving the grid, the clip stays exactly where it is on the
 timeline: Silverdaw slides the audio inside the clip by the same amount, so every
 beat marker keeps the timeline position you just gave it. Adjusting the grid
@@ -216,7 +218,7 @@ The module is available as soon as a clip is being processed at all — either w
 **Enable Warp** ticked or with a pitch shift set. Until then it is greyed out and
 tells you *"Enable warp or set a pitch shift to choose a mode."*
 
-<!-- Image placeholder: the Clip Editor effects rack showing the Warp, Pitch, and Warp & Pitch Mode modules side by side, with a mode selected. -->
+![Warp and Pitch beside their shared Warp & Pitch Mode control, with Tonal selected](/1.12/images/clip-warp-pitch.png)
 
 ::: tip
 If a stretched or re-pitched clip sounds blurred, try another mode and compare
@@ -236,6 +238,8 @@ rhythm or order. Choose a quick grid chop, or place the cuts yourself:
   control, slicing on a bar or beat grid (from a whole bar down to 1/32) or by
   placing markers by hand.
 
+![Generated slice markers divide the waveform before you choose Slice to timeline or Slice to samples](/1.12/images/clip-slice-markers.png)
+
 Once you've made your slices you can:
 
 - **Slice to timeline** — lay the slices back onto the timeline as separate clips
@@ -254,6 +258,8 @@ add points and drag them to shape the line. With a range selected, the **Silence
 and **Full** buttons (<kbd>S</kbd> / <kbd>F</kbd>) instantly drop that part to
 silence or push it to full volume with hard edges. The shaping applies to both
 playback and export.
+
+![Four volume points lower the middle of a phrase and bring it back up without cutting the clip](/1.12/images/clip-volume-envelope.png)
 
 ## Reversing a clip
 

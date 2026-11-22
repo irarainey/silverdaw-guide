@@ -34,6 +34,8 @@ Appearance and notifications:
 
 How the timeline behaves during playback and editing:
 
+![The Timeline tab with clip alignment and previous / next button settings](/1.12/images/preferences-timeline.png)
+
 - **Follow playback** — scroll the timeline while playing so the playhead stays
   centred. Turn it off to keep the view still. This can also be toggled from the
   transport bar.
@@ -103,7 +105,7 @@ Where and how Silverdaw plays and records sound:
   list or sounds wrong. The input itself is chosen in the Record Audio dialog,
   not here.
 
-<!-- Image placeholder: the Preferences Audio tab showing the Output device list and the Recording input driver dropdown. -->
+![The Audio tab in Preferences with the output device settings](/1.12/images/preferences-audio.png)
 
 ## MIDI
 
@@ -134,6 +136,8 @@ Global defaults for the per-clip DJ turntable effects (see
   **Medium**, or **Wild**) of the reverse rewind at the end of a clip.
 
 Changing these updates every clip that already uses the effect.
+
+![Effects preferences showing separate controls for the turntable brake and backspin](/1.12/images/preferences-effects.png)
 
 ### Scratch
 

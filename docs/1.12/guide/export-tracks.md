@@ -19,6 +19,8 @@ selected the first time; **Select all tracks** selects or clears the whole
 list. You can click anywhere on a track's row to toggle it. At least one track
 must be selected.
 
+![The open Tracks list with Vocals ticked and the other tracks left out of the export](/1.12/images/export-track-picker.png)
+
 For just one track, click its header's export icon, whose tooltip reads
 **Export this track…**. The same dialog opens with only that track ticked.
 You can still change the selection before exporting.

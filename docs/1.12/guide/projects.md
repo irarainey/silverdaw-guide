@@ -14,6 +14,8 @@ From the **File** menu (or the startup screen) you can:
 - **Recent Projects** — reopen a project you worked on recently, or clear the
   list with **Clear Recent Projects**.
 
+![New Project and Open Project on the first-launch screen](/1.12/images/startup.png)
+
 ## Saving
 
 - **Save** (<kbd>Ctrl</kbd>+<kbd>S</kbd>) — save your changes.
