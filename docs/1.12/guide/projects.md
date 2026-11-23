@@ -69,18 +69,24 @@ Original imported audio is separate. Moving the project folder does not collect
 those source files for you: they must still be available at the same location,
 or you'll need to relink them.
 
-If you have moved or renamed those source files, you can point Silverdaw back at
-them using **Relink** (see below).
-
 You can also copy generated stems, samples, and recordings from another saved project with
 **File ▸ Import from Project…**. See
 [Importing from another project](/1.12/guide/library#importing-from-another-project).
 
 ## Relinking moved files
 
-If a project can no longer find an imported source file — because it was moved or
-renamed — Silverdaw lets you **relink** it, reconnecting the project to the file
-in one step so playback and editing continue as before.
+When you open a project, **Missing Audio Files** lists any audio Silverdaw can't
+find. Each row shows the old path and how many timeline clips use that file.
+A file can appear here even if it's only in the Library.
+
+![Missing Audio Files showing the old location of California Soul and the Locate file… button](/1.12/images/missing-audio-files.png)
+
+Click **Locate file…** beside a missing file and select it in its new location.
+Repeat for each row. The dialog closes when all the files are found. Save the
+project to remember the new paths.
+
+If you choose **Close** instead, you can right-click an affected timeline clip
+and choose **Relink** later.
 
 ## Autosave and crash recovery
 

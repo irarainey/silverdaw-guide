@@ -78,15 +78,16 @@ output, click its **Play** button, or double-click the row away from its
 buttons. Click **Pause** to pause the audition, and **Back to start** to return
 to the beginning. The row shows a running position while it plays.
 
+The **Playing** strip and the row in the folder show the same file, not two
+copies. You're hearing a preview; use **Import** when you want it in your
+project.
+
+![California Soul in the Playing strip and its folder, with playback position and Import controls](/1.12/images/files-audition.png)
+
 Only one thing plays at a time, so auditioning a file stops project playback.
 
-::: tip
-A strip at the top of the panel keeps the file you are listening to within
-reach. While a file is playing it appears there, marked **Playing**, with its
-own controls — so you can stop it however far you have scrolled or whatever you
-have filtered to. The file stays listed in its folder as well. Pause the
-audition, or let it reach the end, and the strip reads **Nothing playing**.
-:::
+Use the strip to pause the preview even after scrolling or filtering the file
+out of view. When you pause or the file ends, the strip reads **Nothing playing**.
 
 Some formats have to be decoded before they can be played. The button briefly
 reads **Preparing…** while that happens, then playback starts.

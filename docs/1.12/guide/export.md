@@ -77,6 +77,8 @@ The file begins at the range start and stops at the range end, including any
 effects already ringing at the start. **Start from bar**, **Length**, and
 **Tail** are disabled while this is ticked; no extra tail is added.
 
+![Export selected range only ticked, with the start bar, tail and length controls dimmed](/1.12/images/export-selected-range.png)
+
 You do not need to turn on **Loop Selection**. The checkbox starts unchecked
 each time you open the dialog and is unavailable without a timeline range.
 

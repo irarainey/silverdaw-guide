@@ -6,6 +6,8 @@ import { fileURLToPath } from 'node:url'
 import { setTimeout as pause } from 'node:timers/promises'
 import { _electron as electron } from 'playwright-core'
 import { captureRecordingExamples } from './recording-screenshots.mjs'
+import { captureRulerExamples } from './ruler-screenshots.mjs'
+import { captureProjectExamples } from './project-screenshots.mjs'
 
 // Review the scenes against the tagged UI before targeting a new guide series.
 const release = '1.12.1'
@@ -190,6 +192,12 @@ try {
   if (!control) throw new Error('Timeline range did not enter loop mode')
   const top = Math.floor(control.y - 6)
   await frame('timeline-range', { x: 0, y: top, width: 1440, height: Math.min(420, box.y + box.height - top) })
+  await button('File').click()
+  await page.getByRole('button', { name: /^Export Mixdown/ }).click()
+  const selectionOnly = dialog.getByRole('checkbox', { name: 'Export selected range only' })
+  await selectionOnly.check()
+  await captureGroup('export-selected-range', [selectionOnly.locator('..'), dialog.locator('fieldset:disabled')], 8)
+  await dialog.getByRole('button', { name: 'Cancel' }).click()
   await page.mouse.click(box.x + 100, y)
   await button('Edit').click()
   await page.getByRole('button', { name: /^Preferences/ }).click()
@@ -278,6 +286,12 @@ try {
   const file = panel.getByRole('treeitem').filter({ hasText: 'California Soul' })
   await file.waitFor()
   await captureGroup('files-browser', [panel.locator('header').first(), file], 6)
+  await file.getByRole('button', { name: 'Play', exact: true }).click()
+  const playing = panel.getByText('Playing', { exact: true })
+  await playing.waitFor()
+  await captureGroup('files-audition', [playing, file], 8)
+  await file.getByRole('button', { name: 'Pause', exact: true }).click()
+  await playing.waitFor({ state: 'hidden' })
   await library.click()
   await source.click({ button: 'right' })
   await page.getByText('Separate Stems', { exact: true }).click()
@@ -375,18 +389,31 @@ try {
   await frame('mixing-two-lanes', { x: 0, y: box.y, width: 1060, height: 308 })
   await captureRecordingExamples({ page, captureDialog, work, bpm: document.project.bpm,
     trackIds: nodes.filter(node => node.$type === 'TRACK').map(node => node.id) })
-  // In the saved view the next vocal starts at this seam. Extend its left
-  // edge over the preceding phrase; the app creates the transition on release.
-  const seam = { x: box.x + 305, y: box.y + 84 }
+  // Find the next vocal's left trim handle. Auditioning a file can change
+  // the timeline scroll, so its edge isn't at a fixed screen coordinate.
+  const seam = await page.evaluate(async box => {
+    const y = box.y + 84
+    let edge = false
+    for (let x = Math.ceil(box.x + 200); x < box.x + 600; x++) {
+      const el = document.elementFromPoint(x, y)
+      el.dispatchEvent(new PointerEvent('pointermove', { clientX: x, clientY: y, bubbles: true }))
+      await Promise.resolve()
+      const resize = getComputedStyle(el).cursor === 'ew-resize'
+      if (edge && !resize) return { x: x - 2, y }
+      edge = resize
+    }
+    throw new Error('No vocal trim handle in the visible timeline')
+  }, box)
   await page.mouse.move(seam.x, seam.y)
   await page.mouse.down()
   await page.mouse.move(seam.x - 95, seam.y, { steps: 18 })
   await page.mouse.up()
-  await page.mouse.click(clip.x, clip.y, { button: 'right' })
+  await page.mouse.click(seam.x - 145, seam.y, { button: 'right' })
   await page.getByText('Crossfade', { exact: true }).hover()
   await page.getByText(/Crossfade to next: Smooth blend/i).waitFor()
   await page.keyboard.press('Escape')
-  await frame('timeline-crossfade', { x: box.x + 38, y: box.y, width: 533, height: 148 })
+  await frame('timeline-crossfade', { x: seam.x - 200, y: box.y, width: 430, height: 148 })
+  await captureRulerExamples({ page, button, capture, captureGroup, frame, box })
   await button('File').click()
   await page.getByRole('button', { name: /^New Project/ }).click()
   await vocalHeader.waitFor({ state: 'hidden' })
@@ -396,6 +423,8 @@ try {
   await dialog.getByRole('checkbox', { name: /Vocals/i }).first().check()
   await captureDialog('import-from-project')
   await dialog.getByRole('button', { name: 'Cancel' }).click()
+  await captureProjectExamples({ page, app, copy, projectFile: join(copy, files[0].name),
+    document, work, button, dialog, capture, captureGroup, frame, box })
   scene = 'closing the project'
   // Initiate exactly one close. Starting app.close() as well would race the
   // renderer's asynchronous discard response and the app's own shutdown.
