@@ -455,9 +455,11 @@ stops at the range end with no extra tail. See
 
 ## Markers
 
-**Markers** are labelled points you can drop on the ruler to mark places in your
-arrangement — the start of a chorus, a drop, or wherever you want to jump back to.
-They appear as small triangles on the ruler and are saved with the project.
+**Markers** are places in your arrangement you want to jump back to, such as the
+start of a chorus or a drop. Each marker appears as a small green triangle on
+the ruler and is saved with the project.
+
+![Two green markers on the ruler with the red playhead between them](/1.12/images/timeline-markers.png)
 
 - **Add or remove a marker** — press <kbd>M</kbd> to place a marker at the
   playhead. It lands at the **exact playhead position**, even if that isn't on a

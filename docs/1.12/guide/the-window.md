@@ -70,6 +70,8 @@ A thin strip along the very bottom of the window holds two timeline controls:
   with your project. See
   [Choosing the grid](/1.12/guide/timeline#choosing-the-grid).
 
+![Status bar showing the zoom controls and Beat selected beside the grid icon](/1.12/images/window-status-bar.png)
+
 ## Track headers
 
 Each track has a header on the left with its controls:

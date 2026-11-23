@@ -12,7 +12,7 @@ You don't need studio experience to begin. Start with one audio file and a
 short section you like; the [Quick Start](/1.12/guide/quick-start) takes you
 through cutting it into loops, adding effects, and saving an audio file.
 
-> This guide targets Silverdaw 1.12.0 and the 1.12.x release series.
+> This guide covers Silverdaw 1.12.x. The screenshots show version 1.12.1.
 
 ## Who Silverdaw is for
 

@@ -48,6 +48,8 @@ Select a track and open **Track FX** in the bottom panel. Play a section that
 shows what you want to change, then adjust one control at a time. If the panel
 asks you to select a track, click its header on the timeline.
 
+![The Track FX rack with Tone, Filter and effects sends for the selected track](/1.12/images/quickstart-track-fx.png)
+
 Every effect slider can be **double-clicked to reset** it to its default value.
 Controls with a natural centre — such as **Filter** and the **Tone** bands — also
 **snap to that centre** as you drag past it, so you can find the neutral position

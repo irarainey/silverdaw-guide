@@ -137,8 +137,8 @@ Slicing a clip can also produce new samples — see
 
 ## Linked clips
 
-When you drag a **saved clip** onto the timeline, each copy stays **linked** to
-that saved clip, and shows a small **chain badge** on its title strip. You can
+When you use **Save Clip to Library**, the timeline clip becomes **linked** to
+the saved clip. Look for a small **chain badge** on its title strip. You can
 drop the same saved clip onto the timeline as many times as you like, and every
 copy stays connected to the original. Duplicating a linked clip, or copying and
 pasting one, keeps the new copy linked too.
@@ -148,6 +148,8 @@ you've unlinked (below) — is a plain, **unlinked** clip and carries no chain
 badge. It's completely independent: you can trim, chop,
 split, and edit it however you like without affecting anything else, but there's
 no automatic way to keep several copies of it in step.
+
+![Two adjacent vocal phrases: the linked clip on the left has a chain badge; the independent clip on the right has none](/1.12/images/linked-clips.png)
 
 ### Why use linked clips
 
@@ -171,9 +173,9 @@ or just here. Its **sound** is shared with every linked copy:
 You make these changes in the [Clip Editor](/1.12/guide/clip-editor) (they apply when
 you click **Save**) or from **Transform ▸ Warp**, **Transform ▸ Pitch**, and
 **Effects ▸ Reverse**, **Brake**, or **Backspin** in the clip's right-click menu.
-Either way, Silverdaw warns you
-that saving updates the saved clip and every linked copy. If a shared trim or
-tempo change would make **any** linked copy overlap a neighbour on its track,
+The **Warp** and **Pitch** dialogs remind you that saving updates the saved clip
+and every linked copy. If a shared trim or tempo change would make **any**
+linked copy overlap a neighbour on its track,
 Silverdaw refuses the save and names the track (or tracks) that would clash — so
 editing a linked clip can never quietly shuffle your arrangement.
 
