@@ -3,6 +3,7 @@ import DefaultTheme from 'vitepress/theme'
 import { useData, useRouter } from 'vitepress'
 import { onMounted, watch } from 'vue'
 import VersionSwitcher from './components/VersionSwitcher.vue'
+import ImageViewer from './components/ImageViewer.vue'
 import {
   latestVersion,
   isKnownVersion,
@@ -61,4 +62,5 @@ watch(() => page.value.relativePath, redirectToDefaultVersion)
       <VersionSwitcher />
     </template>
   </Layout>
+  <ImageViewer />
 </template>
